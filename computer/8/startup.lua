@@ -1,4 +1,21 @@
 
+json = require "json"
+
+----------------------------------
+-- CONFIGURATION SECTION
+
+local REFRESH_TIME = 30
+local CHEAP_VISITORS_WANT = {
+    "minecraft:hay_block",
+    "minecraft:sunflower",
+    "minecraft:cactus",
+    "minecraft:gold_ingot",
+    "minecraft:iron_ingot"
+}
+
+-- END CONFIGURATION SECTION
+----------------------------------
+
 
 local colony = peripheral.find("colonyIntegrator")
 
@@ -17,6 +34,13 @@ function main()
 end
 
 
+function WriteToFile(input, fileName, mode)
+    local file = io.open(fileName, mode)
+    io.output(file)
+    io.write(input)
+    io.close(file)
+ end
+
 function displayOutOfRangeWarning()
     term.setBackgroundColor(colors.red)  -- Set the background colour to black.
     term.clear()                            -- Paint the entire display with the current background colour.
@@ -30,6 +54,9 @@ function refreshColonyInfo()
     requests = colony.getRequests()
     visitors = colony.getVisitors()
     -- research = colony.getResearch()
+
+    -- WriteToFile(json.encode(buildings), "buildings.json", "w")
+    
     displayLatestColonyInfo()
 end
 
@@ -68,7 +95,7 @@ function displayLatestColonyInfo()
     print("Happiness:", math.floor(colony.getHappiness()), " / 10")
     print("Citizens: ", colony.amountOfCitizens(), "/", colony.maxOfCitizens())
     print("Buildings:", #buildings, "~ ".. getConstructionCount() )
-    print("Visitors: ", #visitors )
+    print("Visitors: ", #visitors, " ~ ", GetCheapVisitors())
     -- print("Research:", getResearchedCount(), "/", #research)
 
     print()
@@ -79,7 +106,7 @@ function displayLatestColonyInfo()
 
     if colony.isUnderAttack() then
         printWithFormat("&e")
-        print("- Colony is under attack!")
+        print("- Colony under attack!")
         printWithFormat("&0")
     end
 
@@ -101,19 +128,27 @@ function displayLatestColonyInfo()
         printWithFormat("&0")
     end
 
-    
     if getGuardedBuildingsCount() < #buildings then
         printWithFormat("&4")
         print("-", #buildings - getGuardedBuildingsCount(), "unguarded buildings")
         printWithFormat("&0")
     end
-
+    
     if colony.getHappiness() <= 8.5 then
         printWithFormat("&3")
         print("- Happiness is low:", math.floor(colony.getHappiness()))
         printWithFormat("&0")
     end
-    
+
+    local unstaffedBuildings, totalUnstaffed = GetUnstaffedBuldingTypes()
+    if totalUnstaffed > 0 then
+        printWithFormat("&e")
+        print("-", totalUnstaffed, "unstaffed buildings")
+        for type, count in pairs(unstaffedBuildings) do
+            print("--", count, type)
+        end
+        printWithFormat("&0")
+    end
     -- if colony.mourning then print("- Recent death") end
 end
 
@@ -125,12 +160,51 @@ function getConstructionCount()
     return count
 end
 
+function GetCheapVisitors()
+    local count = 0
+    for k, v in pairs(visitors) do
+        for i, p in pairs(CHEAP_VISITORS_WANT) do
+            if p == v.recruitCost.name then count = count + 1 end
+        end
+    end
+    return count
+end
+
 function getActiveResearchCount()
     local count = 0
     for k, v in pairs(research) do
         if not v.built then count = count + 1 end
     end
     return count
+end
+
+-------------- BUILDINGS --------------
+function GetUnstaffedBuldingCount() 
+    local count = 0
+    for k, b in pairs(buildings) do
+        if b.maxLevel > 0 and #b.citizens == 0 then count = count + 1 end
+    end
+end
+
+function GetUnstaffedBuldingTypes()
+    local buildingTypes = {}
+    local count = 0
+    for k, b in pairs(buildings) do
+        if b.type ~= "residence" 
+        and b.type ~= "mysticalsite"
+        and b.type ~= "townhall" then
+            if b.level > 0 and #b.citizens == 0 then
+                count =  count + 1
+                if buildingTypes[b.type] ~= nil then
+                    -- print(b.type, buildingTypes[b.type])
+                    buildingTypes[b.type] = buildingTypes[b.type] + 1
+                else
+                    buildingTypes[b.type] = 1
+                end
+            end
+        end 
+    end
+    return buildingTypes, count
 end
 
 function getGuardedBuildingsCount()
@@ -163,16 +237,19 @@ function getIdleBuilders()
     for k, v in pairs(citizens) do
         if v.work.job == "com.minecolonies.job.builder" and v.isIdle then
             print(v.work.job)
-            count = count + 1 
+            count = count + 1
         end
     end
     return count
 end
 
-
-
+function tablelength(T)
+    local count = 0
+    for _ in pairs(T) do count = count + 1 end
+    return count
+  end
 
 while true do
     main()
-    sleep(30)
+    sleep(REFRESH_TIME)
 end
