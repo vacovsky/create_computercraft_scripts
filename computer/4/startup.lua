@@ -109,7 +109,7 @@ while true do
     term.setBackgroundColor(colours.black)  -- Set the background colour to black.
     term.clear()                            -- Paint the entire display with the current background colour.
     term.setCursorPos(1,1)
-    Main()
+    pcall(Main)
     sleep(WAIT_SECONDS)
 
     -- print("Loop finished. Next pass in "..WAIT_SECONDS.." seconds.")
