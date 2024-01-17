@@ -3,7 +3,7 @@ json = require "json"
 
 ----------------------------------
 -- CONFIGURATION SECTION
-
+local USE_MONITOR = true
 local REFRESH_TIME = 30
 local CHEAP_VISITORS_WANT = {
     "minecraft:hay_block",
@@ -15,9 +15,10 @@ local CHEAP_VISITORS_WANT = {
 
 -- END CONFIGURATION SECTION
 ----------------------------------
-
-
 local colony = peripheral.find("colonyIntegrator")
+local monitor
+if USE_MONITOR then monitor = peripheral.find("monitor") end
+monitor.clear()
 
 local buildings = nil
 local citizens = nil
@@ -33,7 +34,6 @@ function Main()
     end
     return true
 end
-
 
 function WriteToFile(input, fileName, mode)
     local file = io.open(fileName, mode)
@@ -54,13 +54,13 @@ function refreshColonyInfo()
     buildings = colony.getBuildings()
     requests = colony.getRequests()
     visitors = colony.getVisitors()
+    if visitors == nil then
+        visitors = 0
+    end
     -- research = colony.getResearch()
-
     -- WriteToFile(json.encode(buildings), "buildings.json", "w")
-    
-    displayLatestColonyInfo()
+    if not USE_MONITOR then displayLatestColonyInfo() else displayLatestColonyInfoInMonitor() end
 end
-
 
 function printWithFormat(...)
     local s = "&1"
@@ -81,7 +81,7 @@ function printWithFormat(...)
             io.write(fields[i][1])
     end
 end
-
+------------------------CONSOLE-----------------
 function displayLatestColonyInfo()
     term.setBackgroundColor(colors.black)  -- Set the background colour to black.
     term.clear()                            -- Paint the entire display with the current background colour.
@@ -151,6 +151,110 @@ function displayLatestColonyInfo()
         printWithFormat("&0")
     end
     -- if colony.mourning then print("- Recent death") end
+end
+
+--------------------MONITOR---------------------
+function displayLatestColonyInfoInMonitor()
+    local line = 1
+    monitor.setTextScale(1)
+    monitor.clear()
+    monitor.setCursorPos(1, line)
+    monitor.setTextColor(8)
+    monitor.write(colony.getColonyName() .. " (id:" .. colony.getColonyID() .. ")")
+
+    line = line + 1
+    monitor.setCursorPos(1, line)
+    monitor.write("=============================")
+
+    line = line + 2
+    monitor.setCursorPos(1, line)
+    monitor.setTextColor(1)
+    monitor.write("Style:   " .. colony.getColonyStyle())
+
+    line = line + 1
+    monitor.setCursorPos(1, line)
+    monitor.setTextColor(1)
+    monitor.write("Happiness:   " .. math.floor(colony.getHappiness()) .. " / 10")
+
+    line = line + 1
+    monitor.setCursorPos(1, line)
+    monitor.setTextColor(1)
+    monitor.write("Citizens:   " .. colony.amountOfCitizens() .. " / " .. colony.maxOfCitizens())
+
+    line = line + 1
+    monitor.setCursorPos(1, line)
+    monitor.setTextColor(1)
+    monitor.write("Buildings:   " .. #buildings .. "~ " .. getConstructionCount())
+
+    line = line + 1
+    monitor.setCursorPos(1, line)
+    monitor.setTextColor(1)
+    monitor.write("Visitors:   " .. #visitors .. " ~ " .. GetCheapVisitors())
+
+    line = line + 3
+    monitor.setCursorPos(1, line)
+    monitor.setTextColor(16384)
+    monitor.write("!!!!!!!!   Alerts   !!!!!!!!!")
+    line = line + 1
+    monitor.setCursorPos(1, line)
+    monitor.write("=============================")
+    line = line + 1
+    
+    if colony.isUnderAttack() then
+        line = line + 1
+        monitor.setCursorPos(1, line)
+        monitor.setTextColor(16384)
+        monitor.write("- Colony under attack!")
+    end
+
+    if getIdleBuilders() > 0 then
+        line = line + 1
+        monitor.setCursorPos(1, line)
+        monitor.setTextColor(16)
+        monitor.write("- " .. getIdleBuilders() .. " idle builders")
+    end
+
+    if colony.amountOfCitizens() + 2 >= colony.maxOfCitizens() then
+        line = line + 1
+        monitor.setCursorPos(1, line)
+        monitor.setTextColor(64)
+        monitor.write("- " .. colony.maxOfCitizens() - colony.amountOfCitizens() .. " open beds")
+    end
+
+    if getOpenRequestsCount() > 0 then
+        line = line + 1
+        monitor.setCursorPos(1, line)
+        monitor.setTextColor(1)
+        monitor.write("- " .. getOpenRequestsCount() .. " open requests")
+    end
+
+    if getGuardedBuildingsCount() < #buildings then
+        line = line + 1
+        monitor.setCursorPos(1, line)
+        monitor.setTextColor(16)
+        monitor.write("- " .. #buildings - getGuardedBuildingsCount() ..  " unguarded buildings")
+    end
+
+    if colony.getHappiness() <= 8.5 then
+        line = line + 1
+        monitor.setCursorPos(1, line)
+        monitor.setTextColor(8)
+        monitor.write("- Happiness is low: " .. math.floor(colony.getHappiness()))
+    end
+
+    local unstaffedBuildings, totalUnstaffed = GetUnstaffedBuldingTypes()
+    if totalUnstaffed > 0 then
+        line = line + 1
+        monitor.setCursorPos(1, line)
+        monitor.setTextColor(16384)
+        monitor.write("- " .. totalUnstaffed .. " unstaffed buildings")
+        for type, count in pairs(unstaffedBuildings) do
+            line = line + 1
+            monitor.setCursorPos(1, line)
+            monitor.write("  - " .. count .. " " .. type)
+        end
+    end
+    -- -- if colony.mourning then print("- Recent death") end
 end
 
 function getConstructionCount()
