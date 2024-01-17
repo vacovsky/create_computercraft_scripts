@@ -1,1 +1,258 @@
-[{"state":"IN_PROGRESS","target":"Builder Alexis C. Garnis","name":"1 White Bed","count":1,"id":"41118314-5af6-4dae-9f19-f71c4174eb37","items":[{"name":"minecraft:white_bed","maxStackSize":1,"tags":["minecraft:item/minecraft:beds"],"count":1,"nbt":[],"displayName":"[White Bed]"}],"minCount":1,"desc":"1 White Bed"}]
+[
+    {
+        "state": "IN_PROGRESS",
+        "target": "Stonemason",
+        "name": "3 Vines",
+        "count": 3,
+        "id": "0b3244ee-cb89-4b3a-8965-ae7b72a56457",
+        "items": [
+            {
+                "name": "minecraft:vine",
+                "maxStackSize": 64,
+                "tags": [
+                    "minecraft:item/minecolonies:compostables",
+                    "minecraft:item/createaddition:plants"
+                ],
+                "count": 1,
+                "nbt": [],
+                "displayName": "[Vines]"
+            }
+        ],
+        "minCount": 3,
+        "desc": "3 Vines"
+    },
+    {
+        "state": "IN_PROGRESS",
+        "target": "Builder Chance G. Good",
+        "name": "1-26 Bricks Shingles",
+        "count": 26,
+        "id": "3774cdb4-cddd-497a-835f-9855f2a459fd",
+        "items": [
+            {
+                "name": "domum_ornamentum:shingle",
+                "maxStackSize": 64,
+                "tags": [],
+                "count": 1,
+                "nbt": {
+                    "textureData": {
+                        "minecraft:block/oak_planks": "minecraft:oak_planks",
+                        "minecraft:block/clay": "minecraft:bricks"
+                    }
+                },
+                "displayName": "[Bricks Shingles]"
+            }
+        ],
+        "minCount": 1,
+        "desc": "1-26 Bricks Shingles"
+    },
+    {
+        "state": "IN_PROGRESS",
+        "target": "Builder Mallory G. Grenefeld",
+        "name": "1-15 Square Prismarine Bricks Pillar",
+        "count": 15,
+        "id": "f826ddf4-6b49-44d3-8e9d-fa0e0c069808",
+        "items": [
+            {
+                "name": "domum_ornamentum:squarepillar",
+                "maxStackSize": 64,
+                "tags": [],
+                "count": 1,
+                "nbt": {
+                    "textureData": {
+                        "minecraft:block/oak_planks": "minecraft:prismarine_bricks"
+                    }
+                },
+                "displayName": "[Square Prismarine Bricks Pillar]"
+            }
+        ],
+        "minCount": 1,
+        "desc": "1-15 Square Prismarine Bricks Pillar"
+    },
+    {
+        "state": "IN_PROGRESS",
+        "target": "Stonemason",
+        "name": "13 Brown Bricks",
+        "count": 13,
+        "id": "5ed961e2-2ebb-4b27-9667-5f2fdcb1e608",
+        "items": [
+            {
+                "name": "domum_ornamentum:brown_bricks",
+                "maxStackSize": 64,
+                "tags": [
+                    "minecraft:item/domum_ornamentum:brick_items",
+                    "minecraft:item/minecolonies:stonemason_product",
+                    "minecraft:item/minecolonies:blacksmith_product_excluded",
+                    "minecraft:item/minecolonies:stonesmeltery_ingredient",
+                    "minecraft:item/minecolonies:stonemason_ingredient"
+                ],
+                "count": 1,
+                "nbt": [],
+                "displayName": "[Brown Bricks]"
+            }
+        ],
+        "minCount": 13,
+        "desc": "13 Brown Bricks"
+    },
+    {
+        "state": "IN_PROGRESS",
+        "target": "Builder Mallory G. Grenefeld",
+        "name": "1 Voxel Prismarine Bricks Pillar",
+        "count": 1,
+        "id": "8c8529e6-0961-4d12-9ae9-5c61dc12f72d",
+        "items": [
+            {
+                "name": "domum_ornamentum:blockypillar",
+                "maxStackSize": 64,
+                "tags": [],
+                "count": 1,
+                "nbt": {
+                    "textureData": {
+                        "minecraft:block/oak_planks": "minecraft:prismarine_bricks"
+                    }
+                },
+                "displayName": "[Voxel Prismarine Bricks Pillar]"
+            }
+        ],
+        "minCount": 1,
+        "desc": "1 Voxel Prismarine Bricks Pillar"
+    },
+    {
+        "state": "IN_PROGRESS",
+        "target": "Builder Alexis C. Garnis",
+        "name": "1-26 Bricks Shingles",
+        "count": 26,
+        "id": "c51a7061-e2d6-4bfb-9baa-2695e614034a",
+        "items": [
+            {
+                "name": "domum_ornamentum:shingle",
+                "maxStackSize": 64,
+                "tags": [],
+                "count": 1,
+                "nbt": {
+                    "textureData": {
+                        "minecraft:block/oak_planks": "minecraft:oak_planks",
+                        "minecraft:block/clay": "minecraft:bricks"
+                    }
+                },
+                "displayName": "[Bricks Shingles]"
+            }
+        ],
+        "minCount": 1,
+        "desc": "1-26 Bricks Shingles"
+    },
+    {
+        "state": "IN_PROGRESS",
+        "target": "Builder Alexis C. Garnis",
+        "name": "1 Bricks Shingles",
+        "count": 1,
+        "id": "da905597-f15d-4c97-99d1-a545362d714c",
+        "items": [
+            {
+                "name": "domum_ornamentum:shingle_slab",
+                "maxStackSize": 64,
+                "tags": [],
+                "count": 1,
+                "nbt": {
+                    "textureData": {
+                        "minecraft:block/oak_planks": "minecraft:bricks",
+                        "minecraft:block/dark_oak_planks": "minecraft:oak_planks"
+                    }
+                },
+                "displayName": "[Bricks Shingles]"
+            }
+        ],
+        "minCount": 1,
+        "desc": "1 Bricks Shingles"
+    },
+    {
+        "state": "IN_PROGRESS",
+        "target": "Builder Chance G. Good",
+        "name": "1-2 Smooth Quartz Stairs",
+        "count": 2,
+        "id": "aa245e18-970e-49a1-820a-0185560e4ec8",
+        "items": [
+            {
+                "name": "minecraft:smooth_quartz_stairs",
+                "maxStackSize": 64,
+                "tags": [
+                    "minecraft:item/minecolonies:stonemason_product",
+                    "minecraft:item/minecolonies:blacksmith_product_excluded",
+                    "minecraft:item/minecolonies:stonesmeltery_ingredient",
+                    "minecraft:item/minecolonies:stonemason_ingredient",
+                    "minecraft:item/minecraft:stairs"
+                ],
+                "count": 1,
+                "nbt": [],
+                "displayName": "[Smooth Quartz Stairs]"
+            }
+        ],
+        "minCount": 1,
+        "desc": "1-2 Smooth Quartz Stairs"
+    },
+    {
+        "state": "IN_PROGRESS",
+        "target": "Stonemason",
+        "name": "2 Vines",
+        "count": 2,
+        "id": "375f8f3d-4ea7-4e2e-81f7-713b16cbd130",
+        "items": [
+            {
+                "name": "minecraft:vine",
+                "maxStackSize": 64,
+                "tags": [
+                    "minecraft:item/minecolonies:compostables",
+                    "minecraft:item/createaddition:plants"
+                ],
+                "count": 1,
+                "nbt": [],
+                "displayName": "[Vines]"
+            }
+        ],
+        "minCount": 2,
+        "desc": "2 Vines"
+    },
+    {
+        "state": "IN_PROGRESS",
+        "target": "Builder Leonidas G. Madden",
+        "name": "1-4 Round Bricks Pillar",
+        "count": 4,
+        "id": "e81c3b36-cec5-495f-bad4-ef6837e46d57",
+        "items": [
+            {
+                "name": "domum_ornamentum:blockpillar",
+                "maxStackSize": 64,
+                "tags": [],
+                "count": 1,
+                "nbt": {
+                    "textureData": {
+                        "minecraft:block/oak_planks": "minecraft:bricks"
+                    }
+                },
+                "displayName": "[Round Bricks Pillar]"
+            }
+        ],
+        "minCount": 1,
+        "desc": "1-4 Round Bricks Pillar"
+    },
+    {
+        "state": "IN_PROGRESS",
+        "target": "com.minecolonies.building.postbox",
+        "name": "250 Soul Sand",
+        "count": 250,
+        "id": "3251264c-bed7-44c7-88e3-0d2147dc35bc",
+        "items": [
+            {
+                "name": "minecraft:soul_sand",
+                "maxStackSize": 64,
+                "tags": [
+                    "minecraft:item/minecraft:soul_fire_base_blocks"
+                ],
+                "count": 1,
+                "nbt": [],
+                "displayName": "[Soul Sand]"
+            }
+        ],
+        "minCount": 250,
+        "desc": "250 Soul Sand"
+    }
+]

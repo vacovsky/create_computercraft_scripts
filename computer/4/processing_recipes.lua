@@ -1,0 +1,84 @@
+local processing_recipes = { _version = "0.0.1" }
+
+
+local processing_recipes = {
+    minecraft = {
+        soul_sand = {
+            name = "minecraft:soul_sand",
+            input = "minecraft:sand",
+            operation = "haunt"
+        },
+        prismarine_shard = {
+            name = "minecraft:prismarine_shard",
+            input = "minecraft:lapis_lazuli",
+            operation = "haunt"
+        },
+        prismarine_crystals = {
+            name = "minecraft:prismarine_crystals",
+            input = "minecraft:lapis_lazuli",
+            operation = "haunt"
+        },
+        soul_soil = {
+            name = "minecraft:soul_soil",
+            input = "minecraft:dirt",
+            operation = "haunt"
+        },
+        gravel = {
+            name = "minecraft:gravel",
+            input = "minecraft:cobblestone",
+            operation = "crush"
+        },
+        -- stone = {
+        --     name = "minecraft:stone",
+        --     input = "minecraft:cobblestone",
+        --     operation = "smelt"
+        -- },
+        sand = {
+            name = "minecraft:sand",
+            input = "minecraft:gravel",
+            operation = "crush"
+        },
+        smooth_stone = {
+            name = "minecraft:smooth_stone",
+            input = "minecraft:stone",
+            operation = "smelt"
+        },
+        cracked_stone_bricks = {
+            name = "minecraft:cracked_stone_bricks",
+            input = "minecraft:stone_bricks",
+            operation = "smelt"
+        },
+        string = { 
+            name = "minecraft:string",
+            input = "minecraft:white_wool",
+            operation = "crush"
+        },
+        glass = { 
+            name = "minecraft:glass",
+            input = "minecraft:sand",
+            operation = "smelt"
+        },
+        terracotta = { 
+            name = "minecraft:terracotta",
+            input = "minecraft:clay",
+            operation = "smelt"
+        },
+        smooth_quartz = {
+            name = "minecraft:smooth_quartz",
+            input = "minecraft:quartz_block",
+            operation = "smelt"
+        },
+        brick = {
+            name = "minecraft:brick",
+            input = "minecraft:clay_ball",
+            operation = "smelt"
+        },
+        nether_brick = {
+            name = "minecraft:nether_brick",
+            input = "minecraft:netherrack",
+            operation = "smelt"
+        },
+    }
+}
+
+return processing_recipes

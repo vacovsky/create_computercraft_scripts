@@ -10,12 +10,14 @@ monitor.setTextScale(1)
 local watchedItems = {
     right = {
         name = "minecraft:stone",
-        strength = 1,
+        onStrength = 0,
+        offStrength = 1,        
         state = "Off"
     },
     left = {
         name = "minecraft:cobblestone",
-        strength = 1,
+        onStrength = 0,
+        offStrength = 1,
         state = "Off"
     }
 }
@@ -43,19 +45,19 @@ function Main()
                 end
             end
         end
-        setRedstoneState(watchedItem.name, found, direction, watchedItem.strength)
         if found then watchedItems[direction].state = "On" else watchedItems[direction].state = "Off" end
+        setRedstoneState(watchedItem, found, direction)
     end
     renderMonitor()
 end
 
-function setRedstoneState(item, state, direction, strength)
-    print(item, tostring(state), direction, strength)
+function setRedstoneState(item, state, direction)
+    print(item.name, tostring(state), direction)
     if state then
         -- print("order found for " .. item .. " | activating redstone to " .. direction .. " : " .. tostring(strength))
-        redstone.setAnalogOutput(direction, strength)
+        redstone.setAnalogOutput(direction, item.onStrength)
     else
-        redstone.setAnalogOutput(direction, strength)
+        redstone.setAnalogOutput(direction, item.offStrength)
     end
 end
 
@@ -66,10 +68,15 @@ function renderMonitor()
     monitor.write("Automatic Order Fulfillment")
 
     local counter = 3
+    local noOrderCounter = counter
     for direction, watchedItem in pairs(watchedItems) do
         monitor.setCursorPos(1, counter)
         monitor.write(direction .. "\t" .. watchedItem.name:gsub("minecraft:", "").. "\t" .. watchedItem.state .. "   ")
         counter = counter + 1
+    end
+    if counter == noOrderCounter then 
+        monitor.setCursorPos(1, counter)
+        monitor.write("No active orders.")
     end
 end
 
