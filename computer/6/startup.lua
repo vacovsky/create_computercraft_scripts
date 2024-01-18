@@ -157,14 +157,24 @@ function displayLatestColonyInfo()
     -- if colony.mourning then print("- Recent death") end
 end
 
+
+
 --------------------MONITOR---------------------
+function RightJustify(input, line)
+    monitor.setCursorPos(monitor.getSize() - string.len(input), line)
+end
+
 function displayLatestColonyInfoInMonitor()
     local line = 1
     monitor.setTextScale(1)
     monitor.clear()
     monitor.setCursorPos(1, line)
     monitor.setTextColor(8)
-    monitor.write(colony.getColonyName() .. " (id:" .. colony.getColonyID() .. ")")
+    monitor.write(colony.getColonyName())
+
+    local colonyIdMsg = "id: " .. colony.getColonyID()
+    monitor.setCursorPos(monitor.getSize() - string.len(colonyIdMsg), line)
+    monitor.write("id:" .. colony.getColonyID() .. ")")
 
     line = line + 1
     monitor.setCursorPos(1, line)
@@ -173,32 +183,50 @@ function displayLatestColonyInfoInMonitor()
     line = line + 2
     monitor.setCursorPos(1, line)
     monitor.setTextColor(1)
-    monitor.write("Style:   " .. colony.getColonyStyle())
+    monitor.write("Style")
+    RightJustify(colony.getColonyStyle(), line)
+    monitor.write(colony.getColonyStyle())
 
     line = line + 1
     monitor.setCursorPos(1, line)
     monitor.setTextColor(1)
-    monitor.write("Happiness:   " .. string.format("%.2f",((colony.getHappiness() * 10) / 10)) .. " / 10")
+    monitor.write("Happiness")
+    local happyValue = string.format("%.2f",((colony.getHappiness() * 10) / 10)) .. " / 10"
+    RightJustify(happyValue, line)
+    monitor.write(happyValue)
 
     line = line + 1
     monitor.setCursorPos(1, line)
     monitor.setTextColor(1)
-    monitor.write("Citizens:   " .. colony.amountOfCitizens() .. " / " .. colony.maxOfCitizens() .. " | " .. GetUnemployedCitizens())
+    monitor.write("Citizens")
+    local citizenValues = tostring(colony.amountOfCitizens() .. " / " .. colony.maxOfCitizens() .. " | " .. GetUnemployedCitizens())
+    RightJustify(citizenValues, line)
+    monitor.write(citizenValues)
 
     line = line + 1
     monitor.setCursorPos(1, line)
     monitor.setTextColor(1)
-    monitor.write("Buildings:   " .. #buildings .. " ~ " .. getConstructionCount())
+    monitor.write("Buildings")
+    local buildingValues = tostring(#buildings .. " ~ " .. getConstructionCount())
+    RightJustify(buildingValues, line)
+    monitor.write(buildingValues)
 
     line = line + 1
     monitor.setCursorPos(1, line)
     monitor.setTextColor(1)
-    monitor.write("Avg Bld Lvl:  " .. GetAverageBuildingLevel().avg  .. " / " .. GetAverageBuildingLevel().total)
+    monitor.write("Avg Bld Lvl")
+    local moreBuildingValues = tostring(GetAverageBuildingLevel().avg  .. " / " .. GetAverageBuildingLevel().total)
+    RightJustify(moreBuildingValues, line)
+    monitor.write(moreBuildingValues)
+
 
     line = line + 1
     monitor.setCursorPos(1, line)
     monitor.setTextColor(1)
-    monitor.write("Visitors:   " .. #visitors .. " ~ " .. GetCheapVisitors())
+    monitor.write("Visitors")
+    local visitorValue = tostring(#visitors .. " ~ " .. GetCheapVisitors())
+    RightJustify(visitorValue, line)
+    monitor.write(visitorValue)
 
     line = line + 3
     monitor.setCursorPos(1, line)
@@ -208,7 +236,7 @@ function displayLatestColonyInfoInMonitor()
     monitor.setCursorPos(1, line)
     monitor.write("=============================")
     line = line + 1
-    
+
     if colony.isUnderAttack() then
         line = line + 1
         monitor.setCursorPos(1, line)
