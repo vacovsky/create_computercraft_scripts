@@ -93,10 +93,11 @@ function displayLatestColonyInfo()
     printWithFormat("&0")
 
     print("Style: ", colony.getColonyStyle())
-    print("Happiness:", math.floor(colony.getHappiness()), " / 10")
+    print("Happiness:", math.floor((colony.getHappiness() * 10) / 10), " / 10")
     print("Citizens: ", colony.amountOfCitizens(), "/", colony.maxOfCitizens())
     print("Buildings:", #buildings, "~ ".. getConstructionCount() )
     print("Visitors: ", #visitors, " ~ ", GetCheapVisitors())
+    print("Avg Bld. Lvl:", GetAverageBuildingLevel()[0], "/", GetAverageBuildingLevel()[1])
     -- print("Research:", getResearchedCount(), "/", #research)
 
     print()
@@ -137,7 +138,7 @@ function displayLatestColonyInfo()
     
     if colony.getHappiness() <= 8.5 then
         printWithFormat("&3")
-        print("- Happiness is low:", math.floor(colony.getHappiness()))
+        print("- Happiness is low:", math.floor((colony.getHappiness() * 10) / 10))
         printWithFormat("&0")
     end
 
@@ -185,6 +186,20 @@ function GetUnstaffedBuldingCount()
     for k, b in pairs(buildings) do
         if b.maxLevel > 0 and #b.citizens == 0 then count = count + 1 end
     end
+end
+
+function GetAverageBuildingLevel() -- actual, possible
+    local actualTotal = 0
+    local maxTotal = 0
+    local count = 0
+    for k, b in pairs(buildings) do
+        if b.maxLevel > 0 then
+            count = count + 1
+            maxTotal = maxTotal + b.maxLevel
+            actualTotal = actualTotal + b.level
+        end
+    end
+    return (actualTotal / count) * 100, (maxTotal / count) * 100
 end
 
 function GetUnstaffedBuldingTypes()

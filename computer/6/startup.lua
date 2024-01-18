@@ -93,10 +93,12 @@ function displayLatestColonyInfo()
     printWithFormat("&0")
 
     print("Style: ", colony.getColonyStyle())
-    print("Happiness:", math.floor(colony.getHappiness()), " / 10")
+    print("Happiness:", string.format("%.2f",((colony.getHappiness() * 10) / 10)), " / 10")
     print("Citizens: ", colony.amountOfCitizens(), "/", colony.maxOfCitizens())
-    print("Buildings:", #buildings, "~ ".. getConstructionCount() )
     print("Visitors: ", #visitors, " ~ ", GetCheapVisitors())
+    print("Buildings:", #buildings, "~ ".. getConstructionCount())
+    print("Avg Bld. Lvl:", GetAverageBuildingLevel().avg, "/", GetAverageBuildingLevel().total)
+
     -- print("Research:", getResearchedCount(), "/", #research)
 
     print()
@@ -137,7 +139,7 @@ function displayLatestColonyInfo()
     
     if colony.getHappiness() <= 8.5 then
         printWithFormat("&3")
-        print("- Happiness is low:", math.floor(colony.getHappiness()))
+        print("- Happiness is low:", math.floor((colony.getHappiness() * 10) / 10))
         printWithFormat("&0")
     end
 
@@ -174,7 +176,7 @@ function displayLatestColonyInfoInMonitor()
     line = line + 1
     monitor.setCursorPos(1, line)
     monitor.setTextColor(1)
-    monitor.write("Happiness:   " .. math.floor(colony.getHappiness()) .. " / 10")
+    monitor.write("Happiness:   " .. string.format("%.2f",((colony.getHappiness() * 10) / 10)) .. " / 10")
 
     line = line + 1
     monitor.setCursorPos(1, line)
@@ -185,6 +187,11 @@ function displayLatestColonyInfoInMonitor()
     monitor.setCursorPos(1, line)
     monitor.setTextColor(1)
     monitor.write("Buildings:   " .. #buildings .. "~ " .. getConstructionCount())
+
+    line = line + 1
+    monitor.setCursorPos(1, line)
+    monitor.setTextColor(1)
+    monitor.write("Avg Bld Lvl:  " .. GetAverageBuildingLevel().avg  .. " / " .. GetAverageBuildingLevel().total)
 
     line = line + 1
     monitor.setCursorPos(1, line)
@@ -239,7 +246,7 @@ function displayLatestColonyInfoInMonitor()
         line = line + 1
         monitor.setCursorPos(1, line)
         monitor.setTextColor(8)
-        monitor.write("- Happiness is low: " .. math.floor(colony.getHappiness()))
+        monitor.write("- Happiness is low: " .. string.format("%.2f",((colony.getHappiness() * 10) / 10)))
     end
 
     local unstaffedBuildings, totalUnstaffed = GetUnstaffedBuldingTypes()
@@ -289,6 +296,23 @@ function GetUnstaffedBuldingCount()
     for k, b in pairs(buildings) do
         if b.maxLevel > 0 and #b.citizens == 0 then count = count + 1 end
     end
+end
+
+function GetAverageBuildingLevel() -- actual, possible
+    local actualTotal = 0
+    local maxTotal = 0
+    local count = 0
+    for k, b in pairs(buildings) do
+        if b.maxLevel > 0 then
+            count = count + 1
+            maxTotal = maxTotal + b.maxLevel
+            actualTotal = actualTotal + b.level
+        end
+    end
+    return {
+        avg = string.format("%.2f", ((actualTotal / count))),
+        total = string.format("%.2f", ((maxTotal / count)))
+    }
 end
 
 function GetUnstaffedBuldingTypes()
@@ -355,6 +379,7 @@ function tablelength(T)
   end
 
 while true do
-    pcall(Main)
+    Main()
+    -- pcall(Main)
     sleep(REFRESH_TIME)
 end
