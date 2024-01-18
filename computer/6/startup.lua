@@ -17,8 +17,10 @@ local CHEAP_VISITORS_WANT = {
 ----------------------------------
 local colony = peripheral.find("colonyIntegrator")
 local monitor
-if USE_MONITOR then monitor = peripheral.find("monitor") end
-monitor.clear()
+if USE_MONITOR then
+    monitor = peripheral.find("monitor")
+    monitor.clear()
+end
 
 local buildings = nil
 local citizens = nil
@@ -58,7 +60,7 @@ function refreshColonyInfo()
         visitors = 0
     end
     -- research = colony.getResearch()
-    -- WriteToFile(json.encode(buildings), "buildings.json", "w")
+    -- WriteToFile(json.encode(citizens), "citizens.json", "w")
     if not USE_MONITOR then displayLatestColonyInfo() else displayLatestColonyInfoInMonitor() end
 end
 
@@ -93,10 +95,10 @@ function displayLatestColonyInfo()
     printWithFormat("&0")
 
     print("Style: ", colony.getColonyStyle())
-    print("Happiness:", string.format("%.2f",((colony.getHappiness() * 10) / 10)), " / 10")
-    print("Citizens: ", colony.amountOfCitizens(), "/", colony.maxOfCitizens())
-    print("Visitors: ", #visitors, " ~ ", GetCheapVisitors())
-    print("Buildings:", #buildings, "~ ".. getConstructionCount())
+    print("Happiness:", string.format("%.2f",((colony.getHappiness() * 10) / 10)), "/ 10")
+    print("Citizens: ", colony.amountOfCitizens(), "/", colony.maxOfCitizens(), "|", GetUnemployedCitizens())
+    print("Visitors: ", #visitors, "~", GetCheapVisitors())
+    print("Buildings: ", #buildings, "~", getConstructionCount())
     print("Avg Bld. Lvl:", GetAverageBuildingLevel().avg, "/", GetAverageBuildingLevel().total)
 
     -- print("Research:", getResearchedCount(), "/", #research)
@@ -136,10 +138,10 @@ function displayLatestColonyInfo()
         print("-", #buildings - getGuardedBuildingsCount(), "unguarded buildings")
         printWithFormat("&0")
     end
-    
+
     if colony.getHappiness() <= 8.5 then
         printWithFormat("&3")
-        print("- Happiness is low:", math.floor((colony.getHappiness() * 10) / 10))
+        print("- Happiness is low:", string.format("%.2f",((colony.getHappiness() * 10) / 10)))
         printWithFormat("&0")
     end
 
@@ -181,12 +183,12 @@ function displayLatestColonyInfoInMonitor()
     line = line + 1
     monitor.setCursorPos(1, line)
     monitor.setTextColor(1)
-    monitor.write("Citizens:   " .. colony.amountOfCitizens() .. " / " .. colony.maxOfCitizens())
+    monitor.write("Citizens:   " .. colony.amountOfCitizens() .. " / " .. colony.maxOfCitizens() .. " | " .. GetUnemployedCitizens())
 
     line = line + 1
     monitor.setCursorPos(1, line)
     monitor.setTextColor(1)
-    monitor.write("Buildings:   " .. #buildings .. "~ " .. getConstructionCount())
+    monitor.write("Buildings:   " .. #buildings .. " ~ " .. getConstructionCount())
 
     line = line + 1
     monitor.setCursorPos(1, line)
@@ -277,6 +279,16 @@ function GetCheapVisitors()
     for k, v in pairs(visitors) do
         for i, p in pairs(CHEAP_VISITORS_WANT) do
             if p == v.recruitCost.name then count = count + 1 end
+        end
+    end
+    return count
+end
+
+function GetUnemployedCitizens()
+    local count = 0
+    for k, v in pairs(citizens) do
+        if v.work.job == "com.minecolonies.job.student" or v.work.job == nil then
+            count = count + 1
         end
     end
     return count

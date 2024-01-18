@@ -3,7 +3,7 @@ json = require "json"
 
 ----------------------------------
 -- CONFIGURATION SECTION
-local USE_MONITOR = false
+
 local REFRESH_TIME = 30
 local CHEAP_VISITORS_WANT = {
     "minecraft:hay_block",
@@ -15,12 +15,9 @@ local CHEAP_VISITORS_WANT = {
 
 -- END CONFIGURATION SECTION
 ----------------------------------
+
+
 local colony = peripheral.find("colonyIntegrator")
-local monitor
-if USE_MONITOR then
-    monitor = peripheral.find("monitor")
-    monitor.clear()
-end
 
 local buildings = nil
 local citizens = nil
@@ -36,6 +33,7 @@ function Main()
     end
     return true
 end
+
 
 function WriteToFile(input, fileName, mode)
     local file = io.open(fileName, mode)
@@ -56,13 +54,13 @@ function refreshColonyInfo()
     buildings = colony.getBuildings()
     requests = colony.getRequests()
     visitors = colony.getVisitors()
-    if visitors == nil then
-        visitors = 0
-    end
     -- research = colony.getResearch()
-    -- WriteToFile(json.encode(citizens), "citizens.json", "w")
-    if not USE_MONITOR then displayLatestColonyInfo() else displayLatestColonyInfoInMonitor() end
+
+    -- WriteToFile(json.encode(buildings), "buildings.json", "w")
+    
+    displayLatestColonyInfo()
 end
+
 
 function printWithFormat(...)
     local s = "&1"
@@ -83,7 +81,7 @@ function printWithFormat(...)
             io.write(fields[i][1])
     end
 end
-------------------------CONSOLE-----------------
+
 function displayLatestColonyInfo()
     term.setBackgroundColor(colors.black)  -- Set the background colour to black.
     term.clear()                            -- Paint the entire display with the current background colour.
@@ -95,12 +93,11 @@ function displayLatestColonyInfo()
     printWithFormat("&0")
 
     print("Style: ", colony.getColonyStyle())
-    print("Happiness:", string.format("%.2f",((colony.getHappiness() * 10) / 10)), "/ 10")
-    print("Citizens: ", colony.amountOfCitizens(), "/", colony.maxOfCitizens(), "|", GetUnemployedCitizens())
-    print("Visitors: ", #visitors, "~", GetCheapVisitors())
-    print("Buildings: ", #buildings, "~", getConstructionCount())
-    print("Avg Bld. Lvl:", GetAverageBuildingLevel().avg, "/", GetAverageBuildingLevel().total)
-
+    print("Happiness:", math.floor((colony.getHappiness() * 10) / 10), " / 10")
+    print("Citizens: ", colony.amountOfCitizens(), "/", colony.maxOfCitizens())
+    print("Buildings:", #buildings, "~ ".. getConstructionCount() )
+    print("Visitors: ", #visitors, " ~ ", GetCheapVisitors())
+    print("Avg Bld. Lvl:", GetAverageBuildingLevel()[0], "/", GetAverageBuildingLevel()[1])
     -- print("Research:", getResearchedCount(), "/", #research)
 
     print()
@@ -138,10 +135,10 @@ function displayLatestColonyInfo()
         print("-", #buildings - getGuardedBuildingsCount(), "unguarded buildings")
         printWithFormat("&0")
     end
-
+    
     if colony.getHappiness() <= 8.5 then
         printWithFormat("&3")
-        print("- Happiness is low:", string.format("%.2f",((colony.getHappiness() * 10) / 10)))
+        print("- Happiness is low:", math.floor((colony.getHappiness() * 10) / 10))
         printWithFormat("&0")
     end
 
@@ -157,115 +154,6 @@ function displayLatestColonyInfo()
     -- if colony.mourning then print("- Recent death") end
 end
 
---------------------MONITOR---------------------
-function displayLatestColonyInfoInMonitor()
-    local line = 1
-    monitor.setTextScale(1)
-    monitor.clear()
-    monitor.setCursorPos(1, line)
-    monitor.setTextColor(8)
-    monitor.write(colony.getColonyName() .. " (id:" .. colony.getColonyID() .. ")")
-
-    line = line + 1
-    monitor.setCursorPos(1, line)
-    monitor.write("=============================")
-
-    line = line + 2
-    monitor.setCursorPos(1, line)
-    monitor.setTextColor(1)
-    monitor.write("Style:   " .. colony.getColonyStyle())
-
-    line = line + 1
-    monitor.setCursorPos(1, line)
-    monitor.setTextColor(1)
-    monitor.write("Happiness:   " .. string.format("%.2f",((colony.getHappiness() * 10) / 10)) .. " / 10")
-
-    line = line + 1
-    monitor.setCursorPos(1, line)
-    monitor.setTextColor(1)
-    monitor.write("Citizens:   " .. colony.amountOfCitizens() .. " / " .. colony.maxOfCitizens())
-
-    line = line + 1
-    monitor.setCursorPos(1, line)
-    monitor.setTextColor(1)
-    monitor.write("Buildings:   " .. #buildings .. " ~ " .. getConstructionCount())
-
-    line = line + 1
-    monitor.setCursorPos(1, line)
-    monitor.setTextColor(1)
-    monitor.write("Avg Bld Lvl:  " .. GetAverageBuildingLevel().avg  .. " / " .. GetAverageBuildingLevel().total)
-
-    line = line + 1
-    monitor.setCursorPos(1, line)
-    monitor.setTextColor(1)
-    monitor.write("Visitors:   " .. #visitors .. " ~ " .. GetCheapVisitors())
-
-    line = line + 3
-    monitor.setCursorPos(1, line)
-    monitor.setTextColor(16384)
-    monitor.write("!!!!!!!!   Alerts   !!!!!!!!!")
-    line = line + 1
-    monitor.setCursorPos(1, line)
-    monitor.write("=============================")
-    line = line + 1
-    
-    if colony.isUnderAttack() then
-        line = line + 1
-        monitor.setCursorPos(1, line)
-        monitor.setTextColor(16384)
-        monitor.write("- Colony under attack!")
-    end
-
-    if getIdleBuilders() > 0 then
-        line = line + 1
-        monitor.setCursorPos(1, line)
-        monitor.setTextColor(16)
-        monitor.write("- " .. getIdleBuilders() .. " idle builders")
-    end
-
-    if colony.amountOfCitizens() + 2 >= colony.maxOfCitizens() then
-        line = line + 1
-        monitor.setCursorPos(1, line)
-        monitor.setTextColor(64)
-        monitor.write("- " .. colony.maxOfCitizens() - colony.amountOfCitizens() .. " open beds")
-    end
-
-    if getOpenRequestsCount() > 0 then
-        line = line + 1
-        monitor.setCursorPos(1, line)
-        monitor.setTextColor(1)
-        monitor.write("- " .. getOpenRequestsCount() .. " open requests")
-    end
-
-    if getGuardedBuildingsCount() < #buildings then
-        line = line + 1
-        monitor.setCursorPos(1, line)
-        monitor.setTextColor(16)
-        monitor.write("- " .. #buildings - getGuardedBuildingsCount() ..  " unguarded buildings")
-    end
-
-    if colony.getHappiness() <= 8.5 then
-        line = line + 1
-        monitor.setCursorPos(1, line)
-        monitor.setTextColor(8)
-        monitor.write("- Happiness is low: " .. string.format("%.2f",((colony.getHappiness() * 10) / 10)))
-    end
-
-    local unstaffedBuildings, totalUnstaffed = GetUnstaffedBuldingTypes()
-    if totalUnstaffed > 0 then
-        line = line + 1
-        monitor.setCursorPos(1, line)
-        monitor.setTextColor(16384)
-        monitor.write("- " .. totalUnstaffed .. " unstaffed buildings")
-        for type, count in pairs(unstaffedBuildings) do
-            line = line + 1
-            monitor.setCursorPos(1, line)
-            monitor.write("  - " .. count .. " " .. type)
-        end
-    end
-    -- -- if colony.mourning then print("- Recent death") end
-end
-
 function getConstructionCount()
     local count = 0
     for k, v in pairs(buildings) do
@@ -279,16 +167,6 @@ function GetCheapVisitors()
     for k, v in pairs(visitors) do
         for i, p in pairs(CHEAP_VISITORS_WANT) do
             if p == v.recruitCost.name then count = count + 1 end
-        end
-    end
-    return count
-end
-
-function GetUnemployedCitizens()
-    local count = 0
-    for k, v in pairs(citizens) do
-        if v.work.job == "com.minecolonies.job.student" or v.work.job == nil then
-            count = count + 1
         end
     end
     return count
@@ -321,10 +199,7 @@ function GetAverageBuildingLevel() -- actual, possible
             actualTotal = actualTotal + b.level
         end
     end
-    return {
-        avg = string.format("%.2f", ((actualTotal / count))),
-        total = string.format("%.2f", ((maxTotal / count)))
-    }
+    return (actualTotal / count) * 100, (maxTotal / count) * 100
 end
 
 function GetUnstaffedBuldingTypes()
@@ -391,7 +266,6 @@ function tablelength(T)
   end
 
 while true do
-    Main()
-    -- pcall(Main)
+    pcall(Main)
     sleep(REFRESH_TIME)
 end
