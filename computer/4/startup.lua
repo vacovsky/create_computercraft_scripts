@@ -27,51 +27,62 @@ function Main()
     warehouseContent = warehouse.list()
 
     local reqs = GetColonyRequests()
-        local foundRequest = nil
-        local foundRecipe = nil
-        local found = false
+    local foundRequest = nil
+    local foundRecipe = nil
+    local found = false
 
-        for k, request in pairs(reqs) do
-            for k2, item in pairs(request.items) do
-                for mod, recipeItem in pairs(recipes) do
-                    for rItem, recipe in pairs(recipes[mod]) do
-                        -- print(recipe, item.name)
-                        if recipe.name == item.name then
-                            found = true
-                            foundRequest = request
-                            foundRecipe = recipe
-                        end
+    for k, request in pairs(reqs) do
+        for k2, item in pairs(request.items) do
+            for mod, recipeItem in pairs(recipes) do
+                for rItem, recipe in pairs(recipes[mod]) do
+                    -- print(recipe, item.name)
+                    if recipe.name == item.name then
+                        found = true
+                        foundRequest = request
+                        foundRecipe = recipe
+                    end
                 end
             end
         end
-        if found then 
+        if found then
             activeOrders[foundRecipe.name] = foundRequest.minCount
-            TransferItem(foundRecipe, foundRequest)
+            TransferItems(foundRecipe, foundRequest)
         end
     end
     renderMonitor()
 end
 
 -- determine if precursor exists in warehouse, and return slot if so
-function LocateIngredients(item_name)
+function LocateIngredient(item_name)
     local slotNum = nil
     for slot, wItem in pairs(warehouseContent) do
         if item_name == wItem.name then
             slotNum = slot
         end
     end
-    print(item_name, slotNum)
+    -- print(item_name, slotNum)
     return slotNum
 end
 
-function TransferItem(recipe, request)
-    local slot = LocateIngredients(recipe.input)
-    print(recipe.name, request.minCount, slot, processors[recipe.operation])
+function TransferItems(recipe, request)
+    for ii, iItemName in pairs(recipe.input) do
+        local slot = LocateIngredient(iItemName)
+        -- print(recipe.name, request.minCount, slot, processors[recipe.operation])
 
-    if slot ~= nil then
-        local processor = peripheral.wrap(processors[recipe.operation])
-        warehouse.pushItems(processors[recipe.operation], slot, request.minCount)
-        -- warehouse.pushItems(peripheral.getName(processor), slot, request.minCount)
+        if slot == nil then
+            for mod, recipeItem in pairs(recipes) do
+                for rItem, recipe in pairs(recipes[mod]) do
+                    if iItemName == recipe.name then
+                        print("Extended order for " .. rItem)
+                        TransferItems(recipe, request)
+                    end
+                end
+            end
+        else
+            warehouse.pushItems(processors[recipe.operation], slot, request.minCount)
+             -- local processor = peripheral.wrap(processors[recipe.operation])
+            -- warehouse.pushItems(peripheral.getName(processor), slot, request.minCount)
+        end
     end
 end
 

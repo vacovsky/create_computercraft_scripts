@@ -3,7 +3,6 @@ json = require "json"
 
 ----------------------------------
 -- CONFIGURATION SECTION
-local USE_MONITOR = false
 local REFRESH_TIME = 30
 local CHEAP_VISITORS_WANT = {
     "minecraft:hay_block",
@@ -16,9 +15,9 @@ local CHEAP_VISITORS_WANT = {
 -- END CONFIGURATION SECTION
 ----------------------------------
 local colony = peripheral.find("colonyIntegrator")
-local monitor
-if USE_MONITOR then
-    monitor = peripheral.find("monitor")
+local monitor = peripheral.find("monitor")
+
+if monitor ~= nil then
     monitor.clear()
 end
 
@@ -61,7 +60,7 @@ function refreshColonyInfo()
     end
     -- research = colony.getResearch()
     -- WriteToFile(json.encode(citizens), "citizens.json", "w")
-    if not USE_MONITOR then displayLatestColonyInfo() else displayLatestColonyInfoInMonitor() end
+    if monitor == nil then displayLatestColonyInfo() else displayLatestColonyInfoInMonitor() end
 end
 
 function printWithFormat(...)
