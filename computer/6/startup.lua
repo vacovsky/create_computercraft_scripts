@@ -174,7 +174,7 @@ function displayLatestColonyInfoInMonitor()
 
     local colonyIdMsg = "id: " .. colony.getColonyID()
     monitor.setCursorPos(monitor.getSize() - string.len(colonyIdMsg), line)
-    monitor.write("id:" .. colony.getColonyID() .. ")")
+    monitor.write("id:" .. colony.getColonyID())
 
     line = line + 1
     monitor.setCursorPos(1, line)
@@ -361,6 +361,7 @@ function GetUnstaffedBuldingTypes()
     for k, b in pairs(buildings) do
         if b.type ~= "residence" 
         and b.type ~= "mysticalsite"
+        and b.type ~= "barracks"
         and b.type ~= "townhall" then
             if b.level > 0 and #b.citizens == 0 then
                 count =  count + 1
@@ -405,7 +406,6 @@ function getIdleBuilders()
     local count = 0
     for k, v in pairs(citizens) do
         if v.work.job == "com.minecolonies.job.builder" and v.isIdle then
-            print(v.work.job)
             count = count + 1
         end
     end
@@ -419,7 +419,7 @@ function tablelength(T)
   end
 
 while true do
-    Main()
-    -- pcall(Main)
+    -- Main()
+    pcall(Main)
     sleep(REFRESH_TIME)
 end

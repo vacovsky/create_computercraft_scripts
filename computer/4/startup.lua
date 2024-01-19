@@ -11,9 +11,8 @@ local warehouse = peripheral.find("minecolonies:warehouse")
 local activeOrders = {}
 local currentMatchingOrders = {}
 local monitor = peripheral.find("monitor")
-
-
 local warehouseContent = {}
+
 --------------------------
 
 
@@ -106,10 +105,16 @@ function WriteToFile(input, fileName, mode)
 
 
 while true do
+
     term.setBackgroundColor(colours.black)  -- Set the background colour to black.
     term.clear()                            -- Paint the entire display with the current background colour.
     term.setCursorPos(1,1)
-    pcall(Main)
+    
+    if monitor == nil then print("MISSING MONITOR") end
+    if warehouse == nil then print("WAREHOUSE NOT CONNECTED") end
+    
+    -- pcall(Main)
+    Main()
     sleep(WAIT_SECONDS)
 
     -- print("Loop finished. Next pass in "..WAIT_SECONDS.." seconds.")

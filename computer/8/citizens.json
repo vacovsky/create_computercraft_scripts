@@ -1,1 +1,3485 @@
-[{"bedPos":{"y":0,"x":0,"z":0},"betterFood":false,"isIdle":false,"happiness":6.9555495798327,"home":{"location":{"y":69,"x":491,"z":-586},"level":2,"type":"residence"},"armor":0,"toughness":0,"children":[6,28],"isAsleep":false,"gender":"female","age":"adult","id":1,"state":"Working","name":"Emmeline C. Good","health":20,"saturation":10.514400000006,"work":{"type":"deliveryman","name":"com.minecolonies.building.deliveryman","location":{"y":75,"x":440,"z":-556},"level":4,"job":"com.minecolonies.job.deliveryman"},"skills":{"Athletics":{"xp":0,"level":2},"Creativity":{"xp":42.703200000002,"level":10},"Mana":{"xp":0,"level":7},"Intelligence":{"xp":0,"level":4},"Knowledge":{"xp":0,"level":8},"Dexterity":{"xp":52.391400000002,"level":14},"Agility":{"xp":2.0046000000012,"level":30},"Adaptability":{"xp":193.977,"level":27},"Focus":{"xp":0,"level":1},"Stamina":{"xp":0,"level":2},"Strength":{"xp":0,"level":1}},"maxHealth":20,"location":{"y":63,"x":441,"z":-576}},{"bedPos":{"y":0,"x":0,"z":0},"betterFood":false,"isIdle":false,"happiness":7.1496201680673,"home":{"location":{"y":71,"x":395,"z":-583},"level":4,"type":"guardtower"},"armor":12,"toughness":0,"children":[],"isAsleep":false,"gender":"female","age":"adult","id":2,"state":"Fighting","name":"Azra G. Good","health":40.022518157959,"saturation":2.1224000000002,"work":{"type":"guardtower","name":"com.minecolonies.building.guardtower","location":{"y":71,"x":395,"z":-583},"level":4,"job":"com.minecolonies.job.knight"},"skills":{"Athletics":{"xp":0,"level":9},"Creativity":{"xp":15.9,"level":8},"Mana":{"xp":13.635,"level":6},"Intelligence":{"xp":104.7,"level":17},"Knowledge":{"xp":18.445,"level":8},"Dexterity":{"xp":0,"level":3},"Agility":{"xp":0,"level":5},"Adaptability":{"xp":27.18,"level":21},"Focus":{"xp":0,"level":1},"Stamina":{"xp":48.6,"level":15},"Strength":{"xp":0,"level":3}},"maxHealth":78,"location":{"y":64,"x":399,"z":-554}},{"bedPos":{"y":0,"x":0,"z":0},"betterFood":false,"isIdle":false,"happiness":6.1879102040822,"home":{"location":{"y":72,"x":393,"z":-494},"level":3,"type":"residence"},"armor":0,"toughness":0,"children":[31],"isAsleep":false,"gender":"male","age":"adult","id":3,"state":"Delivering","name":"Matthew A. Complin","health":20,"saturation":4.7428000000037,"work":{"type":"deliveryman","name":"com.minecolonies.building.deliveryman","location":{"y":70,"x":425,"z":-549},"level":4,"job":"com.minecolonies.job.deliveryman"},"skills":{"Athletics":{"xp":0,"level":1},"Creativity":{"xp":30.375524,"level":7},"Mana":{"xp":0,"level":6},"Intelligence":{"xp":0,"level":4},"Knowledge":{"xp":0,"level":11},"Dexterity":{"xp":28.956048,"level":11},"Agility":{"xp":78.85548,"level":24},"Adaptability":{"xp":72.88524,"level":18},"Focus":{"xp":0,"level":1},"Stamina":{"xp":0,"level":4},"Strength":{"xp":0,"level":1}},"maxHealth":20,"location":{"y":69,"x":524,"z":-571}},{"bedPos":{"y":0,"x":0,"z":0},"betterFood":false,"isIdle":false,"happiness":5.0556495238099,"home":{"location":{"y":69,"x":629,"z":-560},"level":2,"type":"residence"},"armor":0,"toughness":0,"children":[],"isAsleep":false,"gender":"female","age":"adult","id":4,"state":"Working","name":"Linda C. Harris","health":20,"saturation":9.4616000000028,"work":{"type":"cook","name":"com.minecolonies.building.cook","location":{"y":72,"x":417,"z":-638},"level":3,"job":"com.minecolonies.job.cookassistant"},"skills":{"Athletics":{"xp":0,"level":5},"Creativity":{"xp":0,"level":6},"Mana":{"xp":0,"level":5},"Intelligence":{"xp":0,"level":6},"Knowledge":{"xp":0,"level":5},"Dexterity":{"xp":0,"level":8},"Agility":{"xp":0,"level":11},"Adaptability":{"xp":0,"level":10},"Focus":{"xp":0,"level":2},"Stamina":{"xp":0,"level":6},"Strength":{"xp":0,"level":2}},"maxHealth":20,"location":{"y":63,"x":416,"z":-635}},{"bedPos":{"y":0,"x":0,"z":0},"betterFood":false,"isIdle":false,"happiness":4.9293561904761,"home":{"location":{"y":76,"x":315,"z":-581},"level":2,"type":"residence"},"armor":0,"toughness":0,"children":[10],"isAsleep":false,"gender":"female","age":"adult","id":5,"state":"Working","name":"Emilia W. Gascoigne","health":20,"saturation":8.5367999999994,"work":{"type":"glassblower","name":"com.minecolonies.building.glassblower","location":{"y":70,"x":318,"z":-619},"level":1,"job":"com.minecolonies.job.glassblower"},"skills":{"Athletics":{"xp":15.84496,"level":6},"Creativity":{"xp":47.421,"level":16},"Mana":{"xp":36.4208,"level":7},"Intelligence":{"xp":0,"level":3},"Knowledge":{"xp":2.2784,"level":2},"Dexterity":{"xp":10.81917,"level":3},"Agility":{"xp":15.99334,"level":5},"Adaptability":{"xp":4.3408,"level":7},"Focus":{"xp":55.928,"level":12},"Stamina":{"xp":0,"level":3},"Strength":{"xp":4.4324299999999,"level":7}},"maxHealth":20,"location":{"y":70,"x":306,"z":-633}},{"bedPos":{"y":0,"x":0,"z":0},"betterFood":false,"isIdle":false,"happiness":4.3763961904764,"home":{"location":{"y":73,"x":524,"z":-463},"level":2,"type":"residence"},"armor":0,"toughness":0,"children":[20],"isAsleep":false,"gender":"male","age":"adult","id":6,"state":"Searching for trees","name":"Emmanuel M. Good","health":12,"saturation":4.3896000000015,"work":{"type":"lumberjack","name":"com.minecolonies.building.lumberjack","location":{"y":72,"x":516,"z":-534},"level":3,"job":"com.minecolonies.job.lumberjack"},"skills":{"Athletics":{"xp":19.107000000001,"level":11},"Creativity":{"xp":7.774,"level":5},"Mana":{"xp":14.626000000003,"level":8},"Intelligence":{"xp":0,"level":4},"Knowledge":{"xp":0,"level":4},"Dexterity":{"xp":3.887,"level":8},"Agility":{"xp":0,"level":1},"Adaptability":{"xp":15.013999999992,"level":12},"Focus":{"xp":58.566000000006,"level":21},"Stamina":{"xp":0,"level":6},"Strength":{"xp":93.138000000012,"level":28}},"maxHealth":20,"location":{"y":72,"x":515,"z":-534}},{"bedPos":{"y":0,"x":0,"z":0},"betterFood":false,"isIdle":false,"happiness":6.9931956043956,"home":{"location":{"y":64,"x":453,"z":-633},"level":2,"type":"residence"},"armor":0,"toughness":0,"children":[],"isAsleep":false,"gender":"female","age":"adult","id":7,"state":"Finding chickens","name":"Wilmot B. Chilton","health":20,"saturation":16.822,"work":{"type":"chickenherder","name":"com.minecolonies.building.chickenherder","location":{"y":65,"x":598,"z":-563},"level":1,"job":"com.minecolonies.job.chickenherder"},"skills":{"Athletics":{"xp":0,"level":5},"Creativity":{"xp":19.38412,"level":4},"Mana":{"xp":0,"level":2},"Intelligence":{"xp":126.8,"level":19},"Knowledge":{"xp":0,"level":7},"Dexterity":{"xp":17.75956,"level":9},"Agility":{"xp":37.6156,"level":9},"Adaptability":{"xp":35.9762,"level":13},"Focus":{"xp":1.9358800000002,"level":3},"Stamina":{"xp":0,"level":4},"Strength":{"xp":3.56044,"level":4}},"maxHealth":20,"location":{"y":64,"x":591,"z":-577}},{"bedPos":{"y":0,"x":0,"z":0},"betterFood":false,"isIdle":false,"happiness":3.5076952380955,"home":{"location":{"y":70,"x":228,"z":-776},"level":3,"type":"guardtower"},"armor":12,"toughness":0,"children":[],"isAsleep":false,"gender":"female","age":"adult","id":8,"state":"Working","name":"Katalina G. Good","health":91,"saturation":2.5328000000018,"work":{"type":"guardtower","name":"com.minecolonies.building.guardtower","location":{"y":70,"x":228,"z":-776},"level":3,"job":"com.minecolonies.job.knight"},"skills":{"Athletics":{"xp":0,"level":7},"Creativity":{"xp":48.14356,"level":16},"Mana":{"xp":0,"level":1},"Intelligence":{"xp":0,"level":4},"Knowledge":{"xp":61.72928,"level":14},"Dexterity":{"xp":0,"level":4},"Agility":{"xp":0,"level":7},"Adaptability":{"xp":246.2606,"level":39},"Focus":{"xp":0,"level":1},"Stamina":{"xp":201.0928,"level":30},"Strength":{"xp":0,"level":3}},"maxHealth":91,"location":{"y":66,"x":324,"z":-683}},{"bedPos":{"y":0,"x":0,"z":0},"betterFood":true,"isIdle":false,"happiness":6.1535161904763,"home":{"location":{"y":73,"x":506,"z":-463},"level":2,"type":"residence"},"armor":0,"toughness":0,"children":[],"isAsleep":false,"gender":"male","age":"adult","id":9,"state":"Working","name":"Leonardo M. Jones","health":20,"saturation":17.715200000001,"work":{"type":"swineherder","name":"com.minecolonies.building.swineherder","location":{"y":65,"x":589,"z":-563},"level":1,"job":"com.minecolonies.job.swineherder"},"skills":{"Athletics":{"xp":9.66116,"level":4},"Creativity":{"xp":0,"level":5},"Mana":{"xp":0,"level":3},"Intelligence":{"xp":23.375,"level":6},"Knowledge":{"xp":0,"level":4},"Dexterity":{"xp":29.93032,"level":6},"Agility":{"xp":58.35564,"level":11},"Adaptability":{"xp":0,"level":13},"Focus":{"xp":0,"level":3},"Stamina":{"xp":0,"level":7},"Strength":{"xp":17.96828,"level":4}},"maxHealth":20,"location":{"y":65,"x":589,"z":-564}},{"bedPos":{"y":0,"x":0,"z":0},"betterFood":false,"isIdle":false,"happiness":6.1648263736263,"home":{"location":{"y":76,"x":315,"z":-581},"level":2,"type":"residence"},"armor":0,"toughness":0,"children":[],"isAsleep":false,"gender":"male","age":"adult","id":10,"state":"Working","name":"Jon G. Gardiner","health":20,"saturation":11.6348,"work":{"type":"fletcher","name":"com.minecolonies.building.fletcher","location":{"y":68,"x":287,"z":-653},"level":2,"job":"com.minecolonies.job.fletcher"},"skills":{"Athletics":{"xp":20.3604,"level":5},"Creativity":{"xp":10.003,"level":5},"Mana":{"xp":0,"level":6},"Intelligence":{"xp":0,"level":6},"Knowledge":{"xp":23.4927,"level":5},"Dexterity":{"xp":24.931,"level":8},"Agility":{"xp":6.2646,"level":6},"Adaptability":{"xp":3.1323,"level":8},"Focus":{"xp":0,"level":7},"Stamina":{"xp":0,"level":5},"Strength":{"xp":0,"level":13}},"maxHealth":20,"location":{"y":68,"x":297,"z":-654}},{"bedPos":{"y":0,"x":0,"z":0},"betterFood":false,"isIdle":false,"happiness":7.3227025210084,"home":{"location":{"y":76,"x":501,"z":-586},"level":2,"type":"tavern"},"armor":0,"toughness":0,"children":[6,28],"isAsleep":false,"gender":"male","age":"adult","id":11,"state":"Working","name":"Leonidas G. Madden","health":20,"saturation":13.8048,"work":{"type":"builder","name":"com.minecolonies.building.builder","location":{"y":66,"x":563,"z":-591},"level":4,"job":"com.minecolonies.job.builder"},"skills":{"Athletics":{"xp":113.47295000003,"level":18},"Creativity":{"xp":23.750590000007,"level":8},"Mana":{"xp":0,"level":7},"Intelligence":{"xp":0,"level":3},"Knowledge":{"xp":0,"level":7},"Dexterity":{"xp":11.452204999997,"level":5},"Agility":{"xp":4.635,"level":5},"Adaptability":{"xp":134.11090000004,"level":23},"Focus":{"xp":0,"level":1},"Stamina":{"xp":0,"level":7},"Strength":{"xp":12.327795000001,"level":9}},"maxHealth":20,"location":{"y":66,"x":563,"z":-590}},{"bedPos":{"y":0,"x":0,"z":0},"betterFood":false,"isIdle":false,"happiness":6.6251025210086,"home":{"location":{"y":71,"x":307,"z":-542},"level":2,"type":"residence"},"armor":0,"toughness":0,"children":[],"isAsleep":false,"gender":"male","age":"adult","id":12,"state":"Working","name":"Isaac G. Clerk","health":20,"saturation":7.8560000000014,"work":{"type":"stonemason","name":"com.minecolonies.building.stonemason","location":{"y":71,"x":353,"z":-512},"level":4,"job":"com.minecolonies.job.stonemason"},"skills":{"Athletics":{"xp":0,"level":1},"Creativity":{"xp":14.908,"level":30},"Mana":{"xp":0,"level":5},"Intelligence":{"xp":0,"level":4},"Knowledge":{"xp":0,"level":1},"Dexterity":{"xp":10.773999999999,"level":30},"Agility":{"xp":47.2112,"level":12},"Adaptability":{"xp":2.8124000000008,"level":18},"Focus":{"xp":0,"level":5},"Stamina":{"xp":0,"level":9},"Strength":{"xp":0,"level":6}},"maxHealth":20,"location":{"y":71,"x":351,"z":-513}},{"bedPos":{"y":0,"x":0,"z":0},"betterFood":true,"isIdle":false,"happiness":6.155220168067,"home":{"location":{"y":75,"x":592,"z":-436},"level":2,"type":"residence"},"armor":0,"toughness":0,"children":[15],"isAsleep":false,"gender":"male","age":"adult","id":13,"state":"Farming","name":"Melvin B. Gorney","health":20,"saturation":3.8555999999979,"work":{"type":"farmer","name":"com.minecolonies.building.farmer","location":{"y":65,"x":586,"z":-498},"level":4,"job":"com.minecolonies.job.farmer"},"skills":{"Athletics":{"xp":61.897250000001,"level":20},"Creativity":{"xp":0,"level":5},"Mana":{"xp":0,"level":1},"Intelligence":{"xp":0,"level":6},"Knowledge":{"xp":43.084450000002,"level":13},"Dexterity":{"xp":2.0502749999989,"level":4},"Agility":{"xp":0,"level":11},"Adaptability":{"xp":0,"level":11},"Focus":{"xp":0,"level":2},"Stamina":{"xp":154.309,"level":24},"Strength":{"xp":19.529725000001,"level":7}},"maxHealth":20,"location":{"y":64,"x":604,"z":-476}},{"bedPos":{"y":0,"x":0,"z":0},"betterFood":false,"isIdle":false,"happiness":4.4232228571428,"home":{"location":{"y":71,"x":307,"z":-542},"level":2,"type":"residence"},"armor":0,"toughness":0,"children":[10],"isAsleep":false,"gender":"male","age":"adult","id":14,"state":"Working","name":"Emory G. Gardiner","health":16,"saturation":4.7279999999995,"work":{"type":"blacksmith","name":"com.minecolonies.building.blacksmith","location":{"y":71,"x":347,"z":-544},"level":3,"job":"com.minecolonies.job.blacksmith"},"skills":{"Athletics":{"xp":51.278100000001,"level":11},"Creativity":{"xp":0,"level":4},"Mana":{"xp":20.21655,"level":7},"Intelligence":{"xp":0,"level":6},"Knowledge":{"xp":0,"level":9},"Dexterity":{"xp":0,"level":6},"Agility":{"xp":0,"level":1},"Adaptability":{"xp":30.67845,"level":7},"Focus":{"xp":16.390499999999,"level":19},"Stamina":{"xp":0,"level":2},"Strength":{"xp":111.956,"level":25}},"maxHealth":20,"location":{"y":71,"x":353,"z":-537}},{"bedPos":{"y":0,"x":0,"z":0},"betterFood":false,"isIdle":true,"happiness":4.1351695238091,"home":{"location":{"y":71,"x":307,"z":-562},"level":2,"type":"residence"},"armor":0,"toughness":0,"children":[],"isAsleep":false,"gender":"male","age":"adult","id":15,"state":"Idle","name":"Kason G. Ayde","health":20,"saturation":2.4987999999971,"work":{"type":"deliveryman","name":"com.minecolonies.building.deliveryman","location":{"y":66,"x":353,"z":-606},"level":3,"job":"com.minecolonies.job.deliveryman"},"skills":{"Athletics":{"xp":0,"level":5},"Creativity":{"xp":49.637592499999,"level":9},"Mana":{"xp":0,"level":9},"Intelligence":{"xp":0,"level":3},"Knowledge":{"xp":0,"level":10},"Dexterity":{"xp":60.020184999999,"level":13},"Agility":{"xp":1.4872999999949,"level":30},"Adaptability":{"xp":35.380924999994,"level":25},"Focus":{"xp":0,"level":1},"Stamina":{"xp":0,"level":7},"Strength":{"xp":0,"level":1}},"maxHealth":20,"location":{"y":70,"x":536,"z":-469}},{"bedPos":{"y":0,"x":0,"z":0},"betterFood":false,"isIdle":false,"happiness":6.6540907563029,"home":{"location":{"y":69,"x":491,"z":-568},"level":2,"type":"residence"},"armor":0,"toughness":0,"children":[2,22,23,8],"isAsleep":false,"gender":"female","age":"adult","id":16,"state":"Working","name":"Alexis C. Garnis","health":20,"saturation":8.0896000000034,"work":{"type":"builder","name":"com.minecolonies.building.builder","location":{"y":64,"x":439,"z":-580},"level":4,"job":"com.minecolonies.job.builder"},"skills":{"Athletics":{"xp":2.4720000000368,"level":22},"Creativity":{"xp":47.414400000031,"level":11},"Mana":{"xp":0,"level":5},"Intelligence":{"xp":0,"level":5},"Knowledge":{"xp":0,"level":7},"Dexterity":{"xp":0,"level":1},"Agility":{"xp":0,"level":3},"Adaptability":{"xp":145.92900000007,"level":28},"Focus":{"xp":0,"level":1},"Stamina":{"xp":0,"level":7},"Strength":{"xp":15.467200000012,"level":8}},"maxHealth":20,"location":{"y":64,"x":439,"z":-581}},{"bedPos":{"y":0,"x":0,"z":0},"betterFood":false,"isIdle":false,"happiness":4.3250895238095,"home":{"location":{"y":73,"x":506,"z":-463},"level":2,"type":"residence"},"armor":0,"toughness":0,"children":[],"isAsleep":false,"gender":"female","age":"adult","id":17,"state":"Working","name":"Parnell C. Kravitz","health":20,"saturation":3.4011999999999,"work":{"type":"shepherd","name":"com.minecolonies.building.shepherd","location":{"y":65,"x":582,"z":-563},"level":1,"job":"com.minecolonies.job.shepherd"},"skills":{"Athletics":{"xp":0.16331999999982,"level":6},"Creativity":{"xp":0,"level":6},"Mana":{"xp":5.0816399999999,"level":5},"Intelligence":{"xp":13.375,"level":6},"Knowledge":{"xp":0,"level":6},"Dexterity":{"xp":0,"level":5},"Agility":{"xp":10.92668,"level":7},"Adaptability":{"xp":16.21836,"level":6},"Focus":{"xp":43.4064,"level":14},"Stamina":{"xp":0,"level":6},"Strength":{"xp":29.7632,"level":10}},"maxHealth":20,"location":{"y":64,"x":602,"z":-588}},{"bedPos":{"y":0,"x":0,"z":0},"betterFood":false,"isIdle":false,"happiness":7.7270319327731,"home":{"location":{"y":76,"x":501,"z":-586},"level":2,"type":"tavern"},"armor":0,"toughness":0,"children":[],"isAsleep":false,"gender":"male","age":"adult","id":18,"state":"Working","name":"Chance G. Good","health":20,"saturation":17.1648,"work":{"type":"builder","name":"com.minecolonies.building.builder","location":{"y":66,"x":366,"z":-614},"level":4,"job":"com.minecolonies.job.builder"},"skills":{"Athletics":{"xp":56.416675000023,"level":21},"Creativity":{"xp":26.371875000015,"level":11},"Mana":{"xp":13.7046,"level":4},"Intelligence":{"xp":0,"level":5},"Knowledge":{"xp":0,"level":7},"Dexterity":{"xp":0,"level":1},"Agility":{"xp":4.1877,"level":2},"Adaptability":{"xp":97.509150000042,"level":27},"Focus":{"xp":0,"level":1},"Stamina":{"xp":0,"level":9},"Strength":{"xp":22.908937499986,"level":12}},"maxHealth":20,"location":{"y":70,"x":400,"z":-687}},{"bedPos":{"y":0,"x":0,"z":0},"betterFood":false,"isIdle":false,"happiness":3.8110285714289,"home":{"location":{"y":72,"x":393,"z":-494},"level":3,"type":"residence"},"armor":0,"toughness":0,"children":[32,3],"isAsleep":false,"gender":"male","age":"adult","id":19,"state":"Working","name":"Joaquin G. Complin","health":20,"saturation":4.4200000000019,"work":{"type":"sawmill","name":"com.minecolonies.building.sawmill","location":{"y":65,"x":417,"z":-521},"level":3,"job":"com.minecolonies.job.sawmill"},"skills":{"Athletics":{"xp":0,"level":1},"Creativity":{"xp":0,"level":1},"Mana":{"xp":13.73196,"level":6},"Intelligence":{"xp":0,"level":3},"Knowledge":{"xp":143.2735,"level":34},"Dexterity":{"xp":133.8855,"level":28},"Agility":{"xp":45.21457,"level":11},"Adaptability":{"xp":23.98304,"level":7},"Focus":{"xp":3.4445999999999,"level":8},"Stamina":{"xp":2.5360999999999,"level":15},"Strength":{"xp":36.5798,"level":7}},"maxHealth":20,"location":{"y":65,"x":417,"z":-536}},{"bedPos":{"y":0,"x":0,"z":0},"betterFood":false,"isIdle":false,"happiness":6.8036436974791,"home":{"location":{"y":73,"x":517,"z":-448},"level":2,"type":"residence"},"armor":0,"toughness":0,"children":[],"isAsleep":false,"gender":"male","age":"adult","id":20,"state":"Mining","name":"Maximus H. Good","health":20,"saturation":13.874400000001,"work":{"type":"miner","name":"com.minecolonies.building.miner","location":{"y":71,"x":337,"z":-497},"level":4,"job":"com.minecolonies.job.miner"},"skills":{"Athletics":{"xp":0.87219999999969,"level":5},"Creativity":{"xp":0,"level":4},"Mana":{"xp":0,"level":1},"Intelligence":{"xp":9.055,"level":15},"Knowledge":{"xp":19.1636,"level":4},"Dexterity":{"xp":0,"level":3},"Agility":{"xp":0,"level":1},"Adaptability":{"xp":0,"level":7},"Focus":{"xp":0,"level":7},"Stamina":{"xp":28.635999999999,"level":10},"Strength":{"xp":24.786999999998,"level":14}},"maxHealth":20,"location":{"y":71,"x":336,"z":-497}},{"bedPos":{"y":0,"x":0,"z":0},"betterFood":false,"isIdle":false,"happiness":5.3989028571428,"home":{"location":{"y":69,"x":629,"z":-560},"level":2,"type":"residence"},"armor":0,"toughness":0,"children":[24],"isAsleep":false,"gender":"female","age":"adult","id":21,"state":"Herding cows","name":"Ariadne A. Adams","health":20,"saturation":11.979199999999,"work":{"type":"cowboy","name":"com.minecolonies.building.cowboy","location":{"y":65,"x":605,"z":-563},"level":2,"job":"com.minecolonies.job.cowboy"},"skills":{"Athletics":{"xp":0.19500000000772,"level":30},"Creativity":{"xp":0,"level":7},"Mana":{"xp":0,"level":1},"Intelligence":{"xp":0,"level":5},"Knowledge":{"xp":30.45165,"level":11},"Dexterity":{"xp":0,"level":1},"Agility":{"xp":0,"level":8},"Adaptability":{"xp":0,"level":7},"Focus":{"xp":0,"level":6},"Stamina":{"xp":152.01150000001,"level":27},"Strength":{"xp":43.998300000002,"level":14}},"maxHealth":20,"location":{"y":65,"x":605,"z":-564}},{"bedPos":{"y":0,"x":0,"z":0},"betterFood":false,"isIdle":false,"happiness":3.9794952380953,"home":{"location":{"y":79,"x":372,"z":-494},"level":3,"type":"guardtower"},"armor":12,"toughness":0,"children":[],"isAsleep":false,"gender":"female","age":"adult","id":22,"state":"Fighting","name":"Paloma G. Garnis","health":44.360019683838,"saturation":5.3668000000003,"work":{"type":"guardtower","name":"com.minecolonies.building.guardtower","location":{"y":79,"x":372,"z":-494},"level":3,"job":"com.minecolonies.job.knight"},"skills":{"Athletics":{"xp":0,"level":6},"Creativity":{"xp":45.732,"level":9},"Mana":{"xp":3.304,"level":3},"Intelligence":{"xp":3.375,"level":6},"Knowledge":{"xp":11.581,"level":9},"Dexterity":{"xp":0,"level":3},"Agility":{"xp":0,"level":3},"Adaptability":{"xp":34.04,"level":25},"Focus":{"xp":0,"level":1},"Stamina":{"xp":110.64,"level":18},"Strength":{"xp":0,"level":3}},"maxHealth":79,"location":{"y":64,"x":451,"z":-570}},{"bedPos":{"y":0,"x":0,"z":0},"betterFood":false,"isIdle":false,"happiness":4.9508571428571,"home":{"location":{"y":69,"x":491,"z":-568},"level":2,"type":"residence"},"armor":0,"toughness":0,"children":[],"isAsleep":false,"gender":"female","age":"adult","id":23,"state":"Working","name":"Bailee G. Good","health":20,"saturation":8.348,"work":{"type":"library","name":"com.minecolonies.building.library","location":{"y":79,"x":428,"z":-503},"level":2,"job":"com.minecolonies.job.student"},"skills":{"Athletics":{"xp":0,"level":7},"Creativity":{"xp":0,"level":6},"Mana":{"xp":0,"level":7},"Intelligence":{"xp":103.68,"level":20},"Knowledge":{"xp":0,"level":10},"Dexterity":{"xp":0,"level":4},"Agility":{"xp":0,"level":5},"Adaptability":{"xp":0,"level":12},"Focus":{"xp":0,"level":5},"Stamina":{"xp":0,"level":5},"Strength":{"xp":0,"level":5}},"maxHealth":20,"location":{"y":79,"x":429,"z":-502}},{"bedPos":{"y":0,"x":0,"z":0},"betterFood":false,"isIdle":false,"happiness":6.7938084033615,"home":{"location":{"y":64,"x":453,"z":-633},"level":2,"type":"residence"},"armor":0,"toughness":0,"children":[7],"isAsleep":false,"gender":"male","age":"adult","id":24,"state":"Working","name":"Davis A. Chilton","health":20,"saturation":9.1972000000012,"work":{"type":"builder","name":"com.minecolonies.building.builder","location":{"y":69,"x":431,"z":-675},"level":4,"job":"com.minecolonies.job.builder"},"skills":{"Athletics":{"xp":7.9496,"level":9},"Creativity":{"xp":23.883440000001,"level":7},"Mana":{"xp":0,"level":5},"Intelligence":{"xp":0,"level":4},"Knowledge":{"xp":0,"level":3},"Dexterity":{"xp":25.0208,"level":5},"Agility":{"xp":0.96760000000011,"level":10},"Adaptability":{"xp":46.6344,"level":15},"Focus":{"xp":0,"level":1},"Stamina":{"xp":0,"level":4},"Strength":{"xp":1.6042000000001,"level":3}},"maxHealth":20,"location":{"y":69,"x":430,"z":-675}},{"bedPos":{"y":0,"x":0,"z":0},"betterFood":false,"isIdle":false,"happiness":6.0685028571426,"home":{"location":{"y":74,"x":485,"z":-660},"level":2,"type":"residence"},"armor":0,"toughness":0,"children":[36],"isAsleep":false,"gender":"female","age":"adult","id":25,"state":"Working","name":"Sloane H. Garnis","health":20,"saturation":17.071599999998,"work":{"type":"florist","name":"com.minecolonies.building.florist","location":{"y":68,"x":536,"z":-605},"level":2,"job":"com.minecolonies.job.florist"},"skills":{"Athletics":{"xp":0,"level":1},"Creativity":{"xp":0,"level":7},"Mana":{"xp":0,"level":5},"Intelligence":{"xp":19.975,"level":7},"Knowledge":{"xp":0,"level":8},"Dexterity":{"xp":38.3436,"level":15},"Agility":{"xp":49.6992,"level":12},"Adaptability":{"xp":0,"level":6},"Focus":{"xp":0,"level":6},"Stamina":{"xp":0,"level":8},"Strength":{"xp":0,"level":1}},"maxHealth":20,"location":{"y":68,"x":533,"z":-612}},{"bedPos":{"y":0,"x":0,"z":0},"betterFood":false,"isIdle":false,"happiness":6.1507961904765,"home":{"location":{"y":76,"x":501,"z":-586},"level":2,"type":"tavern"},"armor":0,"toughness":0,"children":[],"isAsleep":false,"gender":"female","age":"adult","id":26,"state":"Working","name":"SherriLynne H. Good","health":20,"saturation":17.697200000002,"work":{"type":"baker","name":"com.minecolonies.building.baker","location":{"y":63,"x":416,"z":-639},"level":1,"job":"com.minecolonies.job.baker"},"skills":{"Athletics":{"xp":0,"level":3},"Creativity":{"xp":0,"level":3},"Mana":{"xp":0,"level":5},"Intelligence":{"xp":0,"level":3},"Knowledge":{"xp":0,"level":4},"Dexterity":{"xp":0,"level":4},"Agility":{"xp":0,"level":10},"Adaptability":{"xp":0,"level":8},"Focus":{"xp":0,"level":5},"Stamina":{"xp":0,"level":4},"Strength":{"xp":0,"level":3}},"maxHealth":20,"location":{"y":63,"x":413,"z":-639}},{"bedPos":{"y":0,"x":0,"z":0},"betterFood":false,"isIdle":false,"happiness":7.3208672268911,"home":{"location":{"y":73,"x":517,"z":-448},"level":2,"type":"residence"},"armor":0,"toughness":0,"children":[20],"isAsleep":false,"gender":"male","age":"adult","id":27,"state":"Delivering","name":"Quentin M. Harris","health":20,"saturation":13.632400000003,"work":{"type":"deliveryman","name":"com.minecolonies.building.deliveryman","location":{"y":80,"x":433,"z":-541},"level":4,"job":"com.minecolonies.job.deliveryman"},"skills":{"Athletics":{"xp":0,"level":3},"Creativity":{"xp":36.944008,"level":7},"Mana":{"xp":0,"level":3},"Intelligence":{"xp":0,"level":3},"Knowledge":{"xp":0,"level":5},"Dexterity":{"xp":41.628016,"level":8},"Agility":{"xp":144.48016,"level":21},"Adaptability":{"xp":14.96508,"level":17},"Focus":{"xp":6.0959920000001,"level":2},"Stamina":{"xp":0,"level":6},"Strength":{"xp":0,"level":1}},"maxHealth":20,"location":{"y":64,"x":470,"z":-561}},{"bedPos":{"y":0,"x":0,"z":0},"betterFood":false,"isIdle":false,"happiness":4.9869028571427,"home":{"location":{"y":76,"x":501,"z":-586},"level":2,"type":"tavern"},"armor":0,"toughness":0,"children":[2,22,23],"isAsleep":false,"gender":"male","age":"adult","id":28,"state":"Working","name":"Prince M. Good","health":20,"saturation":8.9671999999988,"work":{"type":"crusher","name":"com.minecolonies.building.crusher","location":{"y":65,"x":288,"z":-615},"level":1,"job":"com.minecolonies.job.crusher"},"skills":{"Athletics":{"xp":0,"level":5},"Creativity":{"xp":0,"level":1},"Mana":{"xp":78.472,"level":14},"Intelligence":{"xp":12.8,"level":7},"Knowledge":{"xp":107.504,"level":19},"Dexterity":{"xp":0,"level":7},"Agility":{"xp":0,"level":7},"Adaptability":{"xp":0,"level":10},"Focus":{"xp":13.2202,"level":5},"Stamina":{"xp":2.7302000000002,"level":6},"Strength":{"xp":0,"level":3}},"maxHealth":20,"location":{"y":64,"x":291,"z":-613}},{"bedPos":{"y":0,"x":0,"z":0},"betterFood":false,"isIdle":false,"happiness":4.8696761904763,"home":{"location":{"y":69,"x":491,"z":-586},"level":2,"type":"residence"},"armor":0,"toughness":0,"children":[25],"isAsleep":false,"gender":"male","age":"adult","id":29,"state":"Working","name":"Raylan G. Hampden","health":20,"saturation":8.0812000000005,"work":{"type":"enchanter","name":"com.minecolonies.building.enchanter","location":{"y":119,"x":406,"z":-433},"level":3,"job":"com.minecolonies.job.enchanter"},"skills":{"Athletics":{"xp":0,"level":5},"Creativity":{"xp":0,"level":6},"Mana":{"xp":0,"level":3},"Intelligence":{"xp":0,"level":2},"Knowledge":{"xp":0,"level":5},"Dexterity":{"xp":0,"level":5},"Agility":{"xp":0,"level":5},"Adaptability":{"xp":0,"level":8},"Focus":{"xp":0,"level":7},"Stamina":{"xp":0,"level":8},"Strength":{"xp":0,"level":6}},"maxHealth":20,"location":{"y":119,"x":406,"z":-432}},{"bedPos":{"y":0,"x":0,"z":0},"betterFood":false,"isIdle":false,"happiness":7.2120263736264,"home":{"location":{"y":71,"x":307,"z":-562},"level":2,"type":"residence"},"armor":0,"toughness":0,"children":[27],"isAsleep":false,"gender":"male","age":"adult","id":30,"state":"Working","name":"Humphrey C. Harris","health":20,"saturation":18.4496,"work":{"type":"concretemixer","name":"com.minecolonies.building.concretemixer","location":{"y":70,"x":318,"z":-626},"level":1,"job":"com.minecolonies.job.concretemixer"},"skills":{"Athletics":{"xp":0,"level":5},"Creativity":{"xp":0,"level":4},"Mana":{"xp":0,"level":4},"Intelligence":{"xp":0,"level":5},"Knowledge":{"xp":0,"level":5},"Dexterity":{"xp":0,"level":3},"Agility":{"xp":0,"level":10},"Adaptability":{"xp":0,"level":9},"Focus":{"xp":0,"level":4},"Stamina":{"xp":0,"level":3},"Strength":{"xp":0,"level":2}},"maxHealth":20,"location":{"y":77,"x":321,"z":-566}},{"bedPos":{"y":0,"x":0,"z":0},"betterFood":false,"isIdle":false,"happiness":4.3799695238095,"home":{"location":{"y":75,"x":592,"z":-436},"level":2,"type":"residence"},"armor":0,"toughness":0,"children":[],"isAsleep":false,"gender":"female","age":"adult","id":31,"state":"Composting","name":"Thomasin C. Barre","health":20,"saturation":3.6147999999997,"work":{"type":"composter","name":"com.minecolonies.building.composter","location":{"y":70,"x":617,"z":-448},"level":3,"job":"com.minecolonies.job.composter"},"skills":{"Athletics":{"xp":12.8775,"level":14},"Creativity":{"xp":0,"level":8},"Mana":{"xp":0,"level":1},"Intelligence":{"xp":0,"level":5},"Knowledge":{"xp":38.5865,"level":10},"Dexterity":{"xp":25.67925,"level":6},"Agility":{"xp":0,"level":8},"Adaptability":{"xp":0,"level":6},"Focus":{"xp":0,"level":4},"Stamina":{"xp":64.395000000001,"level":18},"Strength":{"xp":16.94075,"level":4}},"maxHealth":20,"location":{"y":70,"x":617,"z":-449}},{"bedPos":{"y":0,"x":0,"z":0},"betterFood":false,"isIdle":false,"happiness":7.1444285714287,"home":{"location":{"y":72,"x":393,"z":-494},"level":3,"type":"residence"},"armor":0,"toughness":0,"children":[],"isAsleep":false,"gender":"female","age":"adult","id":32,"state":"Working","name":"Kamari C. Complin","health":20,"saturation":4.3804000000007,"work":{"type":"university","name":"com.minecolonies.building.university","location":{"y":74,"x":426,"z":-502},"level":4,"job":"com.minecolonies.job.researcher"},"skills":{"Athletics":{"xp":17.316,"level":6},"Creativity":{"xp":0,"level":1},"Mana":{"xp":5.512,"level":20},"Intelligence":{"xp":125.295,"level":19},"Knowledge":{"xp":166.799,"level":27},"Dexterity":{"xp":34.272,"level":8},"Agility":{"xp":4.284,"level":6},"Adaptability":{"xp":0,"level":8},"Focus":{"xp":13.6312,"level":8},"Stamina":{"xp":4.4061999999999,"level":11},"Strength":{"xp":8.568,"level":6}},"maxHealth":20,"location":{"y":84,"x":431,"z":-486}},{"bedPos":{"y":0,"x":0,"z":0},"betterFood":false,"isIdle":false,"happiness":6.6507936507936,"home":{"location":{"y":69,"x":514,"z":-668},"level":1,"type":"residence"},"armor":0,"toughness":0,"children":[],"isAsleep":false,"gender":"male","age":"adult","id":33,"state":"Working","name":"Theo B. Amcotts","health":20,"saturation":16.18,"work":{"type":"library","name":"com.minecolonies.building.library","location":{"y":79,"x":428,"z":-503},"level":2,"job":"com.minecolonies.job.student"},"skills":{"Athletics":{"xp":0,"level":2},"Creativity":{"xp":0,"level":4},"Mana":{"xp":0,"level":5},"Intelligence":{"xp":22.08,"level":13},"Knowledge":{"xp":0,"level":6},"Dexterity":{"xp":0,"level":6},"Agility":{"xp":0,"level":8},"Adaptability":{"xp":0,"level":8},"Focus":{"xp":0,"level":5},"Stamina":{"xp":0,"level":7},"Strength":{"xp":0,"level":3}},"maxHealth":20,"location":{"y":79,"x":428,"z":-502}},{"bedPos":{"y":0,"x":0,"z":0},"betterFood":false,"isIdle":false,"happiness":5.2216228571429,"home":{"location":{"y":73,"x":524,"z":-463},"level":2,"type":"residence"},"armor":0,"toughness":0,"children":[],"isAsleep":false,"gender":"male","age":"adult","id":34,"state":"Working","name":"Kysen M. Ardall","health":20,"saturation":10.7288,"work":{"type":"beekeeper","name":"com.minecolonies.building.beekeeper","location":{"y":70,"x":525,"z":-554},"level":3,"job":"com.minecolonies.job.beekeeper"},"skills":{"Athletics":{"xp":0,"level":5},"Creativity":{"xp":0,"level":6},"Mana":{"xp":0,"level":2},"Intelligence":{"xp":25.095,"level":14},"Knowledge":{"xp":0,"level":7},"Dexterity":{"xp":0,"level":4},"Agility":{"xp":0,"level":5},"Adaptability":{"xp":0,"level":9},"Focus":{"xp":0,"level":1},"Stamina":{"xp":0,"level":13},"Strength":{"xp":0,"level":5}},"maxHealth":20,"location":{"y":70,"x":525,"z":-555}},{"bedPos":{"y":0,"x":0,"z":0},"betterFood":false,"isIdle":false,"happiness":4.6091428571429,"home":{"location":{"y":73,"x":448,"z":-672},"level":1,"type":"residence"},"armor":0,"toughness":0,"children":[36],"isAsleep":false,"gender":"male","age":"adult","id":35,"state":"Working","name":"Jacoby B. Babington","health":20,"saturation":11.1352,"work":{"type":"hospital","name":"com.minecolonies.building.hospital","location":{"y":67,"x":470,"z":-487},"level":2,"job":"com.minecolonies.job.healer"},"skills":{"Athletics":{"xp":0,"level":3},"Creativity":{"xp":19.6469,"level":4},"Mana":{"xp":17.327,"level":4},"Intelligence":{"xp":28.565,"level":17},"Knowledge":{"xp":16.731,"level":7},"Dexterity":{"xp":0,"level":6},"Agility":{"xp":0,"level":8},"Adaptability":{"xp":0,"level":8},"Focus":{"xp":3.3462,"level":5},"Stamina":{"xp":24.9519,"level":5},"Strength":{"xp":0,"level":3}},"maxHealth":20,"location":{"y":67,"x":470,"z":-488}},{"bedPos":{"y":0,"x":0,"z":0},"betterFood":false,"isIdle":false,"happiness":5.0790095238095,"home":{"location":{"y":74,"x":485,"z":-660},"level":2,"type":"residence"},"armor":0,"toughness":0,"children":[],"isAsleep":false,"gender":"male","age":"adult","id":36,"state":"Working","name":"Sterling G. Babington","health":20,"saturation":11.8376,"work":{"type":"library","name":"com.minecolonies.building.library","location":{"y":79,"x":428,"z":-503},"level":2,"job":"com.minecolonies.job.student"},"skills":{"Athletics":{"xp":0,"level":5},"Creativity":{"xp":0,"level":5},"Mana":{"xp":0,"level":5},"Intelligence":{"xp":85.275,"level":19},"Knowledge":{"xp":0,"level":7},"Dexterity":{"xp":0,"level":7},"Agility":{"xp":0,"level":9},"Adaptability":{"xp":0,"level":8},"Focus":{"xp":0,"level":5},"Stamina":{"xp":0,"level":4},"Strength":{"xp":0,"level":2}},"maxHealth":20,"location":{"y":79,"x":426,"z":-502}},{"bedPos":{"y":0,"x":0,"z":0},"betterFood":false,"isIdle":false,"happiness":5.0922952380952,"home":{"location":{"y":75,"x":568,"z":-436},"level":1,"type":"residence"},"armor":0,"toughness":0,"children":[],"isAsleep":false,"gender":"male","age":"adult","id":37,"state":"Working","name":"Adonis G. Revaluri","health":20,"saturation":18.3448,"work":{"type":"mechanic","name":"com.minecolonies.building.mechanic","location":{"y":71,"x":385,"z":-716},"level":3,"job":"com.minecolonies.job.mechanic"},"skills":{"Athletics":{"xp":0,"level":4},"Creativity":{"xp":0,"level":1},"Mana":{"xp":0,"level":2},"Intelligence":{"xp":6.795,"level":10},"Knowledge":{"xp":1.54,"level":10},"Dexterity":{"xp":0.077,"level":11},"Agility":{"xp":0.77,"level":7},"Adaptability":{"xp":0,"level":5},"Focus":{"xp":0,"level":6},"Stamina":{"xp":0.154,"level":6},"Strength":{"xp":16.058,"level":3}},"maxHealth":20,"location":{"y":71,"x":385,"z":-693}}]
+[
+    {
+        "bedPos": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+        },
+        "betterFood": false,
+        "isIdle": false,
+        "happiness": 6.9555495798327,
+        "home": {
+            "location": {
+                "y": 69,
+                "x": 491,
+                "z": -586
+            },
+            "level": 2,
+            "type": "residence"
+        },
+        "armor": 0,
+        "toughness": 0,
+        "children": [
+            6,
+            28
+        ],
+        "isAsleep": false,
+        "gender": "female",
+        "age": "adult",
+        "id": 1,
+        "state": "Delivering",
+        "name": "Emmeline C. Good",
+        "health": 20,
+        "saturation": 10.591200000006,
+        "work": {
+            "type": "deliveryman",
+            "name": "com.minecolonies.building.deliveryman",
+            "location": {
+                "y": 75,
+                "x": 440,
+                "z": -556
+            },
+            "level": 4,
+            "job": "com.minecolonies.job.deliveryman"
+        },
+        "skills": {
+            "Athletics": {
+                "xp": 0,
+                "level": 2
+            },
+            "Creativity": {
+                "xp": 42.453600000002,
+                "level": 10
+            },
+            "Mana": {
+                "xp": 0,
+                "level": 7
+            },
+            "Intelligence": {
+                "xp": 0,
+                "level": 4
+            },
+            "Knowledge": {
+                "xp": 0,
+                "level": 8
+            },
+            "Dexterity": {
+                "xp": 51.892200000002,
+                "level": 14
+            },
+            "Agility": {
+                "xp": 2.0046000000012,
+                "level": 30
+            },
+            "Adaptability": {
+                "xp": 191.481,
+                "level": 27
+            },
+            "Focus": {
+                "xp": 0,
+                "level": 1
+            },
+            "Stamina": {
+                "xp": 0,
+                "level": 2
+            },
+            "Strength": {
+                "xp": 0,
+                "level": 1
+            }
+        },
+        "maxHealth": 20,
+        "location": {
+            "y": 64,
+            "x": 449,
+            "z": -564
+        }
+    },
+    {
+        "bedPos": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+        },
+        "betterFood": false,
+        "isIdle": false,
+        "happiness": 7.1496201680673,
+        "home": {
+            "location": {
+                "y": 71,
+                "x": 395,
+                "z": -583
+            },
+            "level": 4,
+            "type": "guardtower"
+        },
+        "armor": 12,
+        "toughness": 0,
+        "children": [],
+        "isAsleep": false,
+        "gender": "female",
+        "age": "adult",
+        "id": 2,
+        "state": "Fighting",
+        "name": "Azra G. Good",
+        "health": 40.022518157959,
+        "saturation": 2.1768000000002,
+        "work": {
+            "type": "guardtower",
+            "name": "com.minecolonies.building.guardtower",
+            "location": {
+                "y": 71,
+                "x": 395,
+                "z": -583
+            },
+            "level": 4,
+            "job": "com.minecolonies.job.knight"
+        },
+        "skills": {
+            "Athletics": {
+                "xp": 0,
+                "level": 9
+            },
+            "Creativity": {
+                "xp": 15.9,
+                "level": 8
+            },
+            "Mana": {
+                "xp": 13.635,
+                "level": 6
+            },
+            "Intelligence": {
+                "xp": 104.7,
+                "level": 17
+            },
+            "Knowledge": {
+                "xp": 18.445,
+                "level": 8
+            },
+            "Dexterity": {
+                "xp": 0,
+                "level": 3
+            },
+            "Agility": {
+                "xp": 0,
+                "level": 5
+            },
+            "Adaptability": {
+                "xp": 27.18,
+                "level": 21
+            },
+            "Focus": {
+                "xp": 0,
+                "level": 1
+            },
+            "Stamina": {
+                "xp": 48.6,
+                "level": 15
+            },
+            "Strength": {
+                "xp": 0,
+                "level": 3
+            }
+        },
+        "maxHealth": 78,
+        "location": {
+            "y": 64,
+            "x": 399,
+            "z": -557
+        }
+    },
+    {
+        "bedPos": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+        },
+        "betterFood": false,
+        "isIdle": false,
+        "happiness": 6.1879102040822,
+        "home": {
+            "location": {
+                "y": 72,
+                "x": 393,
+                "z": -494
+            },
+            "level": 3,
+            "type": "residence"
+        },
+        "armor": 0,
+        "toughness": 0,
+        "children": [
+            31
+        ],
+        "isAsleep": false,
+        "gender": "male",
+        "age": "adult",
+        "id": 3,
+        "state": "Working",
+        "name": "Matthew A. Complin",
+        "health": 20,
+        "saturation": 4.8068000000037,
+        "work": {
+            "type": "deliveryman",
+            "name": "com.minecolonies.building.deliveryman",
+            "location": {
+                "y": 70,
+                "x": 425,
+                "z": -549
+            },
+            "level": 4,
+            "job": "com.minecolonies.job.deliveryman"
+        },
+        "skills": {
+            "Athletics": {
+                "xp": 0,
+                "level": 1
+            },
+            "Creativity": {
+                "xp": 30.242924,
+                "level": 7
+            },
+            "Mana": {
+                "xp": 0,
+                "level": 6
+            },
+            "Intelligence": {
+                "xp": 0,
+                "level": 4
+            },
+            "Knowledge": {
+                "xp": 0,
+                "level": 11
+            },
+            "Dexterity": {
+                "xp": 28.690848,
+                "level": 11
+            },
+            "Agility": {
+                "xp": 76.20348,
+                "level": 24
+            },
+            "Adaptability": {
+                "xp": 71.55924,
+                "level": 18
+            },
+            "Focus": {
+                "xp": 0,
+                "level": 1
+            },
+            "Stamina": {
+                "xp": 0,
+                "level": 4
+            },
+            "Strength": {
+                "xp": 0,
+                "level": 1
+            }
+        },
+        "maxHealth": 20,
+        "location": {
+            "y": 66,
+            "x": 330,
+            "z": -693
+        }
+    },
+    {
+        "bedPos": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+        },
+        "betterFood": false,
+        "isIdle": false,
+        "happiness": 5.0556495238099,
+        "home": {
+            "location": {
+                "y": 69,
+                "x": 629,
+                "z": -560
+            },
+            "level": 2,
+            "type": "residence"
+        },
+        "armor": 0,
+        "toughness": 0,
+        "children": [],
+        "isAsleep": false,
+        "gender": "female",
+        "age": "adult",
+        "id": 4,
+        "state": "Working",
+        "name": "Linda C. Harris",
+        "health": 20,
+        "saturation": 9.4696000000028,
+        "work": {
+            "type": "cook",
+            "name": "com.minecolonies.building.cook",
+            "location": {
+                "y": 72,
+                "x": 417,
+                "z": -638
+            },
+            "level": 3,
+            "job": "com.minecolonies.job.cookassistant"
+        },
+        "skills": {
+            "Athletics": {
+                "xp": 0,
+                "level": 5
+            },
+            "Creativity": {
+                "xp": 0,
+                "level": 6
+            },
+            "Mana": {
+                "xp": 0,
+                "level": 5
+            },
+            "Intelligence": {
+                "xp": 0,
+                "level": 6
+            },
+            "Knowledge": {
+                "xp": 0,
+                "level": 5
+            },
+            "Dexterity": {
+                "xp": 0,
+                "level": 8
+            },
+            "Agility": {
+                "xp": 0,
+                "level": 11
+            },
+            "Adaptability": {
+                "xp": 0,
+                "level": 10
+            },
+            "Focus": {
+                "xp": 0,
+                "level": 2
+            },
+            "Stamina": {
+                "xp": 0,
+                "level": 6
+            },
+            "Strength": {
+                "xp": 0,
+                "level": 2
+            }
+        },
+        "maxHealth": 20,
+        "location": {
+            "y": 63,
+            "x": 409,
+            "z": -632
+        }
+    },
+    {
+        "bedPos": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+        },
+        "betterFood": false,
+        "isIdle": false,
+        "happiness": 4.9293561904761,
+        "home": {
+            "location": {
+                "y": 76,
+                "x": 315,
+                "z": -581
+            },
+            "level": 2,
+            "type": "residence"
+        },
+        "armor": 0,
+        "toughness": 0,
+        "children": [
+            10
+        ],
+        "isAsleep": false,
+        "gender": "female",
+        "age": "adult",
+        "id": 5,
+        "state": "Working",
+        "name": "Emilia W. Gascoigne",
+        "health": 20,
+        "saturation": 8.5387999999994,
+        "work": {
+            "type": "glassblower",
+            "name": "com.minecolonies.building.glassblower",
+            "location": {
+                "y": 70,
+                "x": 318,
+                "z": -619
+            },
+            "level": 1,
+            "job": "com.minecolonies.job.glassblower"
+        },
+        "skills": {
+            "Athletics": {
+                "xp": 15.84496,
+                "level": 6
+            },
+            "Creativity": {
+                "xp": 47.421,
+                "level": 16
+            },
+            "Mana": {
+                "xp": 36.4208,
+                "level": 7
+            },
+            "Intelligence": {
+                "xp": 0,
+                "level": 3
+            },
+            "Knowledge": {
+                "xp": 2.2784,
+                "level": 2
+            },
+            "Dexterity": {
+                "xp": 10.81917,
+                "level": 3
+            },
+            "Agility": {
+                "xp": 15.99334,
+                "level": 5
+            },
+            "Adaptability": {
+                "xp": 4.3408,
+                "level": 7
+            },
+            "Focus": {
+                "xp": 55.928,
+                "level": 12
+            },
+            "Stamina": {
+                "xp": 0,
+                "level": 3
+            },
+            "Strength": {
+                "xp": 4.4324299999999,
+                "level": 7
+            }
+        },
+        "maxHealth": 20,
+        "location": {
+            "y": 69,
+            "x": 322,
+            "z": -622
+        }
+    },
+    {
+        "bedPos": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+        },
+        "betterFood": false,
+        "isIdle": false,
+        "happiness": 4.3763961904764,
+        "home": {
+            "location": {
+                "y": 73,
+                "x": 524,
+                "z": -463
+            },
+            "level": 2,
+            "type": "residence"
+        },
+        "armor": 0,
+        "toughness": 0,
+        "children": [
+            20
+        ],
+        "isAsleep": false,
+        "gender": "male",
+        "age": "adult",
+        "id": 6,
+        "state": "Searching for trees",
+        "name": "Emmanuel M. Good",
+        "health": 12,
+        "saturation": 4.3896000000015,
+        "work": {
+            "type": "lumberjack",
+            "name": "com.minecolonies.building.lumberjack",
+            "location": {
+                "y": 72,
+                "x": 516,
+                "z": -534
+            },
+            "level": 3,
+            "job": "com.minecolonies.job.lumberjack"
+        },
+        "skills": {
+            "Athletics": {
+                "xp": 15.051000000001,
+                "level": 11
+            },
+            "Creativity": {
+                "xp": 7.774,
+                "level": 5
+            },
+            "Mana": {
+                "xp": 12.598000000003,
+                "level": 8
+            },
+            "Intelligence": {
+                "xp": 0,
+                "level": 4
+            },
+            "Knowledge": {
+                "xp": 0,
+                "level": 4
+            },
+            "Dexterity": {
+                "xp": 3.887,
+                "level": 8
+            },
+            "Agility": {
+                "xp": 0,
+                "level": 1
+            },
+            "Adaptability": {
+                "xp": 17.041999999992,
+                "level": 12
+            },
+            "Focus": {
+                "xp": 38.286000000006,
+                "level": 21
+            },
+            "Stamina": {
+                "xp": 0,
+                "level": 6
+            },
+            "Strength": {
+                "xp": 52.578000000012,
+                "level": 28
+            }
+        },
+        "maxHealth": 20,
+        "location": {
+            "y": 72,
+            "x": 515,
+            "z": -534
+        }
+    },
+    {
+        "bedPos": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+        },
+        "betterFood": false,
+        "isIdle": false,
+        "happiness": 6.9931956043956,
+        "home": {
+            "location": {
+                "y": 64,
+                "x": 453,
+                "z": -633
+            },
+            "level": 2,
+            "type": "residence"
+        },
+        "armor": 0,
+        "toughness": 0,
+        "children": [],
+        "isAsleep": false,
+        "gender": "female",
+        "age": "adult",
+        "id": 7,
+        "state": "Finding chickens",
+        "name": "Wilmot B. Chilton",
+        "health": 20,
+        "saturation": 16.9836,
+        "work": {
+            "type": "chickenherder",
+            "name": "com.minecolonies.building.chickenherder",
+            "location": {
+                "y": 65,
+                "x": 598,
+                "z": -563
+            },
+            "level": 1,
+            "job": "com.minecolonies.job.chickenherder"
+        },
+        "skills": {
+            "Athletics": {
+                "xp": 0,
+                "level": 5
+            },
+            "Creativity": {
+                "xp": 19.15207,
+                "level": 4
+            },
+            "Mana": {
+                "xp": 0,
+                "level": 2
+            },
+            "Intelligence": {
+                "xp": 126.8,
+                "level": 19
+            },
+            "Knowledge": {
+                "xp": 0,
+                "level": 7
+            },
+            "Dexterity": {
+                "xp": 17.643535,
+                "level": 9
+            },
+            "Agility": {
+                "xp": 36.45535,
+                "level": 9
+            },
+            "Adaptability": {
+                "xp": 33.6557,
+                "level": 13
+            },
+            "Focus": {
+                "xp": 2.1679300000002,
+                "level": 3
+            },
+            "Stamina": {
+                "xp": 0,
+                "level": 4
+            },
+            "Strength": {
+                "xp": 3.676465,
+                "level": 4
+            }
+        },
+        "maxHealth": 20,
+        "location": {
+            "y": 64,
+            "x": 592,
+            "z": -584
+        }
+    },
+    {
+        "bedPos": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+        },
+        "betterFood": false,
+        "isIdle": false,
+        "happiness": 3.5076952380955,
+        "home": {
+            "location": {
+                "y": 70,
+                "x": 228,
+                "z": -776
+            },
+            "level": 3,
+            "type": "guardtower"
+        },
+        "armor": 12,
+        "toughness": 0,
+        "children": [],
+        "isAsleep": false,
+        "gender": "female",
+        "age": "adult",
+        "id": 8,
+        "state": "Working",
+        "name": "Katalina G. Good",
+        "health": 91,
+        "saturation": 2.5536000000018,
+        "work": {
+            "type": "guardtower",
+            "name": "com.minecolonies.building.guardtower",
+            "location": {
+                "y": 70,
+                "x": 228,
+                "z": -776
+            },
+            "level": 3,
+            "job": "com.minecolonies.job.knight"
+        },
+        "skills": {
+            "Athletics": {
+                "xp": 0,
+                "level": 7
+            },
+            "Creativity": {
+                "xp": 48.14356,
+                "level": 16
+            },
+            "Mana": {
+                "xp": 0,
+                "level": 1
+            },
+            "Intelligence": {
+                "xp": 0,
+                "level": 4
+            },
+            "Knowledge": {
+                "xp": 61.72928,
+                "level": 14
+            },
+            "Dexterity": {
+                "xp": 0,
+                "level": 4
+            },
+            "Agility": {
+                "xp": 0,
+                "level": 7
+            },
+            "Adaptability": {
+                "xp": 246.2606,
+                "level": 39
+            },
+            "Focus": {
+                "xp": 0,
+                "level": 1
+            },
+            "Stamina": {
+                "xp": 201.0928,
+                "level": 30
+            },
+            "Strength": {
+                "xp": 0,
+                "level": 3
+            }
+        },
+        "maxHealth": 91,
+        "location": {
+            "y": 64,
+            "x": 234,
+            "z": -730
+        }
+    },
+    {
+        "bedPos": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+        },
+        "betterFood": true,
+        "isIdle": false,
+        "happiness": 6.1535161904763,
+        "home": {
+            "location": {
+                "y": 73,
+                "x": 506,
+                "z": -463
+            },
+            "level": 2,
+            "type": "residence"
+        },
+        "armor": 0,
+        "toughness": 0,
+        "children": [],
+        "isAsleep": false,
+        "gender": "male",
+        "age": "adult",
+        "id": 9,
+        "state": "Working",
+        "name": "Leonardo M. Jones",
+        "health": 20,
+        "saturation": 17.715200000001,
+        "work": {
+            "type": "swineherder",
+            "name": "com.minecolonies.building.swineherder",
+            "location": {
+                "y": 65,
+                "x": 589,
+                "z": -563
+            },
+            "level": 1,
+            "job": "com.minecolonies.job.swineherder"
+        },
+        "skills": {
+            "Athletics": {
+                "xp": 9.66116,
+                "level": 4
+            },
+            "Creativity": {
+                "xp": 0,
+                "level": 5
+            },
+            "Mana": {
+                "xp": 0,
+                "level": 3
+            },
+            "Intelligence": {
+                "xp": 23.375,
+                "level": 6
+            },
+            "Knowledge": {
+                "xp": 0,
+                "level": 4
+            },
+            "Dexterity": {
+                "xp": 29.93032,
+                "level": 6
+            },
+            "Agility": {
+                "xp": 58.35564,
+                "level": 11
+            },
+            "Adaptability": {
+                "xp": 0,
+                "level": 13
+            },
+            "Focus": {
+                "xp": 0,
+                "level": 3
+            },
+            "Stamina": {
+                "xp": 0,
+                "level": 7
+            },
+            "Strength": {
+                "xp": 17.96828,
+                "level": 4
+            }
+        },
+        "maxHealth": 20,
+        "location": {
+            "y": 65,
+            "x": 589,
+            "z": -564
+        }
+    },
+    {
+        "bedPos": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+        },
+        "betterFood": false,
+        "isIdle": false,
+        "happiness": 6.1648263736263,
+        "home": {
+            "location": {
+                "y": 76,
+                "x": 315,
+                "z": -581
+            },
+            "level": 2,
+            "type": "residence"
+        },
+        "armor": 0,
+        "toughness": 0,
+        "children": [],
+        "isAsleep": false,
+        "gender": "male",
+        "age": "adult",
+        "id": 10,
+        "state": "Working",
+        "name": "Jon G. Gardiner",
+        "health": 20,
+        "saturation": 11.638,
+        "work": {
+            "type": "fletcher",
+            "name": "com.minecolonies.building.fletcher",
+            "location": {
+                "y": 68,
+                "x": 287,
+                "z": -653
+            },
+            "level": 2,
+            "job": "com.minecolonies.job.fletcher"
+        },
+        "skills": {
+            "Athletics": {
+                "xp": 20.3604,
+                "level": 5
+            },
+            "Creativity": {
+                "xp": 10.003,
+                "level": 5
+            },
+            "Mana": {
+                "xp": 0,
+                "level": 6
+            },
+            "Intelligence": {
+                "xp": 0,
+                "level": 6
+            },
+            "Knowledge": {
+                "xp": 23.4927,
+                "level": 5
+            },
+            "Dexterity": {
+                "xp": 24.931,
+                "level": 8
+            },
+            "Agility": {
+                "xp": 6.2646,
+                "level": 6
+            },
+            "Adaptability": {
+                "xp": 3.1323,
+                "level": 8
+            },
+            "Focus": {
+                "xp": 0,
+                "level": 7
+            },
+            "Stamina": {
+                "xp": 0,
+                "level": 5
+            },
+            "Strength": {
+                "xp": 0,
+                "level": 13
+            }
+        },
+        "maxHealth": 20,
+        "location": {
+            "y": 67,
+            "x": 299,
+            "z": -658
+        }
+    },
+    {
+        "bedPos": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+        },
+        "betterFood": false,
+        "isIdle": false,
+        "happiness": 7.3227025210084,
+        "home": {
+            "location": {
+                "y": 76,
+                "x": 501,
+                "z": -586
+            },
+            "level": 2,
+            "type": "tavern"
+        },
+        "armor": 0,
+        "toughness": 0,
+        "children": [
+            6,
+            28
+        ],
+        "isAsleep": false,
+        "gender": "male",
+        "age": "adult",
+        "id": 11,
+        "state": "Working",
+        "name": "Leonidas G. Madden",
+        "health": 20,
+        "saturation": 13.8048,
+        "work": {
+            "type": "builder",
+            "name": "com.minecolonies.building.builder",
+            "location": {
+                "y": 66,
+                "x": 563,
+                "z": -591
+            },
+            "level": 4,
+            "job": "com.minecolonies.job.builder"
+        },
+        "skills": {
+            "Athletics": {
+                "xp": 113.47295000003,
+                "level": 18
+            },
+            "Creativity": {
+                "xp": 23.750590000007,
+                "level": 8
+            },
+            "Mana": {
+                "xp": 0,
+                "level": 7
+            },
+            "Intelligence": {
+                "xp": 0,
+                "level": 3
+            },
+            "Knowledge": {
+                "xp": 0,
+                "level": 7
+            },
+            "Dexterity": {
+                "xp": 11.452204999997,
+                "level": 5
+            },
+            "Agility": {
+                "xp": 4.635,
+                "level": 5
+            },
+            "Adaptability": {
+                "xp": 134.11090000004,
+                "level": 23
+            },
+            "Focus": {
+                "xp": 0,
+                "level": 1
+            },
+            "Stamina": {
+                "xp": 0,
+                "level": 7
+            },
+            "Strength": {
+                "xp": 12.327795000001,
+                "level": 9
+            }
+        },
+        "maxHealth": 20,
+        "location": {
+            "y": 66,
+            "x": 563,
+            "z": -590
+        }
+    },
+    {
+        "bedPos": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+        },
+        "betterFood": false,
+        "isIdle": false,
+        "happiness": 6.6251025210086,
+        "home": {
+            "location": {
+                "y": 71,
+                "x": 307,
+                "z": -542
+            },
+            "level": 2,
+            "type": "residence"
+        },
+        "armor": 0,
+        "toughness": 0,
+        "children": [],
+        "isAsleep": false,
+        "gender": "male",
+        "age": "adult",
+        "id": 12,
+        "state": "Working",
+        "name": "Isaac G. Clerk",
+        "health": 20,
+        "saturation": 7.8688000000014,
+        "work": {
+            "type": "stonemason",
+            "name": "com.minecolonies.building.stonemason",
+            "location": {
+                "y": 71,
+                "x": 353,
+                "z": -512
+            },
+            "level": 4,
+            "job": "com.minecolonies.job.stonemason"
+        },
+        "skills": {
+            "Athletics": {
+                "xp": 0,
+                "level": 1
+            },
+            "Creativity": {
+                "xp": 14.908,
+                "level": 30
+            },
+            "Mana": {
+                "xp": 0,
+                "level": 5
+            },
+            "Intelligence": {
+                "xp": 0,
+                "level": 4
+            },
+            "Knowledge": {
+                "xp": 0,
+                "level": 1
+            },
+            "Dexterity": {
+                "xp": 10.773999999999,
+                "level": 30
+            },
+            "Agility": {
+                "xp": 47.2112,
+                "level": 12
+            },
+            "Adaptability": {
+                "xp": 2.8124000000008,
+                "level": 18
+            },
+            "Focus": {
+                "xp": 0,
+                "level": 5
+            },
+            "Stamina": {
+                "xp": 0,
+                "level": 9
+            },
+            "Strength": {
+                "xp": 0,
+                "level": 6
+            }
+        },
+        "maxHealth": 20,
+        "location": {
+            "y": 71,
+            "x": 350,
+            "z": -513
+        }
+    },
+    {
+        "bedPos": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+        },
+        "betterFood": true,
+        "isIdle": false,
+        "happiness": 6.155220168067,
+        "home": {
+            "location": {
+                "y": 75,
+                "x": 592,
+                "z": -436
+            },
+            "level": 2,
+            "type": "residence"
+        },
+        "armor": 0,
+        "toughness": 0,
+        "children": [
+            15
+        ],
+        "isAsleep": false,
+        "gender": "male",
+        "age": "adult",
+        "id": 13,
+        "state": "Farming",
+        "name": "Melvin B. Gorney",
+        "health": 20,
+        "saturation": 3.8747999999979,
+        "work": {
+            "type": "farmer",
+            "name": "com.minecolonies.building.farmer",
+            "location": {
+                "y": 65,
+                "x": 586,
+                "z": -498
+            },
+            "level": 4,
+            "job": "com.minecolonies.job.farmer"
+        },
+        "skills": {
+            "Athletics": {
+                "xp": 61.812450000001,
+                "level": 20
+            },
+            "Creativity": {
+                "xp": 0,
+                "level": 5
+            },
+            "Mana": {
+                "xp": 0,
+                "level": 1
+            },
+            "Intelligence": {
+                "xp": 0,
+                "level": 6
+            },
+            "Knowledge": {
+                "xp": 43.067490000002,
+                "level": 13
+            },
+            "Dexterity": {
+                "xp": 2.0587549999989,
+                "level": 4
+            },
+            "Agility": {
+                "xp": 0,
+                "level": 11
+            },
+            "Adaptability": {
+                "xp": 0,
+                "level": 11
+            },
+            "Focus": {
+                "xp": 0,
+                "level": 2
+            },
+            "Stamina": {
+                "xp": 154.1394,
+                "level": 24
+            },
+            "Strength": {
+                "xp": 19.521245000001,
+                "level": 7
+            }
+        },
+        "maxHealth": 20,
+        "location": {
+            "y": 65,
+            "x": 588,
+            "z": -512
+        }
+    },
+    {
+        "bedPos": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+        },
+        "betterFood": false,
+        "isIdle": false,
+        "happiness": 4.4232228571428,
+        "home": {
+            "location": {
+                "y": 71,
+                "x": 307,
+                "z": -542
+            },
+            "level": 2,
+            "type": "residence"
+        },
+        "armor": 0,
+        "toughness": 0,
+        "children": [
+            10
+        ],
+        "isAsleep": false,
+        "gender": "male",
+        "age": "adult",
+        "id": 14,
+        "state": "Working",
+        "name": "Emory G. Gardiner",
+        "health": 16,
+        "saturation": 4.7359999999995,
+        "work": {
+            "type": "blacksmith",
+            "name": "com.minecolonies.building.blacksmith",
+            "location": {
+                "y": 71,
+                "x": 347,
+                "z": -544
+            },
+            "level": 3,
+            "job": "com.minecolonies.job.blacksmith"
+        },
+        "skills": {
+            "Athletics": {
+                "xp": 51.278100000001,
+                "level": 11
+            },
+            "Creativity": {
+                "xp": 0,
+                "level": 4
+            },
+            "Mana": {
+                "xp": 20.21655,
+                "level": 7
+            },
+            "Intelligence": {
+                "xp": 0,
+                "level": 6
+            },
+            "Knowledge": {
+                "xp": 0,
+                "level": 9
+            },
+            "Dexterity": {
+                "xp": 0,
+                "level": 6
+            },
+            "Agility": {
+                "xp": 0,
+                "level": 1
+            },
+            "Adaptability": {
+                "xp": 30.67845,
+                "level": 7
+            },
+            "Focus": {
+                "xp": 16.390499999999,
+                "level": 19
+            },
+            "Stamina": {
+                "xp": 0,
+                "level": 2
+            },
+            "Strength": {
+                "xp": 111.956,
+                "level": 25
+            }
+        },
+        "maxHealth": 20,
+        "location": {
+            "y": 71,
+            "x": 353,
+            "z": -536
+        }
+    },
+    {
+        "bedPos": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+        },
+        "betterFood": false,
+        "isIdle": false,
+        "happiness": 4.1351695238091,
+        "home": {
+            "location": {
+                "y": 71,
+                "x": 307,
+                "z": -562
+            },
+            "level": 2,
+            "type": "residence"
+        },
+        "armor": 0,
+        "toughness": 0,
+        "children": [],
+        "isAsleep": false,
+        "gender": "male",
+        "age": "adult",
+        "id": 15,
+        "state": "Delivering",
+        "name": "Kason G. Ayde",
+        "health": 20,
+        "saturation": 2.533999999997,
+        "work": {
+            "type": "deliveryman",
+            "name": "com.minecolonies.building.deliveryman",
+            "location": {
+                "y": 66,
+                "x": 353,
+                "z": -606
+            },
+            "level": 3,
+            "job": "com.minecolonies.job.deliveryman"
+        },
+        "skills": {
+            "Athletics": {
+                "xp": 0,
+                "level": 5
+            },
+            "Creativity": {
+                "xp": 49.521717499999,
+                "level": 9
+            },
+            "Mana": {
+                "xp": 0,
+                "level": 9
+            },
+            "Intelligence": {
+                "xp": 0,
+                "level": 3
+            },
+            "Knowledge": {
+                "xp": 0,
+                "level": 10
+            },
+            "Dexterity": {
+                "xp": 59.788434999999,
+                "level": 13
+            },
+            "Agility": {
+                "xp": 1.4872999999949,
+                "level": 30
+            },
+            "Adaptability": {
+                "xp": 34.222174999994,
+                "level": 25
+            },
+            "Focus": {
+                "xp": 0,
+                "level": 1
+            },
+            "Stamina": {
+                "xp": 0,
+                "level": 7
+            },
+            "Strength": {
+                "xp": 0,
+                "level": 1
+            }
+        },
+        "maxHealth": 20,
+        "location": {
+            "y": 69,
+            "x": 383,
+            "z": -515
+        }
+    },
+    {
+        "bedPos": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+        },
+        "betterFood": false,
+        "isIdle": false,
+        "happiness": 6.6540907563029,
+        "home": {
+            "location": {
+                "y": 69,
+                "x": 491,
+                "z": -568
+            },
+            "level": 2,
+            "type": "residence"
+        },
+        "armor": 0,
+        "toughness": 0,
+        "children": [
+            2,
+            22,
+            23,
+            8
+        ],
+        "isAsleep": false,
+        "gender": "female",
+        "age": "adult",
+        "id": 16,
+        "state": "Working",
+        "name": "Alexis C. Garnis",
+        "health": 20,
+        "saturation": 8.1120000000034,
+        "work": {
+            "type": "builder",
+            "name": "com.minecolonies.building.builder",
+            "location": {
+                "y": 64,
+                "x": 439,
+                "z": -580
+            },
+            "level": 4,
+            "job": "com.minecolonies.job.builder"
+        },
+        "skills": {
+            "Athletics": {
+                "xp": 2.4300000000368,
+                "level": 22
+            },
+            "Creativity": {
+                "xp": 47.406000000031,
+                "level": 11
+            },
+            "Mana": {
+                "xp": 0,
+                "level": 5
+            },
+            "Intelligence": {
+                "xp": 0,
+                "level": 5
+            },
+            "Knowledge": {
+                "xp": 0,
+                "level": 7
+            },
+            "Dexterity": {
+                "xp": 0,
+                "level": 1
+            },
+            "Agility": {
+                "xp": 0,
+                "level": 3
+            },
+            "Adaptability": {
+                "xp": 145.84500000007,
+                "level": 28
+            },
+            "Focus": {
+                "xp": 0,
+                "level": 1
+            },
+            "Stamina": {
+                "xp": 0,
+                "level": 7
+            },
+            "Strength": {
+                "xp": 15.463000000012,
+                "level": 8
+            }
+        },
+        "maxHealth": 20,
+        "location": {
+            "y": 68,
+            "x": 480,
+            "z": -559
+        }
+    },
+    {
+        "bedPos": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+        },
+        "betterFood": false,
+        "isIdle": false,
+        "happiness": 4.3250895238095,
+        "home": {
+            "location": {
+                "y": 73,
+                "x": 506,
+                "z": -463
+            },
+            "level": 2,
+            "type": "residence"
+        },
+        "armor": 0,
+        "toughness": 0,
+        "children": [],
+        "isAsleep": false,
+        "gender": "female",
+        "age": "adult",
+        "id": 17,
+        "state": "Working",
+        "name": "Parnell C. Kravitz",
+        "health": 20,
+        "saturation": 3.6447999999999,
+        "work": {
+            "type": "shepherd",
+            "name": "com.minecolonies.building.shepherd",
+            "location": {
+                "y": 65,
+                "x": 582,
+                "z": -563
+            },
+            "level": 1,
+            "job": "com.minecolonies.job.shepherd"
+        },
+        "skills": {
+            "Athletics": {
+                "xp": 26.55406,
+                "level": 5
+            },
+            "Creativity": {
+                "xp": 0,
+                "level": 6
+            },
+            "Mana": {
+                "xp": 4.6131199999999,
+                "level": 5
+            },
+            "Intelligence": {
+                "xp": 13.375,
+                "level": 6
+            },
+            "Knowledge": {
+                "xp": 0,
+                "level": 6
+            },
+            "Dexterity": {
+                "xp": 0,
+                "level": 5
+            },
+            "Agility": {
+                "xp": 11.16094,
+                "level": 7
+            },
+            "Adaptability": {
+                "xp": 16.68688,
+                "level": 6
+            },
+            "Focus": {
+                "xp": 38.7212,
+                "level": 14
+            },
+            "Stamina": {
+                "xp": 0,
+                "level": 6
+            },
+            "Strength": {
+                "xp": 27.4206,
+                "level": 10
+            }
+        },
+        "maxHealth": 20,
+        "location": {
+            "y": 64,
+            "x": 602,
+            "z": -588
+        }
+    },
+    {
+        "bedPos": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+        },
+        "betterFood": false,
+        "isIdle": false,
+        "happiness": 7.7270319327731,
+        "home": {
+            "location": {
+                "y": 76,
+                "x": 501,
+                "z": -586
+            },
+            "level": 2,
+            "type": "tavern"
+        },
+        "armor": 0,
+        "toughness": 0,
+        "children": [],
+        "isAsleep": false,
+        "gender": "male",
+        "age": "adult",
+        "id": 18,
+        "state": "Working",
+        "name": "Chance G. Good",
+        "health": 20,
+        "saturation": 17.2,
+        "work": {
+            "type": "builder",
+            "name": "com.minecolonies.building.builder",
+            "location": {
+                "y": 66,
+                "x": 366,
+                "z": -614
+            },
+            "level": 4,
+            "job": "com.minecolonies.job.builder"
+        },
+        "skills": {
+            "Athletics": {
+                "xp": 56.374675000023,
+                "level": 21
+            },
+            "Creativity": {
+                "xp": 26.363475000015,
+                "level": 11
+            },
+            "Mana": {
+                "xp": 13.7046,
+                "level": 4
+            },
+            "Intelligence": {
+                "xp": 0,
+                "level": 5
+            },
+            "Knowledge": {
+                "xp": 0,
+                "level": 7
+            },
+            "Dexterity": {
+                "xp": 0,
+                "level": 1
+            },
+            "Agility": {
+                "xp": 4.1877,
+                "level": 2
+            },
+            "Adaptability": {
+                "xp": 97.425150000042,
+                "level": 27
+            },
+            "Focus": {
+                "xp": 0,
+                "level": 1
+            },
+            "Stamina": {
+                "xp": 0,
+                "level": 9
+            },
+            "Strength": {
+                "xp": 22.904737499986,
+                "level": 12
+            }
+        },
+        "maxHealth": 20,
+        "location": {
+            "y": 70,
+            "x": 400,
+            "z": -678
+        }
+    },
+    {
+        "bedPos": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+        },
+        "betterFood": false,
+        "isIdle": false,
+        "happiness": 3.8110285714289,
+        "home": {
+            "location": {
+                "y": 72,
+                "x": 393,
+                "z": -494
+            },
+            "level": 3,
+            "type": "residence"
+        },
+        "armor": 0,
+        "toughness": 0,
+        "children": [
+            32,
+            3
+        ],
+        "isAsleep": false,
+        "gender": "male",
+        "age": "adult",
+        "id": 19,
+        "state": "Working",
+        "name": "Joaquin G. Complin",
+        "health": 20,
+        "saturation": 4.4264000000019,
+        "work": {
+            "type": "sawmill",
+            "name": "com.minecolonies.building.sawmill",
+            "location": {
+                "y": 65,
+                "x": 417,
+                "z": -521
+            },
+            "level": 3,
+            "job": "com.minecolonies.job.sawmill"
+        },
+        "skills": {
+            "Athletics": {
+                "xp": 0,
+                "level": 1
+            },
+            "Creativity": {
+                "xp": 0,
+                "level": 1
+            },
+            "Mana": {
+                "xp": 13.73196,
+                "level": 6
+            },
+            "Intelligence": {
+                "xp": 0,
+                "level": 3
+            },
+            "Knowledge": {
+                "xp": 143.2735,
+                "level": 34
+            },
+            "Dexterity": {
+                "xp": 133.8855,
+                "level": 28
+            },
+            "Agility": {
+                "xp": 45.21457,
+                "level": 11
+            },
+            "Adaptability": {
+                "xp": 23.98304,
+                "level": 7
+            },
+            "Focus": {
+                "xp": 3.4445999999999,
+                "level": 8
+            },
+            "Stamina": {
+                "xp": 2.5360999999999,
+                "level": 15
+            },
+            "Strength": {
+                "xp": 36.5798,
+                "level": 7
+            }
+        },
+        "maxHealth": 20,
+        "location": {
+            "y": 64,
+            "x": 412,
+            "z": -530
+        }
+    },
+    {
+        "bedPos": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+        },
+        "betterFood": false,
+        "isIdle": false,
+        "happiness": 6.8036436974791,
+        "home": {
+            "location": {
+                "y": 73,
+                "x": 517,
+                "z": -448
+            },
+            "level": 2,
+            "type": "residence"
+        },
+        "armor": 0,
+        "toughness": 0,
+        "children": [],
+        "isAsleep": false,
+        "gender": "male",
+        "age": "adult",
+        "id": 20,
+        "state": "Mining",
+        "name": "Maximus H. Good",
+        "health": 20,
+        "saturation": 13.874400000001,
+        "work": {
+            "type": "miner",
+            "name": "com.minecolonies.building.miner",
+            "location": {
+                "y": 71,
+                "x": 337,
+                "z": -497
+            },
+            "level": 4,
+            "job": "com.minecolonies.job.miner"
+        },
+        "skills": {
+            "Athletics": {
+                "xp": 0.87219999999969,
+                "level": 5
+            },
+            "Creativity": {
+                "xp": 0,
+                "level": 4
+            },
+            "Mana": {
+                "xp": 0,
+                "level": 1
+            },
+            "Intelligence": {
+                "xp": 9.055,
+                "level": 15
+            },
+            "Knowledge": {
+                "xp": 19.1636,
+                "level": 4
+            },
+            "Dexterity": {
+                "xp": 0,
+                "level": 3
+            },
+            "Agility": {
+                "xp": 0,
+                "level": 1
+            },
+            "Adaptability": {
+                "xp": 0,
+                "level": 7
+            },
+            "Focus": {
+                "xp": 0,
+                "level": 7
+            },
+            "Stamina": {
+                "xp": 28.635999999999,
+                "level": 10
+            },
+            "Strength": {
+                "xp": 24.786999999998,
+                "level": 14
+            }
+        },
+        "maxHealth": 20,
+        "location": {
+            "y": 71,
+            "x": 336,
+            "z": -497
+        }
+    },
+    {
+        "bedPos": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+        },
+        "betterFood": false,
+        "isIdle": false,
+        "happiness": 5.3989028571428,
+        "home": {
+            "location": {
+                "y": 69,
+                "x": 629,
+                "z": -560
+            },
+            "level": 2,
+            "type": "residence"
+        },
+        "armor": 0,
+        "toughness": 0,
+        "children": [
+            24
+        ],
+        "isAsleep": false,
+        "gender": "female",
+        "age": "adult",
+        "id": 21,
+        "state": "Herding cows",
+        "name": "Ariadne A. Adams",
+        "health": 20,
+        "saturation": 11.979199999999,
+        "work": {
+            "type": "cowboy",
+            "name": "com.minecolonies.building.cowboy",
+            "location": {
+                "y": 65,
+                "x": 605,
+                "z": -563
+            },
+            "level": 2,
+            "job": "com.minecolonies.job.cowboy"
+        },
+        "skills": {
+            "Athletics": {
+                "xp": 0.19500000000772,
+                "level": 30
+            },
+            "Creativity": {
+                "xp": 0,
+                "level": 7
+            },
+            "Mana": {
+                "xp": 0,
+                "level": 1
+            },
+            "Intelligence": {
+                "xp": 0,
+                "level": 5
+            },
+            "Knowledge": {
+                "xp": 30.45165,
+                "level": 11
+            },
+            "Dexterity": {
+                "xp": 0,
+                "level": 1
+            },
+            "Agility": {
+                "xp": 0,
+                "level": 8
+            },
+            "Adaptability": {
+                "xp": 0,
+                "level": 7
+            },
+            "Focus": {
+                "xp": 0,
+                "level": 6
+            },
+            "Stamina": {
+                "xp": 152.01150000001,
+                "level": 27
+            },
+            "Strength": {
+                "xp": 43.998300000002,
+                "level": 14
+            }
+        },
+        "maxHealth": 20,
+        "location": {
+            "y": 65,
+            "x": 605,
+            "z": -564
+        }
+    },
+    {
+        "bedPos": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+        },
+        "betterFood": false,
+        "isIdle": false,
+        "happiness": 3.9794952380953,
+        "home": {
+            "location": {
+                "y": 79,
+                "x": 372,
+                "z": -494
+            },
+            "level": 3,
+            "type": "guardtower"
+        },
+        "armor": 12,
+        "toughness": 0,
+        "children": [],
+        "isAsleep": false,
+        "gender": "female",
+        "age": "adult",
+        "id": 22,
+        "state": "Fighting",
+        "name": "Paloma G. Garnis",
+        "health": 44.360019683838,
+        "saturation": 5.3908000000003,
+        "work": {
+            "type": "guardtower",
+            "name": "com.minecolonies.building.guardtower",
+            "location": {
+                "y": 79,
+                "x": 372,
+                "z": -494
+            },
+            "level": 3,
+            "job": "com.minecolonies.job.knight"
+        },
+        "skills": {
+            "Athletics": {
+                "xp": 0,
+                "level": 6
+            },
+            "Creativity": {
+                "xp": 45.732,
+                "level": 9
+            },
+            "Mana": {
+                "xp": 3.304,
+                "level": 3
+            },
+            "Intelligence": {
+                "xp": 3.375,
+                "level": 6
+            },
+            "Knowledge": {
+                "xp": 11.581,
+                "level": 9
+            },
+            "Dexterity": {
+                "xp": 0,
+                "level": 3
+            },
+            "Agility": {
+                "xp": 0,
+                "level": 3
+            },
+            "Adaptability": {
+                "xp": 34.04,
+                "level": 25
+            },
+            "Focus": {
+                "xp": 0,
+                "level": 1
+            },
+            "Stamina": {
+                "xp": 110.64,
+                "level": 18
+            },
+            "Strength": {
+                "xp": 0,
+                "level": 3
+            }
+        },
+        "maxHealth": 79,
+        "location": {
+            "y": 65,
+            "x": 361,
+            "z": -586
+        }
+    },
+    {
+        "bedPos": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+        },
+        "betterFood": false,
+        "isIdle": false,
+        "happiness": 4.9508571428571,
+        "home": {
+            "location": {
+                "y": 69,
+                "x": 491,
+                "z": -568
+            },
+            "level": 2,
+            "type": "residence"
+        },
+        "armor": 0,
+        "toughness": 0,
+        "children": [],
+        "isAsleep": false,
+        "gender": "female",
+        "age": "adult",
+        "id": 23,
+        "state": "Working",
+        "name": "Bailee G. Good",
+        "health": 20,
+        "saturation": 8.588,
+        "work": {
+            "type": "library",
+            "name": "com.minecolonies.building.library",
+            "location": {
+                "y": 79,
+                "x": 428,
+                "z": -503
+            },
+            "level": 2,
+            "job": "com.minecolonies.job.student"
+        },
+        "skills": {
+            "Athletics": {
+                "xp": 0,
+                "level": 7
+            },
+            "Creativity": {
+                "xp": 0,
+                "level": 6
+            },
+            "Mana": {
+                "xp": 0,
+                "level": 7
+            },
+            "Intelligence": {
+                "xp": 83.68,
+                "level": 20
+            },
+            "Knowledge": {
+                "xp": 0,
+                "level": 10
+            },
+            "Dexterity": {
+                "xp": 0,
+                "level": 4
+            },
+            "Agility": {
+                "xp": 0,
+                "level": 5
+            },
+            "Adaptability": {
+                "xp": 0,
+                "level": 12
+            },
+            "Focus": {
+                "xp": 0,
+                "level": 5
+            },
+            "Stamina": {
+                "xp": 0,
+                "level": 5
+            },
+            "Strength": {
+                "xp": 0,
+                "level": 5
+            }
+        },
+        "maxHealth": 20,
+        "location": {
+            "y": 79,
+            "x": 429,
+            "z": -502
+        }
+    },
+    {
+        "bedPos": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+        },
+        "betterFood": false,
+        "isIdle": false,
+        "happiness": 6.7938084033615,
+        "home": {
+            "location": {
+                "y": 64,
+                "x": 453,
+                "z": -633
+            },
+            "level": 2,
+            "type": "residence"
+        },
+        "armor": 0,
+        "toughness": 0,
+        "children": [
+            7
+        ],
+        "isAsleep": false,
+        "gender": "male",
+        "age": "adult",
+        "id": 24,
+        "state": "Working",
+        "name": "Davis A. Chilton",
+        "health": 20,
+        "saturation": 9.2932000000012,
+        "work": {
+            "type": "builder",
+            "name": "com.minecolonies.building.builder",
+            "location": {
+                "y": 69,
+                "x": 431,
+                "z": -675
+            },
+            "level": 4,
+            "job": "com.minecolonies.job.builder"
+        },
+        "skills": {
+            "Athletics": {
+                "xp": 7.1176,
+                "level": 9
+            },
+            "Creativity": {
+                "xp": 23.717040000001,
+                "level": 7
+            },
+            "Mana": {
+                "xp": 0,
+                "level": 5
+            },
+            "Intelligence": {
+                "xp": 0,
+                "level": 4
+            },
+            "Knowledge": {
+                "xp": 0,
+                "level": 3
+            },
+            "Dexterity": {
+                "xp": 25.104,
+                "level": 5
+            },
+            "Agility": {
+                "xp": 0.96760000000011,
+                "level": 10
+            },
+            "Adaptability": {
+                "xp": 44.9704,
+                "level": 15
+            },
+            "Focus": {
+                "xp": 0,
+                "level": 1
+            },
+            "Stamina": {
+                "xp": 0,
+                "level": 4
+            },
+            "Strength": {
+                "xp": 1.5210000000001,
+                "level": 3
+            }
+        },
+        "maxHealth": 20,
+        "location": {
+            "y": 71,
+            "x": 490,
+            "z": -523
+        }
+    },
+    {
+        "bedPos": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+        },
+        "betterFood": false,
+        "isIdle": false,
+        "happiness": 6.0685028571426,
+        "home": {
+            "location": {
+                "y": 74,
+                "x": 485,
+                "z": -660
+            },
+            "level": 2,
+            "type": "residence"
+        },
+        "armor": 0,
+        "toughness": 0,
+        "children": [
+            36
+        ],
+        "isAsleep": false,
+        "gender": "female",
+        "age": "adult",
+        "id": 25,
+        "state": "Gardening",
+        "name": "Sloane H. Garnis",
+        "health": 20,
+        "saturation": 17.072399999998,
+        "work": {
+            "type": "florist",
+            "name": "com.minecolonies.building.florist",
+            "location": {
+                "y": 68,
+                "x": 536,
+                "z": -605
+            },
+            "level": 2,
+            "job": "com.minecolonies.job.florist"
+        },
+        "skills": {
+            "Athletics": {
+                "xp": 0,
+                "level": 1
+            },
+            "Creativity": {
+                "xp": 0,
+                "level": 7
+            },
+            "Mana": {
+                "xp": 0,
+                "level": 5
+            },
+            "Intelligence": {
+                "xp": 19.975,
+                "level": 7
+            },
+            "Knowledge": {
+                "xp": 0,
+                "level": 8
+            },
+            "Dexterity": {
+                "xp": 35.119155,
+                "level": 15
+            },
+            "Agility": {
+                "xp": 47.85666,
+                "level": 12
+            },
+            "Adaptability": {
+                "xp": 0,
+                "level": 6
+            },
+            "Focus": {
+                "xp": 0,
+                "level": 6
+            },
+            "Stamina": {
+                "xp": 0,
+                "level": 8
+            },
+            "Strength": {
+                "xp": 0,
+                "level": 1
+            }
+        },
+        "maxHealth": 20,
+        "location": {
+            "y": 68,
+            "x": 535,
+            "z": -611
+        }
+    },
+    {
+        "bedPos": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+        },
+        "betterFood": false,
+        "isIdle": false,
+        "happiness": 6.1507961904765,
+        "home": {
+            "location": {
+                "y": 76,
+                "x": 501,
+                "z": -586
+            },
+            "level": 2,
+            "type": "tavern"
+        },
+        "armor": 0,
+        "toughness": 0,
+        "children": [],
+        "isAsleep": false,
+        "gender": "female",
+        "age": "adult",
+        "id": 26,
+        "state": "Working",
+        "name": "SherriLynne H. Good",
+        "health": 20,
+        "saturation": 17.699200000002,
+        "work": {
+            "type": "baker",
+            "name": "com.minecolonies.building.baker",
+            "location": {
+                "y": 63,
+                "x": 416,
+                "z": -639
+            },
+            "level": 1,
+            "job": "com.minecolonies.job.baker"
+        },
+        "skills": {
+            "Athletics": {
+                "xp": 0,
+                "level": 3
+            },
+            "Creativity": {
+                "xp": 0,
+                "level": 3
+            },
+            "Mana": {
+                "xp": 0,
+                "level": 5
+            },
+            "Intelligence": {
+                "xp": 0,
+                "level": 3
+            },
+            "Knowledge": {
+                "xp": 0,
+                "level": 4
+            },
+            "Dexterity": {
+                "xp": 0,
+                "level": 4
+            },
+            "Agility": {
+                "xp": 0,
+                "level": 10
+            },
+            "Adaptability": {
+                "xp": 0,
+                "level": 8
+            },
+            "Focus": {
+                "xp": 0,
+                "level": 5
+            },
+            "Stamina": {
+                "xp": 0,
+                "level": 4
+            },
+            "Strength": {
+                "xp": 0,
+                "level": 3
+            }
+        },
+        "maxHealth": 20,
+        "location": {
+            "y": 62,
+            "x": 414,
+            "z": -631
+        }
+    },
+    {
+        "bedPos": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+        },
+        "betterFood": false,
+        "isIdle": false,
+        "happiness": 7.3208672268911,
+        "home": {
+            "location": {
+                "y": 73,
+                "x": 517,
+                "z": -448
+            },
+            "level": 2,
+            "type": "residence"
+        },
+        "armor": 0,
+        "toughness": 0,
+        "children": [
+            20
+        ],
+        "isAsleep": false,
+        "gender": "male",
+        "age": "adult",
+        "id": 27,
+        "state": "Delivering",
+        "name": "Quentin M. Harris",
+        "health": 20,
+        "saturation": 13.706000000003,
+        "work": {
+            "type": "deliveryman",
+            "name": "com.minecolonies.building.deliveryman",
+            "location": {
+                "y": 80,
+                "x": 433,
+                "z": -541
+            },
+            "level": 4,
+            "job": "com.minecolonies.job.deliveryman"
+        },
+        "skills": {
+            "Athletics": {
+                "xp": 0,
+                "level": 3
+            },
+            "Creativity": {
+                "xp": 36.694336,
+                "level": 7
+            },
+            "Mana": {
+                "xp": 0,
+                "level": 3
+            },
+            "Intelligence": {
+                "xp": 0,
+                "level": 3
+            },
+            "Knowledge": {
+                "xp": 0,
+                "level": 5
+            },
+            "Dexterity": {
+                "xp": 41.128672,
+                "level": 8
+            },
+            "Agility": {
+                "xp": 139.48672,
+                "level": 21
+            },
+            "Adaptability": {
+                "xp": 12.46836,
+                "level": 17
+            },
+            "Focus": {
+                "xp": 6.3456640000001,
+                "level": 2
+            },
+            "Stamina": {
+                "xp": 0,
+                "level": 6
+            },
+            "Strength": {
+                "xp": 0,
+                "level": 1
+            }
+        },
+        "maxHealth": 20,
+        "location": {
+            "y": 72,
+            "x": 513,
+            "z": -534
+        }
+    },
+    {
+        "bedPos": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+        },
+        "betterFood": false,
+        "isIdle": false,
+        "happiness": 4.9869028571427,
+        "home": {
+            "location": {
+                "y": 76,
+                "x": 501,
+                "z": -586
+            },
+            "level": 2,
+            "type": "tavern"
+        },
+        "armor": 0,
+        "toughness": 0,
+        "children": [
+            2,
+            22,
+            23
+        ],
+        "isAsleep": false,
+        "gender": "male",
+        "age": "adult",
+        "id": 28,
+        "state": "Working",
+        "name": "Prince M. Good",
+        "health": 20,
+        "saturation": 8.9691999999988,
+        "work": {
+            "type": "crusher",
+            "name": "com.minecolonies.building.crusher",
+            "location": {
+                "y": 65,
+                "x": 288,
+                "z": -615
+            },
+            "level": 1,
+            "job": "com.minecolonies.job.crusher"
+        },
+        "skills": {
+            "Athletics": {
+                "xp": 0,
+                "level": 5
+            },
+            "Creativity": {
+                "xp": 0,
+                "level": 1
+            },
+            "Mana": {
+                "xp": 78.472,
+                "level": 14
+            },
+            "Intelligence": {
+                "xp": 12.8,
+                "level": 7
+            },
+            "Knowledge": {
+                "xp": 107.504,
+                "level": 19
+            },
+            "Dexterity": {
+                "xp": 0,
+                "level": 7
+            },
+            "Agility": {
+                "xp": 0,
+                "level": 7
+            },
+            "Adaptability": {
+                "xp": 0,
+                "level": 10
+            },
+            "Focus": {
+                "xp": 13.2202,
+                "level": 5
+            },
+            "Stamina": {
+                "xp": 2.7302000000002,
+                "level": 6
+            },
+            "Strength": {
+                "xp": 0,
+                "level": 3
+            }
+        },
+        "maxHealth": 20,
+        "location": {
+            "y": 64,
+            "x": 280,
+            "z": -624
+        }
+    },
+    {
+        "bedPos": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+        },
+        "betterFood": false,
+        "isIdle": false,
+        "happiness": 4.8696761904763,
+        "home": {
+            "location": {
+                "y": 69,
+                "x": 491,
+                "z": -586
+            },
+            "level": 2,
+            "type": "residence"
+        },
+        "armor": 0,
+        "toughness": 0,
+        "children": [
+            25
+        ],
+        "isAsleep": false,
+        "gender": "male",
+        "age": "adult",
+        "id": 29,
+        "state": "Working",
+        "name": "Raylan G. Hampden",
+        "health": 20,
+        "saturation": 8.0812000000005,
+        "work": {
+            "type": "enchanter",
+            "name": "com.minecolonies.building.enchanter",
+            "location": {
+                "y": 119,
+                "x": 406,
+                "z": -433
+            },
+            "level": 3,
+            "job": "com.minecolonies.job.enchanter"
+        },
+        "skills": {
+            "Athletics": {
+                "xp": 0,
+                "level": 5
+            },
+            "Creativity": {
+                "xp": 0,
+                "level": 6
+            },
+            "Mana": {
+                "xp": 0,
+                "level": 3
+            },
+            "Intelligence": {
+                "xp": 0,
+                "level": 2
+            },
+            "Knowledge": {
+                "xp": 0,
+                "level": 5
+            },
+            "Dexterity": {
+                "xp": 0,
+                "level": 5
+            },
+            "Agility": {
+                "xp": 0,
+                "level": 5
+            },
+            "Adaptability": {
+                "xp": 0,
+                "level": 8
+            },
+            "Focus": {
+                "xp": 0,
+                "level": 7
+            },
+            "Stamina": {
+                "xp": 0,
+                "level": 8
+            },
+            "Strength": {
+                "xp": 0,
+                "level": 6
+            }
+        },
+        "maxHealth": 20,
+        "location": {
+            "y": 119,
+            "x": 406,
+            "z": -432
+        }
+    },
+    {
+        "bedPos": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+        },
+        "betterFood": false,
+        "isIdle": false,
+        "happiness": 7.2120263736264,
+        "home": {
+            "location": {
+                "y": 71,
+                "x": 307,
+                "z": -562
+            },
+            "level": 2,
+            "type": "residence"
+        },
+        "armor": 0,
+        "toughness": 0,
+        "children": [
+            27
+        ],
+        "isAsleep": false,
+        "gender": "male",
+        "age": "adult",
+        "id": 30,
+        "state": "Working",
+        "name": "Humphrey C. Harris",
+        "health": 20,
+        "saturation": 18.4496,
+        "work": {
+            "type": "concretemixer",
+            "name": "com.minecolonies.building.concretemixer",
+            "location": {
+                "y": 70,
+                "x": 318,
+                "z": -626
+            },
+            "level": 1,
+            "job": "com.minecolonies.job.concretemixer"
+        },
+        "skills": {
+            "Athletics": {
+                "xp": 0,
+                "level": 5
+            },
+            "Creativity": {
+                "xp": 0,
+                "level": 4
+            },
+            "Mana": {
+                "xp": 0,
+                "level": 4
+            },
+            "Intelligence": {
+                "xp": 0,
+                "level": 5
+            },
+            "Knowledge": {
+                "xp": 0,
+                "level": 5
+            },
+            "Dexterity": {
+                "xp": 0,
+                "level": 3
+            },
+            "Agility": {
+                "xp": 0,
+                "level": 10
+            },
+            "Adaptability": {
+                "xp": 0,
+                "level": 9
+            },
+            "Focus": {
+                "xp": 0,
+                "level": 4
+            },
+            "Stamina": {
+                "xp": 0,
+                "level": 3
+            },
+            "Strength": {
+                "xp": 0,
+                "level": 2
+            }
+        },
+        "maxHealth": 20,
+        "location": {
+            "y": 77,
+            "x": 321,
+            "z": -566
+        }
+    },
+    {
+        "bedPos": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+        },
+        "betterFood": false,
+        "isIdle": false,
+        "happiness": 4.3799695238095,
+        "home": {
+            "location": {
+                "y": 75,
+                "x": 592,
+                "z": -436
+            },
+            "level": 2,
+            "type": "residence"
+        },
+        "armor": 0,
+        "toughness": 0,
+        "children": [],
+        "isAsleep": false,
+        "gender": "female",
+        "age": "adult",
+        "id": 31,
+        "state": "Composting",
+        "name": "Thomasin C. Barre",
+        "health": 20,
+        "saturation": 3.9363999999997,
+        "work": {
+            "type": "composter",
+            "name": "com.minecolonies.building.composter",
+            "location": {
+                "y": 70,
+                "x": 617,
+                "z": -448
+            },
+            "level": 3,
+            "job": "com.minecolonies.job.composter"
+        },
+        "skills": {
+            "Athletics": {
+                "xp": 11.3025,
+                "level": 14
+            },
+            "Creativity": {
+                "xp": 0,
+                "level": 8
+            },
+            "Mana": {
+                "xp": 0,
+                "level": 1
+            },
+            "Intelligence": {
+                "xp": 0,
+                "level": 5
+            },
+            "Knowledge": {
+                "xp": 38.2715,
+                "level": 10
+            },
+            "Dexterity": {
+                "xp": 25.83675,
+                "level": 6
+            },
+            "Agility": {
+                "xp": 0,
+                "level": 8
+            },
+            "Adaptability": {
+                "xp": 0,
+                "level": 6
+            },
+            "Focus": {
+                "xp": 0,
+                "level": 4
+            },
+            "Stamina": {
+                "xp": 61.245000000001,
+                "level": 18
+            },
+            "Strength": {
+                "xp": 16.78325,
+                "level": 4
+            }
+        },
+        "maxHealth": 20,
+        "location": {
+            "y": 70,
+            "x": 618,
+            "z": -448
+        }
+    },
+    {
+        "bedPos": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+        },
+        "betterFood": false,
+        "isIdle": false,
+        "happiness": 7.1444285714287,
+        "home": {
+            "location": {
+                "y": 72,
+                "x": 393,
+                "z": -494
+            },
+            "level": 3,
+            "type": "residence"
+        },
+        "armor": 0,
+        "toughness": 0,
+        "children": [],
+        "isAsleep": false,
+        "gender": "female",
+        "age": "adult",
+        "id": 32,
+        "state": "Working",
+        "name": "Kamari C. Complin",
+        "health": 20,
+        "saturation": 4.4060000000007,
+        "work": {
+            "type": "university",
+            "name": "com.minecolonies.building.university",
+            "location": {
+                "y": 74,
+                "x": 426,
+                "z": -502
+            },
+            "level": 4,
+            "job": "com.minecolonies.job.researcher"
+        },
+        "skills": {
+            "Athletics": {
+                "xp": 17.316,
+                "level": 6
+            },
+            "Creativity": {
+                "xp": 0,
+                "level": 1
+            },
+            "Mana": {
+                "xp": 129.738,
+                "level": 19
+            },
+            "Intelligence": {
+                "xp": 125.295,
+                "level": 19
+            },
+            "Knowledge": {
+                "xp": 154.661,
+                "level": 27
+            },
+            "Dexterity": {
+                "xp": 34.272,
+                "level": 8
+            },
+            "Agility": {
+                "xp": 4.284,
+                "level": 6
+            },
+            "Adaptability": {
+                "xp": 0,
+                "level": 8
+            },
+            "Focus": {
+                "xp": 13.0243,
+                "level": 8
+            },
+            "Stamina": {
+                "xp": 3.7992999999999,
+                "level": 11
+            },
+            "Strength": {
+                "xp": 8.568,
+                "level": 6
+            }
+        },
+        "maxHealth": 20,
+        "location": {
+            "y": 84,
+            "x": 431,
+            "z": -486
+        }
+    },
+    {
+        "bedPos": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+        },
+        "betterFood": false,
+        "isIdle": false,
+        "happiness": 6.6507936507936,
+        "home": {
+            "location": {
+                "y": 69,
+                "x": 514,
+                "z": -668
+            },
+            "level": 1,
+            "type": "residence"
+        },
+        "armor": 0,
+        "toughness": 0,
+        "children": [],
+        "isAsleep": false,
+        "gender": "male",
+        "age": "adult",
+        "id": 33,
+        "state": "Working",
+        "name": "Theo B. Amcotts",
+        "health": 20,
+        "saturation": 16.42,
+        "work": {
+            "type": "library",
+            "name": "com.minecolonies.building.library",
+            "location": {
+                "y": 79,
+                "x": 428,
+                "z": -503
+            },
+            "level": 2,
+            "job": "com.minecolonies.job.student"
+        },
+        "skills": {
+            "Athletics": {
+                "xp": 0,
+                "level": 2
+            },
+            "Creativity": {
+                "xp": 0,
+                "level": 4
+            },
+            "Mana": {
+                "xp": 0,
+                "level": 5
+            },
+            "Intelligence": {
+                "xp": 61.72,
+                "level": 12
+            },
+            "Knowledge": {
+                "xp": 0,
+                "level": 6
+            },
+            "Dexterity": {
+                "xp": 0,
+                "level": 6
+            },
+            "Agility": {
+                "xp": 0,
+                "level": 8
+            },
+            "Adaptability": {
+                "xp": 0,
+                "level": 8
+            },
+            "Focus": {
+                "xp": 0,
+                "level": 5
+            },
+            "Stamina": {
+                "xp": 0,
+                "level": 7
+            },
+            "Strength": {
+                "xp": 0,
+                "level": 3
+            }
+        },
+        "maxHealth": 20,
+        "location": {
+            "y": 79,
+            "x": 428,
+            "z": -502
+        }
+    },
+    {
+        "bedPos": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+        },
+        "betterFood": false,
+        "isIdle": false,
+        "happiness": 5.2216228571429,
+        "home": {
+            "location": {
+                "y": 73,
+                "x": 524,
+                "z": -463
+            },
+            "level": 2,
+            "type": "residence"
+        },
+        "armor": 0,
+        "toughness": 0,
+        "children": [],
+        "isAsleep": false,
+        "gender": "male",
+        "age": "adult",
+        "id": 34,
+        "state": "Working",
+        "name": "Kysen M. Ardall",
+        "health": 20,
+        "saturation": 10.7288,
+        "work": {
+            "type": "beekeeper",
+            "name": "com.minecolonies.building.beekeeper",
+            "location": {
+                "y": 70,
+                "x": 525,
+                "z": -554
+            },
+            "level": 3,
+            "job": "com.minecolonies.job.beekeeper"
+        },
+        "skills": {
+            "Athletics": {
+                "xp": 0,
+                "level": 5
+            },
+            "Creativity": {
+                "xp": 0,
+                "level": 6
+            },
+            "Mana": {
+                "xp": 0,
+                "level": 2
+            },
+            "Intelligence": {
+                "xp": 25.095,
+                "level": 14
+            },
+            "Knowledge": {
+                "xp": 0,
+                "level": 7
+            },
+            "Dexterity": {
+                "xp": 0,
+                "level": 4
+            },
+            "Agility": {
+                "xp": 0,
+                "level": 5
+            },
+            "Adaptability": {
+                "xp": 0,
+                "level": 9
+            },
+            "Focus": {
+                "xp": 0,
+                "level": 1
+            },
+            "Stamina": {
+                "xp": 0,
+                "level": 13
+            },
+            "Strength": {
+                "xp": 0,
+                "level": 5
+            }
+        },
+        "maxHealth": 20,
+        "location": {
+            "y": 70,
+            "x": 525,
+            "z": -555
+        }
+    },
+    {
+        "bedPos": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+        },
+        "betterFood": false,
+        "isIdle": false,
+        "happiness": 4.6091428571429,
+        "home": {
+            "location": {
+                "y": 73,
+                "x": 448,
+                "z": -672
+            },
+            "level": 1,
+            "type": "residence"
+        },
+        "armor": 0,
+        "toughness": 0,
+        "children": [
+            36
+        ],
+        "isAsleep": false,
+        "gender": "male",
+        "age": "adult",
+        "id": 35,
+        "state": "Working",
+        "name": "Jacoby B. Babington",
+        "health": 20,
+        "saturation": 11.1352,
+        "work": {
+            "type": "hospital",
+            "name": "com.minecolonies.building.hospital",
+            "location": {
+                "y": 67,
+                "x": 470,
+                "z": -487
+            },
+            "level": 2,
+            "job": "com.minecolonies.job.healer"
+        },
+        "skills": {
+            "Athletics": {
+                "xp": 0,
+                "level": 3
+            },
+            "Creativity": {
+                "xp": 19.6469,
+                "level": 4
+            },
+            "Mana": {
+                "xp": 17.327,
+                "level": 4
+            },
+            "Intelligence": {
+                "xp": 28.565,
+                "level": 17
+            },
+            "Knowledge": {
+                "xp": 16.731,
+                "level": 7
+            },
+            "Dexterity": {
+                "xp": 0,
+                "level": 6
+            },
+            "Agility": {
+                "xp": 0,
+                "level": 8
+            },
+            "Adaptability": {
+                "xp": 0,
+                "level": 8
+            },
+            "Focus": {
+                "xp": 3.3462,
+                "level": 5
+            },
+            "Stamina": {
+                "xp": 24.9519,
+                "level": 5
+            },
+            "Strength": {
+                "xp": 0,
+                "level": 3
+            }
+        },
+        "maxHealth": 20,
+        "location": {
+            "y": 67,
+            "x": 470,
+            "z": -488
+        }
+    },
+    {
+        "bedPos": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+        },
+        "betterFood": false,
+        "isIdle": false,
+        "happiness": 5.0790095238095,
+        "home": {
+            "location": {
+                "y": 74,
+                "x": 485,
+                "z": -660
+            },
+            "level": 2,
+            "type": "residence"
+        },
+        "armor": 0,
+        "toughness": 0,
+        "children": [],
+        "isAsleep": false,
+        "gender": "male",
+        "age": "adult",
+        "id": 36,
+        "state": "Working",
+        "name": "Sterling G. Babington",
+        "health": 20,
+        "saturation": 12.0776,
+        "work": {
+            "type": "library",
+            "name": "com.minecolonies.building.library",
+            "location": {
+                "y": 79,
+                "x": 428,
+                "z": -503
+            },
+            "level": 2,
+            "job": "com.minecolonies.job.student"
+        },
+        "skills": {
+            "Athletics": {
+                "xp": 0,
+                "level": 5
+            },
+            "Creativity": {
+                "xp": 0,
+                "level": 5
+            },
+            "Mana": {
+                "xp": 0,
+                "level": 5
+            },
+            "Intelligence": {
+                "xp": 55.275,
+                "level": 19
+            },
+            "Knowledge": {
+                "xp": 0,
+                "level": 7
+            },
+            "Dexterity": {
+                "xp": 0,
+                "level": 7
+            },
+            "Agility": {
+                "xp": 0,
+                "level": 9
+            },
+            "Adaptability": {
+                "xp": 0,
+                "level": 8
+            },
+            "Focus": {
+                "xp": 0,
+                "level": 5
+            },
+            "Stamina": {
+                "xp": 0,
+                "level": 4
+            },
+            "Strength": {
+                "xp": 0,
+                "level": 2
+            }
+        },
+        "maxHealth": 20,
+        "location": {
+            "y": 79,
+            "x": 426,
+            "z": -502
+        }
+    },
+    {
+        "bedPos": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+        },
+        "betterFood": false,
+        "isIdle": false,
+        "happiness": 5.0922952380952,
+        "home": {
+            "location": {
+                "y": 75,
+                "x": 568,
+                "z": -436
+            },
+            "level": 1,
+            "type": "residence"
+        },
+        "armor": 0,
+        "toughness": 0,
+        "children": [],
+        "isAsleep": false,
+        "gender": "male",
+        "age": "adult",
+        "id": 37,
+        "state": "Working",
+        "name": "Adonis G. Revaluri",
+        "health": 20,
+        "saturation": 18.3544,
+        "work": {
+            "type": "mechanic",
+            "name": "com.minecolonies.building.mechanic",
+            "location": {
+                "y": 71,
+                "x": 385,
+                "z": -716
+            },
+            "level": 3,
+            "job": "com.minecolonies.job.mechanic"
+        },
+        "skills": {
+            "Athletics": {
+                "xp": 0,
+                "level": 4
+            },
+            "Creativity": {
+                "xp": 0,
+                "level": 1
+            },
+            "Mana": {
+                "xp": 0,
+                "level": 2
+            },
+            "Intelligence": {
+                "xp": 6.795,
+                "level": 10
+            },
+            "Knowledge": {
+                "xp": 1.54,
+                "level": 10
+            },
+            "Dexterity": {
+                "xp": 0.077,
+                "level": 11
+            },
+            "Agility": {
+                "xp": 0.77,
+                "level": 7
+            },
+            "Adaptability": {
+                "xp": 0,
+                "level": 5
+            },
+            "Focus": {
+                "xp": 0,
+                "level": 6
+            },
+            "Stamina": {
+                "xp": 0.154,
+                "level": 6
+            },
+            "Strength": {
+                "xp": 16.058,
+                "level": 3
+            }
+        },
+        "maxHealth": 20,
+        "location": {
+            "y": 71,
+            "x": 384,
+            "z": -721
+        }
+    }
+]

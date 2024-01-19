@@ -53,6 +53,11 @@ local processing_recipes = {
             input = "minecraft:white_wool",
             operation = "crush"
         },
+        red_sand = { 
+            name = "minecraft:red_sand",
+            input = "minecraft:terracotta",
+            operation = "crush"
+        },
         glass = { 
             name = "minecraft:glass",
             input = "minecraft:sand",
@@ -75,9 +80,21 @@ local processing_recipes = {
         },
         nether_brick = {
             name = "minecraft:nether_brick",
-            input = "minecraft:netherrack",
+            input = "minecraft:netherrack ",
             operation = "smelt"
         },
+        sugar = {
+            name = "minecraft:sugar",
+            input = "minecraft:sugarcane ",
+            operation = "crush"
+        },
+    },
+    create = {
+        cinder_flour = {
+            name = "create:cinder_flour",
+            input = "minecraft:netherrack",
+            operation = "crush"
+        }
     }
 }
 
