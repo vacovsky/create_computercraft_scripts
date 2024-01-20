@@ -6,7 +6,7 @@ local colony = peripheral.find("colonyIntegrator")
 local sourceVault = peripheral.find("minecraft:chest")
 local destinationVault = peripheral.find("minecraft:hopper")
 local trash = peripheral.find("create:chute")
-
+local passCount = 0
 local colonyName = "New Nodnol"
 local WAIT_SECONDS = 5
 --------------------------
@@ -28,15 +28,14 @@ function Main()
                     found = true
                 end
             end
-            if not found then TransferItem(vitem, slot, trash) end
-            print("Trashing", vitem.name)
-
         end
+        if not found then TransferItem(vitem, slot, trash) end
+        print(passCount, "Trashing", vitem.name)
         
         -- SetRedstoneState(watchedItem.name, found, direction, watchedItem.strength)
         
-        if found then 
-            print("Delivering", vitem.name)
+        if found then
+            print(passCount, "Delivering", vitem.name)
             TransferItem(vitem, slot, destinationVault) 
         end
         
@@ -88,5 +87,7 @@ function WriteToFile(input, fileName, mode)
 while true do
     Main()
     sleep(WAIT_SECONDS)
-    print("Loop finished. Next pass in "..WAIT_SECONDS.." seconds.")
+    passCount = passCount + 1
+    term.clear()
+    -- print("Loop finished. Next pass in "..WAIT_SECONDS.." seconds.")
 end
