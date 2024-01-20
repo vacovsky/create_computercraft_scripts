@@ -71,8 +71,8 @@ function TransferItems(recipe, request)
 
         if slot == nil then
             for mod, recipeItem in pairs(recipes) do
-                for rItem, recipe in pairs(recipes[mod]) do
-                    if iItemName == recipe.name then
+                for rItem, rRecipe in pairs(recipes[mod]) do
+                    if iItemName == rRecipe.name then
                         print("Extended order for " .. rItem)
                         TransferItems(recipe, request)
                     end
