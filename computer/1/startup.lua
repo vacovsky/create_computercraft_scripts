@@ -5,6 +5,7 @@ local colony = peripheral.find("colonyIntegrator")
 -- local monitor = peripheral.find("monitor")
 local sourceVault = peripheral.find("minecraft:chest")
 local destinationVault = peripheral.find("minecraft:hopper")
+local trash = peripheral.find("create:chute")
 
 local colonyName = "New Nodnol"
 local WAIT_SECONDS = 5
@@ -27,17 +28,25 @@ function Main()
                     found = true
                 end
             end
+            if not found then TransferItem(vitem, slot, trash) end
+            print("Trashing", vitem.name)
+
         end
         
         -- SetRedstoneState(watchedItem.name, found, direction, watchedItem.strength)
-        if found then TransferItem(vitem, slot) end
+        
+        if found then 
+            print("Delivering", vitem.name)
+            TransferItem(vitem, slot, destinationVault) 
+        end
+        
     end
     -- renderMonitor()
 end
 
-function TransferItem(item, sourceSlot)
-    sourceVault.pushItems(peripheral.getName(destinationVault), sourceSlot)
-    -- print(item.name, sourceDirection, sourceSlot, destinationDirection)
+function TransferItem(item, sourceSlot, destination)
+    -- print(item.name, sourceSlot, destination)
+    sourceVault.pushItems(peripheral.getName(destination), sourceSlot)
     -- print(json.encode(item))
 end
 
