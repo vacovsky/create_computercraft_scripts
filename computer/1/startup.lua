@@ -88,6 +88,6 @@ while true do
     Main()
     sleep(WAIT_SECONDS)
     passCount = passCount + 1
-    term.clear()
+    -- term.clear()
     -- print("Loop finished. Next pass in "..WAIT_SECONDS.." seconds.")
 end
