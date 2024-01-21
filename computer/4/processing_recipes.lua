@@ -118,11 +118,11 @@ local processing_recipes = {
             input = {"minecraft:cobblestone"},
             operation = "haunt"
         },
-        -- cracked_polished_blackstone = {
-        --     name = "minecraft:cracked_polished_blackstone",
-        --     input = {"minecraft:blackstone"},
-        --     operation = "smelt"
-        -- },
+        cracked_deepslate_bricks = {
+            name = "minecraft:cracked_deepslate_bricks",
+            input = {"minecraft:deepslate_bricks"},
+            operation = "smelt"
+        },
         cracked_polished_blackstone_bricks = {
             name = "minecraft:cracked_polished_blackstone_bricks",
             input = {"minecraft:polished_blackstone_bricks"},
