@@ -10,6 +10,8 @@ function BoolToYN(input)
     if input then return "Y" else return "N" end
 end
 
+function DistanceFrom(x1,y1,x2,y2) return math.sqrt((x2 - x1) ^ 2 + (y2 - y1) ^ 2) end
+
 
 if #arg >= 1 then
     local type = ""
@@ -23,7 +25,8 @@ if #arg >= 1 then
                 pos = "(" .. building.location.x .. ", " .. building.location.z .. ")",
                 staffed = #building.citizens > 0,
                 guarded = building.guarded,
-                level = building.level
+                level = building.level,
+                -- distance = DistanceFrom(building.location.x, building.location.y)
             })
         end
     end

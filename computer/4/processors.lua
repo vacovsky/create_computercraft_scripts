@@ -5,7 +5,7 @@ local processors = {
     cook = "minecraft:barrel_0",
     crush = "minecraft:barrel_2",
     press = "minecraft:barrel_5",
-    cold_mix = "minecraft:barrel_6",
+    saw = "minecraft:barrel_6",
     hot_mix ="minecraft:barrel_2",
 }
 

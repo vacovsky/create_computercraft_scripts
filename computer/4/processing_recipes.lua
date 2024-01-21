@@ -85,13 +85,28 @@ local processing_recipes = {
         },
         nether_brick = {
             name = "minecraft:nether_brick",
-            input = {"minecraft:netherrack "},
+            input = {"minecraft:netherrack"},
             operation = "smelt"
         },
         sugar = {
             name = "minecraft:sugar",
-            input = {"minecraft:sugarcane "},
+            input = {"minecraft:sugarcane"},
             operation = "crush"
+        },
+        stripped_oak_log = {
+            name = "minecraft:stripped_oak_log",
+            input = {"minecraft:oak_log"},
+            operation = "saw"
+        },
+        stripped_spruce_log = {
+            name = "minecraft:stripped_spruce_log",
+            input = {"minecraft:spruce_log"},
+            operation = "saw"
+        },
+        stripped_dark_oak_log = {
+            name = "minecraft:stripped_dark_oak_log",
+            input = {"minecraft:dark_oak_log"},
+            operation = "saw"
         },
     },
     create = {
