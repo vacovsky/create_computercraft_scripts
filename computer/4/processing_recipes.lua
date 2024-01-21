@@ -113,10 +113,20 @@ local processing_recipes = {
             input = {"minecraft:bamboo_block"},
             operation = "breakdown"
         },
-        cobbled_blackstone = {
-            name = "minecraft:cobbled_blackstone",
+        blackstone = {
+            name = "minecraft:blackstone",
             input = {"minecraft:cobblestone"},
             operation = "haunt"
+        },
+        -- cracked_polished_blackstone = {
+        --     name = "minecraft:cracked_polished_blackstone",
+        --     input = {"minecraft:blackstone"},
+        --     operation = "smelt"
+        -- },
+        cracked_polished_blackstone_bricks = {
+            name = "minecraft:cracked_polished_blackstone_bricks",
+            input = {"minecraft:polished_blackstone_bricks"},
+            operation = "smelt"
         },
     },
     create = {

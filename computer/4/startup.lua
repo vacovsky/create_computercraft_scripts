@@ -92,7 +92,7 @@ function renderMonitor()
     monitor.setTextScale(2)
     monitor.clear()
     monitor.setCursorPos(1, 1)
-    monitor.write("Automated Processing")
+    monitor.write("Automated Processing: Loop " .. loopCounter)
 
     local counter = 3
     local noOrderCounter = counter
@@ -116,6 +116,7 @@ function WriteToFile(input, fileName, mode)
  end
 
 
+print("Starting automated processing.")
 while true do
 
     term.setBackgroundColor(colours.black)  -- Set the background colour to black.
