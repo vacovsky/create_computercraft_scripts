@@ -108,6 +108,16 @@ local processing_recipes = {
             input = {"minecraft:dark_oak_log"},
             operation = "saw"
         },
+        bamboo_planks = {
+            name = "minecraft:bamboo_planks",
+            input = {"minecraft:bamboo_block"},
+            operation = "breakdown"
+        },
+        cobbled_blackstone = {
+            name = "minecraft:cobbled_blackstone",
+            input = {"minecraft:cobblestone"},
+            operation = "haunt"
+        },
     },
     create = {
         cinder_flour = {

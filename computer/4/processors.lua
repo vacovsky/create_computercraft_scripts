@@ -7,6 +7,7 @@ local processors = {
     press = "minecraft:barrel_5",
     saw = "minecraft:barrel_6",
     hot_mix ="minecraft:barrel_2",
+    breakdown ="minecraft:barrel_7",
 }
 
 return processors

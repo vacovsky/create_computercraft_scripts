@@ -12,6 +12,7 @@ local activeOrders = {}
 local currentMatchingOrders = {}
 local monitor = peripheral.find("monitor")
 local warehouseContent = {}
+local loopCounter = 0
 
 --------------------------
 
@@ -127,7 +128,7 @@ while true do
     -- pcall(Main)
     Main()
     sleep(WAIT_SECONDS)
-
-    -- print("Loop finished. Next pass in "..WAIT_SECONDS.." seconds.")
+    loopCounter = loopCounter + 1
+    print("Loop " .. loopCounter .. " finished.")
     -- renderMonitor()
 end
