@@ -93,6 +93,11 @@ local processing_recipes = {
             input = {"minecraft:sugarcane"},
             operation = "crush"
         },
+        popped_chorus_fruit = {
+            name = "minecraft:popped_chorus_fruit",
+            input = {"minecraft:chorus_fruit"},
+            operation = "smelt"
+        },
         stripped_oak_log = {
             name = "minecraft:stripped_oak_log",
             input = {"minecraft:oak_log"},
