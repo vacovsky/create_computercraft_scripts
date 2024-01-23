@@ -50,7 +50,7 @@ function Main()
             TransferItems(foundRecipe, foundRequest)
         end
     end
-    renderMonitor()
+    RenderMonitor()
 end
 
 -- determine if precursor exists in warehouse, and return slot if so
@@ -88,7 +88,8 @@ function TransferItems(recipe, request)
 end
 
 
-function renderMonitor()
+function RenderMonitor()
+    monitor.setBackgroundColor(colors.black)
     monitor.setTextScale(2)
     monitor.clear()
     monitor.setCursorPos(1, 1)
@@ -118,18 +119,26 @@ function WriteToFile(input, fileName, mode)
 
 print("Starting automated processing.")
 while true do
-
-    term.setBackgroundColor(colours.black)  -- Set the background colour to black.
+    term.setBackgroundColor(colors.black)  -- Set the background colour to black.
     term.clear()                            -- Paint the entire display with the current background colour.
     term.setCursorPos(1,1)
-    
+
     if monitor == nil then print("MISSING MONITOR") end
-    if warehouse == nil then print("WAREHOUSE NOT CONNECTED") end
-    
-    -- pcall(Main)
-    Main()
+    if warehouse == nil then
+        print("WAREHOUSE NOT CONNECTED")
+        if monitor ~= nil then
+            monitor.clear()
+            monitor.setTextScale(3)              -- Paint the entire display with the current background colour.
+            monitor.setCursorPos(1,5)
+            monitor.setBackgroundColor(colors.red)
+            monitor.write("WAREHOUSE NOT CONNECTED")
+        end
+    else
+        -- pcall(Main)
+        Main()
+        loopCounter = loopCounter + 1
+        print("Loop " .. loopCounter .. " finished.")
+        if monitor ~= nil then RenderMonitor() end
+    end
     sleep(WAIT_SECONDS)
-    loopCounter = loopCounter + 1
-    print("Loop " .. loopCounter .. " finished.")
-    -- renderMonitor()
 end

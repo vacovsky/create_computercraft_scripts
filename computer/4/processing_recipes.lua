@@ -28,6 +28,21 @@ local processing_recipes = {
             input = {"minecraft:cobblestone"},
             operation = "crush"
         },
+        clay_ball = {
+            name = "minecraft:clay_ball",
+            input = {"minecraft:gravel"},
+            operation = "wash"
+        },
+        gold_nugget = {
+            name = "minecraft:gold_nugget",
+            input = {"minecraft:soul_sand"},
+            operation = "wash"
+        },
+        quartz = {
+            name = "minecraft:quartz",
+            input = {"minecraft:soul_sand"},
+            operation = "wash"
+        },
         -- stone = {
         --     name = "minecraft:stone",
         --     input = "minecraft:cobblestone",
@@ -92,6 +107,11 @@ local processing_recipes = {
             name = "minecraft:sugar",
             input = {"minecraft:sugarcane"},
             operation = "crush"
+        },
+        crying_obsidian = {
+            name = "minecraft:crying_obsidian",
+            input = {"minecraft:obsidian"},
+            operation = "haunt"
         },
         popped_chorus_fruit = {
             name = "minecraft:popped_chorus_fruit",
