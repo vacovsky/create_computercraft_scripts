@@ -14,6 +14,8 @@ local monitor = peripheral.find("monitor")
 local warehouseContent = {}
 local loopCounter = 0
 
+local extendedRequests = {}
+
 --------------------------
 
 
@@ -74,8 +76,15 @@ function TransferItems(recipe, request)
             for mod, recipeItem in pairs(recipes) do
                 for rItem, rRecipe in pairs(recipes[mod]) do
                     if iItemName == rRecipe.name then
-                        print("Extended order for " .. rItem)
-                        TransferItems(recipe, request)
+
+                        for eoi, eo in pairs(extendedRequests) do
+                            if iItemName == eo then 
+                                extendedRequests[eoi] = nil
+                            else
+                                print("Extended order for " .. rItem)
+                                TransferItems(recipe, request)
+                            end
+                        end
                     end
                 end
             end
@@ -102,10 +111,16 @@ function RenderMonitor()
         monitor.write(count .. " " .. item)
         counter = counter + 1
     end
+    for eoi, eo in pairs(extendedRequests) do
+        monitor.setCursorPos(1, counter)
+        monitor.write("* " .. eo)
+        counter = counter + 1
+    end
     if counter == noOrderCounter then
         monitor.setCursorPos(1, counter)
         monitor.write("No active orders.")
     end
+
     activeOrders = {}
 end
 
