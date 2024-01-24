@@ -9,12 +9,12 @@ local WAIT_SECONDS = 5
 local colony = peripheral.find("colonyIntegrator")
 local warehouse = peripheral.find("minecolonies:warehouse")
 local activeOrders = {}
+local extendedRequests = {}
 local currentMatchingOrders = {}
 local monitor = peripheral.find("monitor")
 local warehouseContent = {}
 local loopCounter = 0
 
-local extendedRequests = {}
 
 --------------------------
 
@@ -76,13 +76,13 @@ function TransferItems(recipe, request)
             for mod, recipeItem in pairs(recipes) do
                 for rItem, rRecipe in pairs(recipes[mod]) do
                     if iItemName == rRecipe.name then
-
                         for eoi, eo in pairs(extendedRequests) do
-                            if iItemName == eo then 
+                            if iItemName == eo then
                                 extendedRequests[eoi] = nil
                             else
+                                extendedRequests[eoi] = iItemName
                                 print("Extended order for " .. rItem)
-                                TransferItems(recipe, request)
+                                TransferItems(rRecipe, request)
                             end
                         end
                     end
@@ -98,6 +98,8 @@ end
 
 
 function RenderMonitor()
+    if monitor ~= nil then
+        
     monitor.setBackgroundColor(colors.black)
     monitor.setTextScale(2)
     monitor.clear()
@@ -121,7 +123,7 @@ function RenderMonitor()
         monitor.write("No active orders.")
     end
 
-    activeOrders = {}
+    end
 end
 
 function WriteToFile(input, fileName, mode)
@@ -138,9 +140,13 @@ while true do
     term.clear()                            -- Paint the entire display with the current background colour.
     term.setCursorPos(1,1)
 
-    if monitor == nil then print("MISSING MONITOR") end
+    if monitor == nil then
+        print("MISSING MONITOR")
+    end
+
     if warehouse == nil then
         print("WAREHOUSE NOT CONNECTED")
+
         if monitor ~= nil then
             monitor.clear()
             monitor.setTextScale(3)              -- Paint the entire display with the current background colour.
@@ -153,7 +159,9 @@ while true do
         Main()
         loopCounter = loopCounter + 1
         print("Loop " .. loopCounter .. " finished.")
-        if monitor ~= nil then RenderMonitor() end
+        RenderMonitor()
+        activeOrders = {}
     end
+
     sleep(WAIT_SECONDS)
 end
