@@ -114,9 +114,13 @@ function displayLatestColonyInfo()
         printWithFormat("&0")
     end
 
-    if getIdleBuilders() > 0 then 
+    local ibc, idleBuilders = getIdleBuilders()
+    if getIdleBuilders() > 0 then
         printWithFormat("&4")
-        print("-", getIdleBuilders(), "idle builders")
+        print("-", ibc, "idle builders")
+        for bni, bn in pairs(idleBuilders) do
+            print("  -", bn)
+        end
         printWithFormat("&0")
     end
 
@@ -243,11 +247,17 @@ function displayLatestColonyInfoInMonitor()
         monitor.write("- Colony under attack!")
     end
 
+    local ibc, idleBuilders = getIdleBuilders()
     if getIdleBuilders() > 0 then
         line = line + 1
         monitor.setCursorPos(1, line)
         monitor.setTextColor(16)
-        monitor.write("- " .. getIdleBuilders() .. " idle builders")
+        monitor.write("- " .. ibc .. " idle builders")
+        for bni, bn in pairs(idleBuilders) do
+            line = line + 1
+            monitor.setCursorPos(1, line)
+            monitor.write("  - " .. bn)
+        end
     end
 
     if colony.amountOfCitizens() + 2 >= colony.maxOfCitizens() then
@@ -313,8 +323,10 @@ end
 
 function GetUnemployedCitizens()
     local count = 0
+    -- WriteToFile(json.encode(citizens), "citizens.json", "w")
+
     for k, v in pairs(citizens) do
-        if v.work.job == "com.minecolonies.job.student" or v.work.job == nil then
+        if v.work ~= nil and (v.work.job == "com.minecolonies.job.student" or v.work.job == nil) then
             count = count + 1
         end
     end
@@ -402,13 +414,15 @@ function getOpenRequestsCount()
 end
 
 function getIdleBuilders()
+    local idleBuilders = {}
     local count = 0
     for k, v in pairs(citizens) do
-        if v.work.job == "com.minecolonies.job.builder" and v.isIdle then
+        if v.work ~= nil and (v.work.job == "com.minecolonies.job.builder" and v.isIdle) then
             count = count + 1
+            table.insert(idleBuilders, v.name)
         end
     end
-    return count
+    return count, idleBuilders
 end
 
 function tablelength(T)
@@ -418,7 +432,7 @@ function tablelength(T)
   end
 
 while true do
-    -- Main()
-    pcall(Main)
+    Main()
+    -- pcall(Main)
     sleep(REFRESH_TIME)
 end
