@@ -180,6 +180,11 @@ local processing_recipes = {
             input = {"minecraft:gold_ingot"},
             operation = "press"
         },
+        wheat_flour = {
+            name = "create:wheat_flour",
+            input = {"minecraft:wheat"},
+            operation = "crush"
+        },
         iron_sheet = {
             name = "create:iron_sheet",
             input = {"minecraft:iron_ingot"},
