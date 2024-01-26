@@ -185,6 +185,11 @@ local processing_recipes = {
             input = {"minecraft:wheat"},
             operation = "crush"
         },
+        dough = {
+            name = "create:dough",
+            input = {"create:wheat_flour"},
+            operation = "mixwater"
+        },
         iron_sheet = {
             name = "create:iron_sheet",
             input = {"minecraft:iron_ingot"},
