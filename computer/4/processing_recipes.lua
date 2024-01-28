@@ -152,7 +152,7 @@ local processing_recipes = {
             name = "minecraft:cracked_polished_blackstone_bricks",
             input = {"minecraft:polished_blackstone_bricks"},
             operation = "smelt"
-        },
+        }
     },
     create = {
         cinder_flour = {
