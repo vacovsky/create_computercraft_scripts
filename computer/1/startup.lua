@@ -3,6 +3,7 @@ json = require "json"
 local colony = peripheral.find("colonyIntegrator")
 -- local rs = peripheral.find("redstoneIntegrator")
 -- local monitor = peripheral.find("monitor")
+-- local sourceVault = peripheral.find("create:vault")
 local sourceVault = peripheral.find("minecraft:chest")
 local destinationVault = peripheral.find("minecraft:hopper")
 local trash = peripheral.find("create:chute")
