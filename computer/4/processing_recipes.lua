@@ -143,6 +143,11 @@ local processing_recipes = {
             input = {"minecraft:cobblestone"},
             operation = "haunt"
         },
+        emerald = {
+            name = "minecraft:emerald",
+            input = {"createoreexcavation:raw_emerald"},
+            operation = "saw"
+        },
         cracked_deepslate_bricks = {
             name = "minecraft:cracked_deepslate_bricks",
             input = {"minecraft:deepslate_bricks"},
