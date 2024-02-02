@@ -3,7 +3,7 @@ json = require "json"
 
 ----------------------------------
 -- CONFIGURATION SECTION
-local REFRESH_TIME = 30
+local REFRESH_TIME = 60
 local CHEAP_VISITORS_WANT = {
     "minecraft:hay_block",
     "minecraft:sunflower",
@@ -16,6 +16,7 @@ local CHEAP_VISITORS_WANT = {
 ----------------------------------
 local colony = peripheral.find("colonyIntegrator")
 local monitor = peripheral.find("monitor")
+local warehouse = peripheral.find("minecolonies:warehouse")
 
 if monitor ~= nil then
     monitor.clear()
@@ -28,6 +29,7 @@ local research = nil
 local visitors = nil
 
 function Main()
+    getWarehouse()
     if colony.isInColony() then
         refreshColonyInfo()
     else
@@ -88,6 +90,7 @@ function displayLatestColonyInfo()
     term.clear()                            -- Paint the entire display with the current background colour.
     term.setCursorPos(1,1)
 
+    local warehouseStats = getWarehouse()
     printWithFormat("&3", colony.getColonyName(), "(id:", colony.getColonyID() .. ")")
     print("==========================")
 
@@ -98,7 +101,11 @@ function displayLatestColonyInfo()
     print("Citizens: ", colony.amountOfCitizens(), "/", colony.maxOfCitizens(), "|", GetUnemployedCitizens())
     print("Visitors: ", #visitors, "~", GetCheapVisitors())
     print("Buildings: ", #buildings, "~", getConstructionCount())
-    print("Avg Bld. Lvl:", GetAverageBuildingLevel().avg, "/", GetAverageBuildingLevel().total)
+    print("Avg Bld. Lvl: ", GetAverageBuildingLevel().avg, "/", GetAverageBuildingLevel().total)
+
+    -- local warehouseVal = string.format("%.2f",((warehouseStats.percentUsed * 10) / 10)) .. "% used"
+    print("Warehouse Use: ", string.format("%.2f",((warehouseStats.percentUsed * 10) / 10)) .. "%")
+
 
     -- print("Research:", getResearchedCount(), "/", #research)
 
@@ -230,6 +237,20 @@ function displayLatestColonyInfoInMonitor()
     local visitorValue = tostring(#visitors .. " ~ " .. GetCheapVisitors())
     RightJustify(visitorValue, line)
     monitor.write(visitorValue)
+
+
+
+    line = line + 1
+    local warehouseStats = getWarehouse()
+    monitor.setCursorPos(1, line)
+    monitor.setTextColor(1)
+    monitor.write("Warehouse")
+    local warehouseVal = string.format("%.2f",((warehouseStats.percentUsed * 10) / 10)) .. "% used"
+    RightJustify(warehouseVal, line)
+    monitor.write(warehouseVal)
+    -- print("Warehouse Cap.:", string.format("%.2f",((warehouseStats.percentUsed * 10) / 10)), "/ 10")
+
+
 
     line = line + 3
     monitor.setCursorPos(1, line)
@@ -411,6 +432,21 @@ function getOpenRequestsCount()
         count = count + 1
     end
     return count
+end
+
+
+function getWarehouse()
+    local result = {
+        total = 0,
+        used = 0,
+        percentUsed = 0.0
+    }
+    if warehouse ~= nil then
+        result.total = warehouse.size()
+        result.used = #warehouse.list()
+        result.percentUsed = (result.used / result.total) * 100
+    end
+    return result
 end
 
 function getIdleBuilders()
