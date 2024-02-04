@@ -1,6 +1,6 @@
 rednet.open("right");
 
-local hyperXpStr = "minecolonies_warehouse"
+local warehouse = "minecolonies:warehouse_7"
 local protocol = "mcwarehouselookup"
 
 while true do
@@ -8,11 +8,14 @@ while true do
     sender, message = rednet.receive(protocol);
     clear();
 
-    local response = 0
-    local warehouseContent = warehouse.list()
+    local response = {
+        name = "message",
+        count = 0
+    }
+    local warehouseContent = peripheral.wrap(warehouse).list()
     for slot, item in pairs(warehouseContent) do
         if message == item.name then
-            response = response +  item.count
+            response.count = response.count + item.count
         end
     end
 
