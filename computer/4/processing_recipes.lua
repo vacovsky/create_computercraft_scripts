@@ -63,6 +63,11 @@ local processing_recipes = {
             input = {"minecraft:cobbled_deepslate"},
             operation = "smelt"
         },
+        cobbled_deepslate = {
+            name = "minecraft:cobbled_deepslate",
+            input = {"minecraft:deepslate"},
+            operation = "crush"
+        },
         cracked_stone_bricks = {
             name = "minecraft:cracked_stone_bricks",
             input = {"minecraft:stone_bricks"},
