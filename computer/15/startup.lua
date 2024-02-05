@@ -6,7 +6,7 @@ local stressStr = "Create_Stressometer_0"
 local speedStr = "Create_Speedometer_0"
 local monitorStr = "monitor_2"
 local boilerStr = "fluidTank_2"
-local speed = peripheral.wrap("Create_RotationSpeedController_2")
+local stress = peripheral.wrap(stressStr)
 
 local displayState = {
     
@@ -46,7 +46,7 @@ local remoteNetworks = {
 }
 
 for network, props in pairs(remoteNetworks) do
-    remoteNetworks[network].connection = peripheral.wrap(connectionString)
+    remoteNetworks[network].connection = peripheral.wrap(props.connectionString)
 end
 
 local monitor = peripheral.wrap(monitorStr)
@@ -77,11 +77,12 @@ end
 
 function CheckStatusOfConnectedSubnet(subnet, props)
     local whStock = QueryWarehouseForAssociatedItems(props.relevantItems)
+    print(props.name, whStock, "/", props.maximumStock)
     if whStock > props.maximumStock then
         props.connection.setTargetSpeed(0)
         props.currentSpeed = 0
     else
-        props.setTargetSpeed(props.maxSpeed)
+        props.connection.setTargetSpeed(props.maxSpeed)
         props.currentSpeed = props.maxSpeed
     end
 end
@@ -107,6 +108,8 @@ function Main()
 end
 
 while true do
+    term.clear()                            -- Paint the entire display with the current background colour.
+    term.setCursorPos(1,1)
     Main()
     sleep(REFRESH_TIME)
 end

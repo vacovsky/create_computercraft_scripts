@@ -12,4 +12,4 @@ local warehouseProtocol = "mcwarehouselookup"
 local itemQuery = "minecraft:emerald"
 rednet.broadcast(itemQuery, warehouseProtocol);
 senderId, message, protocol = rednet.receive(warehouseProtocol,5)
-print(itemQuery, message)
+print(itemQuery, message.count)

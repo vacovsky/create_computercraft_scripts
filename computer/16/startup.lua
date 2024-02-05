@@ -18,7 +18,7 @@ while true do
             response.count = response.count + item.count
         end
     end
-
+    response.name = message
     rednet.send(sender, response, protocol)
 end
 
