@@ -163,6 +163,11 @@ local processing_recipes = {
             input = {"createoreexcavation:raw_emerald"},
             operation = "saw"
         },
+        steak = {
+            name = "minecraft:steak",
+            input = {"minecraft:raw_beef"},
+            operation = "cook"
+        },
         cracked_deepslate_bricks = {
             name = "minecraft:cracked_deepslate_bricks",
             input = {"minecraft:deepslate_bricks"},
