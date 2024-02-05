@@ -1,6 +1,6 @@
 
 
-local REFRESH_TIME = 5
+local REFRESH_TIME = 1
 local stressStr = "Create_Stressometer_0"
 local speedStr = "Create_Speedometer_0"
 local monitorStr = "monitor_1"

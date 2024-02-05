@@ -15,6 +15,8 @@ local monitor = peripheral.find("monitor")
 local warehouseContent = {}
 local loopCounter = 0
 
+local warehouseBound = peripheral.wrap("minecraft:barrel_12")
+-- local warehouseBound = peripheral.wrap("minecolonies:stash_0")
 
 --------------------------
 
@@ -131,15 +133,22 @@ function WriteToFile(input, fileName, mode)
     io.output(file)
     io.write(input)
     io.close(file)
- end
+end
 
+function PushToWarehouse()
+    for slot, item in pairs(warehouseBound.list()) do
+        local xfered = warehouseBound.pushItems("minecolonies:warehouse_7", slot, 64)
+        print(xfered, item.name, "to WH")
+    end
+end
 
 print("Starting automated processing.")
 while true do
     term.setBackgroundColor(colors.black)  -- Set the background colour to black.
-    term.clear()                            -- Paint the entire display with the current background colour.
+    term.clear() -- Paint the entire display with the current background colour.
     term.setCursorPos(1,1)
-
+    
+    PushToWarehouse()
     if monitor == nil then
         print("MISSING MONITOR")
     end

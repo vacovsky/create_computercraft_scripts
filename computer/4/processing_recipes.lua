@@ -68,6 +68,11 @@ local processing_recipes = {
             input = {"minecraft:deepslate"},
             operation = "crush"
         },
+        black_dye = {
+            name = "minecraft:black_dye",
+            input = {"minecraft:charcoal"},
+            operation = "crush"
+        },
         cracked_stone_bricks = {
             name = "minecraft:cracked_stone_bricks",
             input = {"minecraft:stone_bricks"},
@@ -121,6 +126,11 @@ local processing_recipes = {
         popped_chorus_fruit = {
             name = "minecraft:popped_chorus_fruit",
             input = {"minecraft:chorus_fruit"},
+            operation = "smelt"
+        },
+        copper_ingot = {
+            name = "minecraft:copper_ingot",
+            input = {"minecraft:raw_copper", "minecraft:copper_ore", "minecraft:deepslate_copper_ore", "create:crushed_raw_copper"},
             operation = "smelt"
         },
         stripped_oak_log = {
