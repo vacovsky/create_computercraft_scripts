@@ -49,7 +49,7 @@ function RenderDisplay()
         monitor.setCursorPos(xcur, line)
         monitor.write(props.name)
         if props.change < 0 then monitor.setTextColor(colors.red) elseif props.change > 0 then monitor.setTextColor(colors.green) end
-        local lineText = props.stock .. "(" .. props.change ..")   " .. StringState(props.state)
+        local lineText = props.stock .. " (" .. props.change ..")   " .. StringState(props.state)
         RightJustify(lineText, line)
         monitor.write(lineText, line)
         monitor.setTextColor(8)
@@ -58,7 +58,7 @@ function RenderDisplay()
 end
 
 function StringState(state)
-    if state then return "ON" else return "OFF" end
+    if state then return "RUN" else return "OFF" end
 end
 
 function GetSystemStressLevel() -- 0 thru 1
@@ -68,7 +68,6 @@ end
 function CheckStatusOfConnectedSubnet(subnet, props)
     local whStock = QueryWarehouseForAssociatedItems(props.relevantItems)
 
-    
     if whStock > props.maximumStock then
         props.connection.setTargetSpeed(0)
         props.currentSpeed = 0
@@ -82,12 +81,11 @@ function CheckStatusOfConnectedSubnet(subnet, props)
         speed = props.currentSpeed,
         state = props.currentSpeed > 0,
         refinedName = props.refinedResourceName,
-        change = 0,
+        change = nil,
+        stock = 0
     }
-    if displayState[subnet].stock ~= nil then
-        displayState[subnet].change = displayState[subnet].stock - whStock
-        print(props.name, whStock, "/", props.maximumStock, "(" .. displayState[subnet].stock .. ")") 
-    end
+    displayState[subnet].change = -(displayState[subnet].stock - whStock)
+    print(props.name, whStock, "/", props.maximumStock, "(" .. displayState[subnet].change .. ")")
     displayState[subnet].stock = whStock
 end
 
