@@ -35,8 +35,13 @@ local processing_recipes = {
         },
         gold_nugget = {
             name = "minecraft:gold_nugget",
-            input = {"minecraft:soul_sand"},
-            operation = "wash"
+            input = {"minecraft:gold_ingot"},
+            operation = "breakdown"
+        },
+        iron_nugget = {
+            name = "minecraft:iron_nugget",
+            input = {"minecraft:iron_ingot"},
+            operation = "breakdown"
         },
         quartz = {
             name = "minecraft:quartz",
@@ -133,6 +138,11 @@ local processing_recipes = {
             input = {"minecraft:raw_copper", "minecraft:copper_ore", "minecraft:deepslate_copper_ore", "create:crushed_raw_copper"},
             operation = "smelt"
         },
+        gold_ingot = {
+            name = "minecraft:gold_ingot",
+            input = {"minecraft:raw_gold", "minecraft:gold_ore", "minecraft:deepslate_gold_ore", "create:crushed_raw_gold"},
+            operation = "smelt"
+        },
         stripped_oak_log = {
             name = "minecraft:stripped_oak_log",
             input = {"minecraft:oak_log"},
@@ -201,7 +211,7 @@ local processing_recipes = {
             operation = "press"
         },
         gold_sheet = {
-            name = "create:gold_sheet",
+            name = "create:golden_sheet",
             input = {"minecraft:gold_ingot"},
             operation = "press"
         },
