@@ -67,7 +67,11 @@ end
 
 function CheckStatusOfConnectedSubnet(subnet, props)
     local whStock = QueryWarehouseForAssociatedItems(props.relevantItems)
-
+    local change = 0
+    if displayState[subnet] ~= nil and displayState[subnet].stock ~= nil then
+      change = -(displayState[subnet].stock - whStock)
+    end
+    
     if whStock > props.maximumStock then
         props.connection.setTargetSpeed(0)
         props.currentSpeed = 0
@@ -81,12 +85,10 @@ function CheckStatusOfConnectedSubnet(subnet, props)
         speed = props.currentSpeed,
         state = props.currentSpeed > 0,
         refinedName = props.refinedResourceName,
-        change = nil,
-        stock = 0
+        change = change,
+        stock = whStock
     }
-    displayState[subnet].change = -(displayState[subnet].stock - whStock)
-    print(props.name, whStock, "/", props.maximumStock, "(" .. displayState[subnet].change .. ")")
-    displayState[subnet].stock = whStock
+    print(props.name, whStock, "/", props.maximumStock, "(" .. change .. ")")
 end
 
 
