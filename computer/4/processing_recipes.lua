@@ -90,7 +90,7 @@ local processing_recipes = {
         },
         red_sand = { 
             name = "minecraft:red_sand",
-            input = {"minecraft:terracotta"},
+            input = {"minecraft:terracotta", "minecraft:granite"},
             operation = "crush"
         },
         glass = { 

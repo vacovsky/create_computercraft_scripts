@@ -2,13 +2,11 @@
 remoteNetworks = require("remote_networks")
 rednet.open("left");
 
-local DIMENSION = "world"
+local DIMENSION = "nether"
 local warehouseProtocol = "mcwarehouselookup"
 local REFRESH_TIME = 15
-local stressStr = "Create_Stressometer_0"
-local speedStr = "Create_Speedometer_0"
-local monitorStr = "monitor_4"
-local boilerStr = "fluidTank_2"
+local stressStr = "Create_Stressometer_1"
+local monitorStr = "monitor_6"
 local stress = peripheral.wrap(stressStr)
 
 local displayState = {
@@ -41,14 +39,9 @@ function RenderDisplay()
     monitor.clear()
     monitor.setCursorPos(xcur, line)
     monitor.setTextColor(8)
-    monitor.write("STRESS")
-    local worldPower = "WORLD " .. string.format("%.2f",((((GetSystemStressLevel()) * 100 ) * 10) / 10))  .. "% used"
-    RightJustify(worldPower, line)
-    line = line + 1
-    local netherPower = "NETHER " ..string.format("%.2f",((((QueryExtradimensionalNetworkStress()) * 100 ) * 10) / 10))  .. "% used"
-    RightJustify(netherPower, line)
-    
-
+    monitor.write("STRESS ENERGY CONTROL")
+    local curPower = string.format("%.2f",(((  (stress.getStress() / stress.getStressCapacity()) * 100 ) * 10) / 10))  .. "% used"
+    RightJustify(curPower, line)
 
     line = line + 1
     monitor.setCursorPos(xcur, line)
@@ -76,13 +69,13 @@ function GetSystemStressLevel() -- 0 thru 1
 end
 
 function CheckStatusOfConnectedSubnet(subnet, props)
-
+    
     local whStock = QueryWarehouseForAssociatedItems(props.relevantItems)
     local change = 0
     if displayState[subnet] ~= nil and displayState[subnet].stock ~= nil then
       change = -(displayState[subnet].stock - whStock)
     end
-
+    
     if whStock > props.maximumStock then
         props.connection.setTargetSpeed(0)
         props.currentSpeed = 0
@@ -103,16 +96,8 @@ function CheckStatusOfConnectedSubnet(subnet, props)
 end
 
 
-function QueryExtradimensionalSubnetStatus()
-    rednet.broadcast("status", "netherminer");
-    senderId, message, protocol = rednet.receive("netherminer", 5)
-    return message
-end
+function CheckStatusOfRemoteSubnet(subnet, props)
 
-function QueryExtradimensionalNetworkStress()
-    rednet.broadcast("stress", "netherminer");
-    senderId, message, protocol = rednet.receive("netherminer", 5)
-    return message
 end
 
 function QueryWarehouseForAssociatedItems(items)
@@ -125,30 +110,39 @@ function QueryWarehouseForAssociatedItems(items)
     return totalItems
 end
 
-function CheckStatusOfRemoteSubnet(subnet, props)
-    return 0
-end
 
 function Main()
-    -- GetSystemStressLevel()
+    GetSystemStressLevel()
     for subnet, props in pairs(remoteNetworks) do
         if props.dimension == DIMENSION then
             CheckStatusOfConnectedSubnet(subnet, props)
         else
-            local status = 0
             CheckStatusOfRemoteSubnet(subnet, props)
         end
-    end
-    for subnet, props in pairs(QueryExtradimensionalSubnetStatus()) do
-        displayState[subnet] = props
     end
     RenderDisplay()
 end
 
+
+local co = coroutine.create(function ()
+    local protocol = "nethermine"
+    while true do
+        local sender, message = rednet.receive(protocol);
+        if message == "status" then
+            rednet.send(sender, displayState, protocol)
+        end
+        if message == "status" then
+            rednet.send(sender, string.format("%.2f",((((GetSystemStressLevel()) * 100 ) * 10) / 10)), protocol)
+        end
+    end
+end)
+
+coroutine.resume(co)
+
 local counter = 0
 while true do
     counter = counter + 1
-    term.clear()                            -- Paint the entire display with the current background colour.
+    term.clear()
     term.setCursorPos(1,1)
     print("Pass", counter, "refresh interval", REFRESH_TIME .. "s")
     print()
