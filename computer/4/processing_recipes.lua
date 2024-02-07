@@ -183,6 +183,11 @@ local processing_recipes = {
             input = {"minecraft:raw_beef"},
             operation = "cook"
         },
+        dried_kelp = {
+            name = "minecraft:dried_kelp",
+            input = {"minecraft:kelp"},
+            operation = "cook"
+        },
         cracked_deepslate_bricks = {
             name = "minecraft:cracked_deepslate_bricks",
             input = {"minecraft:deepslate_bricks"},
