@@ -2,16 +2,16 @@
 remoteNetworks = require("remote_networks")
 rednet.open("left");
 
+shell.openTab("status_api")
+print("Starting Monitor")
+
 local DIMENSION = "nether"
 local warehouseProtocol = "mcwarehouselookup"
 local REFRESH_TIME = 15
-local stressStr = "Create_Stressometer_1"
 local monitorStr = "monitor_6"
+local stressStr = "Create_Stressometer_1"
 local stress = peripheral.wrap(stressStr)
-
-local displayState = {
-    
-}
+local displayState = {}
 
 
 for network, props in pairs(remoteNetworks) do
@@ -19,7 +19,6 @@ for network, props in pairs(remoteNetworks) do
         remoteNetworks[network].connection = peripheral.wrap(props.connectionString)
     end
 end
-
 local monitor = peripheral.wrap(monitorStr)
 
 function RightJustify(input, line)
@@ -27,10 +26,6 @@ function RightJustify(input, line)
     monitor.write(input, line)
 end
 
-
--- function RightJustify(input, line)
---     monitor.setCursorPos(monitor.getSize() - string.len(input), line)
--- end
 
 function RenderDisplay()
     local line = 1
@@ -69,13 +64,12 @@ function GetSystemStressLevel() -- 0 thru 1
 end
 
 function CheckStatusOfConnectedSubnet(subnet, props)
-    
     local whStock = QueryWarehouseForAssociatedItems(props.relevantItems)
     local change = 0
     if displayState[subnet] ~= nil and displayState[subnet].stock ~= nil then
       change = -(displayState[subnet].stock - whStock)
     end
-    
+
     if whStock > props.maximumStock then
         props.connection.setTargetSpeed(0)
         props.currentSpeed = 0
@@ -96,18 +90,29 @@ function CheckStatusOfConnectedSubnet(subnet, props)
 end
 
 
-function CheckStatusOfRemoteSubnet(subnet, props)
-
-end
-
 function QueryWarehouseForAssociatedItems(items)
     local totalItems = 0
     for i, item in pairs(items) do
         rednet.broadcast(item, warehouseProtocol);
         senderId, message, protocol = rednet.receive(warehouseProtocol, 5)
-        totalItems = totalItems + message.count
+        if message.count ~= nil then
+            totalItems = totalItems + message.count
+        end
     end
     return totalItems
+end
+
+
+function WriteTableToFile(table, fileName)
+    WriteToFile(textutils.serialize(table), fileName)
+end
+
+
+function WriteToFile(input, fileName)
+    local file = io.open(fileName, "w")
+    io.output(file)
+    io.write(input)
+    io.close(file)
 end
 
 
@@ -116,28 +121,12 @@ function Main()
     for subnet, props in pairs(remoteNetworks) do
         if props.dimension == DIMENSION then
             CheckStatusOfConnectedSubnet(subnet, props)
-        else
-            CheckStatusOfRemoteSubnet(subnet, props)
         end
     end
+    WriteTableToFile(displayState, "state")
     RenderDisplay()
 end
 
-
-local co = coroutine.create(function ()
-    local protocol = "nethermine"
-    while true do
-        local sender, message = rednet.receive(protocol);
-        if message == "status" then
-            rednet.send(sender, displayState, protocol)
-        end
-        if message == "status" then
-            rednet.send(sender, string.format("%.2f",((((GetSystemStressLevel()) * 100 ) * 10) / 10)), protocol)
-        end
-    end
-end)
-
-coroutine.resume(co)
 
 local counter = 0
 while true do

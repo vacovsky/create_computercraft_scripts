@@ -9,6 +9,7 @@ local stressStr = "Create_Stressometer_0"
 local speedStr = "Create_Speedometer_0"
 local monitorStr = "monitor_4"
 local boilerStr = "fluidTank_2"
+local netherProtocol = "nethermine"
 local stress = peripheral.wrap(stressStr)
 
 local displayState = {
@@ -45,10 +46,9 @@ function RenderDisplay()
     local worldPower = "WORLD " .. string.format("%.2f",((((GetSystemStressLevel()) * 100 ) * 10) / 10))  .. "% used"
     RightJustify(worldPower, line)
     line = line + 1
-    local netherPower = "NETHER " ..string.format("%.2f",((((QueryExtradimensionalNetworkStress()) * 100 ) * 10) / 10))  .. "% used"
-    RightJustify(netherPower, line)
-    
 
+    local netherPower = "NETHER " .. QueryExtradimensionalNetworkStress()  .. "% used"
+    RightJustify(netherPower, line)
 
     line = line + 1
     monitor.setCursorPos(xcur, line)
@@ -56,6 +56,7 @@ function RenderDisplay()
     line = line + 1
 
     for network, props in pairs(displayState) do
+        print("netowrk", network)
         line = line + 1
         monitor.setCursorPos(xcur, line)
         monitor.write(props.name)
@@ -64,7 +65,6 @@ function RenderDisplay()
         RightJustify(lineText, line)
         monitor.setTextColor(8)
     end
-
 end
 
 function StringState(state)
@@ -104,23 +104,29 @@ end
 
 
 function QueryExtradimensionalSubnetStatus()
-    rednet.broadcast("status", "netherminer");
-    senderId, message, protocol = rednet.receive("netherminer", 5)
+    rednet.broadcast("status", netherProtocol);
+    senderId, message, protocol = rednet.receive(netherProtocol, 1)
     return message
 end
 
 function QueryExtradimensionalNetworkStress()
-    rednet.broadcast("stress", "netherminer");
-    senderId, message, protocol = rednet.receive("netherminer", 5)
-    return message
+    local edns = 0
+    rednet.broadcast("stress", netherProtocol);
+    senderId, message, protocol = rednet.receive(netherProtocol, 1)
+    if message ~= nil then
+        edns = edns + message
+    end
+    return edns
 end
 
 function QueryWarehouseForAssociatedItems(items)
     local totalItems = 0
     for i, item in pairs(items) do
         rednet.broadcast(item, warehouseProtocol);
-        senderId, message, protocol = rednet.receive(warehouseProtocol, 5)
-        totalItems = totalItems + message.count
+        senderId, message, protocol = rednet.receive(warehouseProtocol, 1)
+        if message ~= nil then
+            totalItems = totalItems + message.count
+        end
     end
     return totalItems
 end
@@ -130,7 +136,6 @@ function CheckStatusOfRemoteSubnet(subnet, props)
 end
 
 function Main()
-    -- GetSystemStressLevel()
     for subnet, props in pairs(remoteNetworks) do
         if props.dimension == DIMENSION then
             CheckStatusOfConnectedSubnet(subnet, props)
@@ -139,8 +144,12 @@ function Main()
             CheckStatusOfRemoteSubnet(subnet, props)
         end
     end
-    for subnet, props in pairs(QueryExtradimensionalSubnetStatus()) do
-        displayState[subnet] = props
+
+    local exss = QueryExtradimensionalSubnetStatus()
+    if exss ~= nil then
+        for subnet, props in pairs(exss) do
+            displayState[subnet] = props
+        end
     end
     RenderDisplay()
 end

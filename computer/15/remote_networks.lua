@@ -19,6 +19,22 @@ local remoteNetworks = {
         currentSpeed = 0,
         priority = 0
     },
+    diamondMine = {
+        refinedResourceName = "Diamond",
+        name = "Diamond Mine",
+        connectionString = "Create_RotationSpeedController_15",
+        connection = nil,
+        dimension = "world",
+        relevantItems = {
+            "minecraft:raw_diamond",
+            "minecraft:diamond"
+        },
+        maximumStock = 2048,
+        minSpeed = 64,
+        maxSpeed = 256,
+        currentSpeed = 0,
+        priority = 0
+    },
     quartzMine = {
         refinedResourceName = "Nether Quartz",
         name = "Quartz Mine",
