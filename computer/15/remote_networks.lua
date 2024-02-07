@@ -26,7 +26,7 @@ local remoteNetworks = {
         connection = nil,
         dimension = "world",
         relevantItems = {
-            "minecraft:raw_diamond",
+            "createoreexcavation:raw_diamond",
             "minecraft:diamond"
         },
         maximumStock = 2048,

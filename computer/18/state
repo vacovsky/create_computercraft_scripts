@@ -4,15 +4,15 @@
     refinedName = "Nether Quartz",
     name = "Quartz Mine",
     speed = 128,
-    stock = 1167,
-    change = 0,
+    stock = 1544,
+    change = 1,
   },
   glowstoneMine = {
     state = true,
     refinedName = "Glowstone Dust",
     name = "Glowstone Mine",
     speed = 128,
-    stock = 151,
+    stock = 153,
     change = 0,
   },
 }
