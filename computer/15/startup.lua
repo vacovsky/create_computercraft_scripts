@@ -12,10 +12,7 @@ local boilerStr = "fluidTank_2"
 local netherProtocol = "nethermine"
 local stress = peripheral.wrap(stressStr)
 
-local displayState = {
-    
-}
-
+local displayState = {}
 
 for network, props in pairs(remoteNetworks) do
     if props.connectionString ~= nil then

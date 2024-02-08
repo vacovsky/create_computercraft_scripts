@@ -13,7 +13,6 @@ local monitor = peripheral.wrap(monitorStr)
 
 
 
-
 function RightJustify(input, line)
     monitor.setCursorPos(monitor.getSize() - string.len(input), line)
     monitor.write(input)
