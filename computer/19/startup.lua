@@ -7,10 +7,6 @@ local warehouse = peripheral.find("minecolonies:warehouse")
 local trash = peripheral.wrap(trash_string)
 
 
-function GetSystemStressLevel() -- 0 thru 1
-    return stress.getStress() / stress.getStressCapacity()
-end
-
 function FindItemLocationsInWarehouse(itemId)
     print("searching for", itemId)
     local matchedSlots = {}
@@ -19,6 +15,7 @@ function FindItemLocationsInWarehouse(itemId)
              table.insert(matchedSlots, slot)
         end
     end
+    return matchedSlots
 end
 
 function PushToTrash(slots)
@@ -32,7 +29,10 @@ print("Starting Trash Item API - BE CAREFUL")
 while true do
     local sender, message = rednet.receive(protocol);
     print("delete request recieved for", message)
-
     local itemSlots = FindItemLocationsInWarehouse(message)
-    PushToTrash(itemSlots)
+    if itemSlots ~= nil then
+        PushToTrash(itemSlots)
+    else
+        print("item not found")
+    end
 end

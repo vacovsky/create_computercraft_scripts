@@ -163,6 +163,11 @@ local processing_recipes = {
             input = {"minecraft:bamboo_block"},
             operation = "breakdown"
         },
+        stripped_bamboo_block = {
+            name = "minecraft:stripped_bamboo_block",
+            input = {"minecraft:bamboo_block"},
+            operation = "saw"
+        },
         blackstone = {
             name = "minecraft:blackstone",
             input = {"minecraft:cobblestone"},
