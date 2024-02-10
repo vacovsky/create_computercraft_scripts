@@ -1,8 +1,18 @@
 {
-  "computer": 4,
-  "peripheral.computer": 0,
-  "peripheral.minecraft:barrel": 6,
-  "peripheral.minecolonies:warehouse": 0,
+  "computer": 19,
+  "peripheral.computer": 15,
+  "peripheral.minecraft:barrel": 13,
+  "peripheral.minecolonies:warehouse": 7,
   "peripheral.minecolonies:rack": 0,
-  "peripheral.monitor": 0
+  "peripheral.monitor": 6,
+  "peripheral.colonyIntegrator": 0,
+  "peripheral.fluidTank": 5,
+  "peripheral.modem": 0,
+  "peripheral.Create_Stressometer": 1,
+  "peripheral.Create_Speedometer": 0,
+  "peripheral.Create_RotationSpeedController": 15,
+  "peripheral.minecolonies:stash": 0,
+  "peripheral.minecolonies:colonybuilding": 0,
+  "peripheral.create:chute": 0,
+  "peripheral.create:item_vault": 0
 }
