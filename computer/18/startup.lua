@@ -71,8 +71,8 @@ function CheckStatusOfConnectedSubnet(subnet, props)
     end
 
     if whStock > props.maximumStock then
-        props.connection.setTargetSpeed(0)
-        props.currentSpeed = 0
+        props.connection.setTargetSpeed(props.minSpeed)
+        props.currentSpeed = props.minSpeed
     else
         props.connection.setTargetSpeed(props.maxSpeed)
         props.currentSpeed = props.maxSpeed
@@ -135,6 +135,6 @@ while true do
     term.setCursorPos(1,1)
     print("Pass", counter, "refresh interval", REFRESH_TIME .. "s")
     print()
-    Main()
+    pcall(Main)
     sleep(REFRESH_TIME)
 end

@@ -13,7 +13,7 @@ local remoteNetworks = {
             "minecraft:quartz"
         },
         maximumStock = 2048,
-        minSpeed = 64,
+        minSpeed = 128,
         maxSpeed = 128,
         currentSpeed = 0,
         priority = 2

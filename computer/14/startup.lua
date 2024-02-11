@@ -42,10 +42,10 @@ end
 
 
 while true do
-    Main()
+    -- Main()
     print("Stress: ", stress.getStress(), " / ",stress.getStressCapacity())
     print("Speed: ", speed.getSpeed())
 
-    -- pcall(Main)
+    pcall(Main)
     sleep(REFRESH_TIME)
 end

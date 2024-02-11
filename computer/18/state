@@ -1,18 +1,18 @@
 {
   quartzMine = {
-    state = false,
+    state = true,
     refinedName = "Nether Quartz",
     name = "Quartz Mine",
-    speed = 0,
+    speed = 128,
     stock = 2084,
     change = 0,
   },
   glowstoneMine = {
-    state = false,
+    state = true,
     refinedName = "Glowstone Dust",
     name = "Glowstone Mine",
-    speed = 0,
-    stock = 2049,
+    speed = 128,
+    stock = 1793,
     change = 0,
   },
 }
