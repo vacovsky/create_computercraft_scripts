@@ -19,6 +19,22 @@ local remoteNetworks = {
         currentSpeed = 0,
         priority = 0
     },
+    redstoneMine = {
+        refinedResourceName = "Redstone Dust",
+        name = "Redstone Mine",
+        connectionString = "Create_RotationSpeedController_16",
+        connection = nil,
+        dimension = "world",
+        relevantItems = {
+            "createoreexcavation:raw_redstone",
+            "minecraft:redstone"
+        },
+        maximumStock = 2048,
+        minSpeed = 64,
+        maxSpeed = 256,
+        currentSpeed = 0,
+        priority = 0
+    },
     diamondMine = {
         refinedResourceName = "Diamond",
         name = "Diamond Mine",

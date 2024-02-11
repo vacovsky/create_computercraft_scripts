@@ -1,4 +1,4 @@
-shell.openTab("warehouse_splitter")
+-- shell.openTab("warehouse_splitter")
 rednet.open("right");
 
 local warehouse = "minecolonies:warehouse_7"

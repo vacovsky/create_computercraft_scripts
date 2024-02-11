@@ -110,7 +110,7 @@ function QueryExtradimensionalNetworkStress()
     local edns = 0
     rednet.broadcast("stress", netherProtocol);
     senderId, message, protocol = rednet.receive(netherProtocol, 1)
-    if message ~= nil then
+    if tonumber(message) ~= nil then
         edns = edns + message
     end
     return edns
@@ -158,6 +158,6 @@ while true do
     term.setCursorPos(1,1)
     print("Pass", counter, "refresh interval", REFRESH_TIME .. "s")
     print()
-    Main()
+    pcall(Main)
     sleep(REFRESH_TIME)
 end
