@@ -12,7 +12,7 @@
     refinedName = "Glowstone Dust",
     name = "Glowstone Mine",
     speed = 128,
-    stock = 1793,
+    stock = 1769,
     change = 0,
   },
 }

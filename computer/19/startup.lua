@@ -1,4 +1,5 @@
 rednet.open("right");
+shell.openTab("golden_carrot_builder")
 
 
 local protocol = "delete_item"
