@@ -23,7 +23,7 @@ function Main()
     end
 end
 while true do
-    Main()
-    -- pcall(Main)
+    -- Main()
+    pcall(Main)
     sleep(30)
 end
