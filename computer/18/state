@@ -4,7 +4,7 @@
     refinedName = "Nether Quartz",
     name = "Quartz Mine",
     speed = 128,
-    stock = 2085,
+    stock = 2143,
     change = 0,
   },
   glowstoneMine = {
@@ -12,7 +12,7 @@
     refinedName = "Glowstone Dust",
     name = "Glowstone Mine",
     speed = 128,
-    stock = 1769,
+    stock = 1765,
     change = 0,
   },
 }
