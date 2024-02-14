@@ -14,7 +14,7 @@ local remoteNetworks = {
             "create:crushed_raw_copper"
         },
         maximumStock = 2048,
-        minSpeed = 64,
+        minSpeed = 0,
         maxSpeed = 256,
         currentSpeed = 0,
         priority = 0
@@ -30,7 +30,7 @@ local remoteNetworks = {
             "minecraft:redstone"
         },
         maximumStock = 2048,
-        minSpeed = 64,
+        minSpeed = 0,
         maxSpeed = 256,
         currentSpeed = 0,
         priority = 0
@@ -46,7 +46,7 @@ local remoteNetworks = {
             "minecraft:diamond"
         },
         maximumStock = 2048,
-        minSpeed = 64,
+        minSpeed = 0,
         maxSpeed = 256,
         currentSpeed = 0,
         priority = 0
@@ -62,7 +62,7 @@ local remoteNetworks = {
             "minecraft:quartz"
         },
         maximumStock = 2048,
-        minSpeed = 64,
+        minSpeed = 0,
         maxSpeed = 188,
         currentSpeed = 0,
         priority = 2
@@ -78,7 +78,7 @@ local remoteNetworks = {
             "minecraft:glowstone_dust"
         },
         maximumStock = 2048,
-        minSpeed = 64,
+        minSpeed = 0,
         maxSpeed = 188,
         currentSpeed = 0,
         priority = 3
@@ -95,7 +95,7 @@ local remoteNetworks = {
             "create:emerald_ore"
         },
         maximumStock = 2048,
-        minSpeed = 64,
+        minSpeed = 0,
         maxSpeed = 256,
         currentSpeed = 0,
         priority = 3
@@ -111,7 +111,7 @@ local remoteNetworks = {
             "create:crushed_raw_iron"
         },
         maximumStock = 2048,
-        minSpeed = 64,
+        minSpeed = 0,
         maxSpeed = 256,
         currentSpeed = 0,
         priority = 0
@@ -128,7 +128,7 @@ local remoteNetworks = {
             "create:crushed_raw_gold"
         }, 
         maximumStock = 2048,
-        minSpeed = 64,
+        minSpeed = 0,
         maxSpeed = 256,
         currentSpeed = 0,
         priority = 0
@@ -143,7 +143,7 @@ local remoteNetworks = {
             "minecraft:lapis_lazuli"
         },
         maximumStock = 2048,
-        minSpeed = 64,
+        minSpeed = 0,
         maxSpeed = 256,
         currentSpeed = 0,
         priority = 3
