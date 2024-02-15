@@ -128,7 +128,7 @@ local remoteNetworks = {
             "create:crushed_raw_gold"
         }, 
         maximumStock = 2048,
-        minSpeed = 0,
+        minSpeed = 64,
         maxSpeed = 256,
         currentSpeed = 0,
         priority = 0
