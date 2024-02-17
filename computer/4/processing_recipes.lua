@@ -205,6 +205,21 @@ local processing_recipes = {
         }
     },
     create = {
+        scoria = {
+            name = "create:scoria",
+            input = {"minecraft:soul_sand"},
+            operation = "smelt"
+        },
+        zinc_ingot = {
+            name = "create:zinc_ingot",
+            input = {"create:crushed_raw_zinc", "create:raw_zinc"},
+            operation = "smelt"
+        },
+        crushed_raw_zinc = {
+            name = "create:crushed_raw_zinc",
+            input = {"create:raw_zinc"},
+            operation = "crush"
+        },
         cinder_flour = {
             name = "create:cinder_flour",
             input = {"minecraft:netherrack"},
