@@ -100,6 +100,22 @@ local remoteNetworks = {
         currentSpeed = 0,
         priority = 3
     },
+    zincMine = {
+        refinedResourceName = "Zinc Ingot",
+        name = "Zinc Mine",
+        connectionString = "Create_RotationSpeedController_17",
+        dimension = "world",
+        connection = nil,
+        relevantItems = {
+            "create:crushed_raw_zinc",
+            "create:raw_zinc"
+        },
+        maximumStock = 2048,
+        minSpeed = 0,
+        maxSpeed = 256,
+        currentSpeed = 0,
+        priority = 3
+    },
     ironGenerator = {
         refinedResourceName = "Iron Ingot",
         name = "Iron Generator",

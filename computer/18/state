@@ -4,7 +4,7 @@
     refinedName = "Nether Quartz",
     name = "Quartz Mine",
     speed = 128,
-    stock = 2041,
+    stock = 2017,
     change = 0,
   },
   glowstoneMine = {
