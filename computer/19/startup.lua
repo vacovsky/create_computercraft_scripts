@@ -1,5 +1,6 @@
 rednet.open("right");
 shell.openTab("golden_carrot_builder")
+shell.openTab("netherrack_shuffler")
 
 
 local protocol = "delete_item"
