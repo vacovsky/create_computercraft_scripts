@@ -13,9 +13,9 @@ print("Starting SUPER NETHERRACK MOVER how stupid")
 
 function Main() 
     for slot, item in pairs(warehouse.list()) do
-        if item.name == "minecraft:netherrack" then
+        if item.name == "minecraft:netherrack" or item.name == "minecraft:egg" then
             pushStuff(slot, nrbarrel_str)
-            print("Tried to push netherrack!")
+            print("Tried to push netherrack/egg!")
         end
     end
 end
