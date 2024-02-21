@@ -2,6 +2,10 @@ rednet.open("right");
 shell.openTab("golden_carrot_builder")
 shell.openTab("netherrack_shuffler")
 
+-- shell.openTab("golden_carrot_builder")
+shell.openTab("glow_hyperxp")
+shell.openTab("lapis_hyperxp")
+
 
 local protocol = "delete_item"
 local trash_string = "create:chute_0"

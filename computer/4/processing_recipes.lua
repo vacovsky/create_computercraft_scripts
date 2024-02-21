@@ -23,6 +23,11 @@ local processing_recipes = {
             input = {"minecraft:dirt"},
             operation = "haunt"
         },
+        glow_ink_sac = {
+            name = "minecraft:glow_ink_sac",
+            input = {"minecraft:ink_sac"},
+            operation = "haunt"
+        },
         gravel = {
             name = "minecraft:gravel",
             input = {"minecraft:cobblestone"},
